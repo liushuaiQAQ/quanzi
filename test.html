@@ -1,0 +1,29 @@
+<!--#include virtual="/html/doctype.html" -->
+<title>圈子未登录-首页</title>
+<!--#include virtual="/html/mate.html"-->
+<meta name="baidu-site-verification" content="rrHD5UlN6N" />
+<link rel="stylesheet" type="text/css" href="/css/center/index/index.css" />
+<link rel="stylesheet" type="text/css" href="/css/center/index/triends.css" />
+
+</head>
+
+<body>
+<a href="javascript:;" class="JS_click">click</a>
+<script type="text/javascript">
+$(document).on("click",".JS_click",function(){
+$.ajax({
+	url:"/test",
+	data:{
+		userName:"test",
+		passWord:"123456"
+		},
+	success:function(msg){
+		console.log(msg);
+	}
+	});
+});
+</script>
+
+</body>
+
+</html>

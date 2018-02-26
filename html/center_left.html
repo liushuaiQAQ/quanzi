@@ -1,0 +1,149 @@
+<!--left-->
+<div class="content_left" id="con_left">
+	<h2 class="qz_mk">常用</h2>
+	<ul>
+		<li class="item_sy" id="indexHtml">
+			<a href="/center/index.html"><i></i>圈子</a>
+		</li>
+	</ul>
+	<h2 class="qz_mk qz_discover">发现</h2>
+	<ul>
+		<li class="item_zyq" id="zyqHtml">
+			<a href="/center/zyq.html"><i></i>职业圈</a>
+		</li>
+		<li class="item_shq" id="shqHtml">
+			<a href="/center/shq.html"><i></i>生活圈</a>
+		</li>
+		<li class="item_qq" id="qqqHtml">
+			<a href="/center/qqq.html"><i></i>全球圈</a>
+		</li>
+		<li class="item_cj" id="cjqzHtml">
+			<a href="/center/cjqz.html"><i></i>创建圈子</a>
+		</li>
+	</ul>
+	<h2 class="qz_personage">个人中心</h2>
+	<ul class="content_data">
+		<li class="item_tx">
+
+		</li>
+		<li class="item_bj">
+			<a href="/center/editbjzl.html"><i></i>编辑资料</a>
+		</li>
+		<li class="item_my">
+			<a href="/center/me/circle.html"><i></i>我的圈子</a>
+		</li>
+		<li class="item_vip">
+			<a href="/center/vipCentre.html"><i></i>会员中心</a>
+		</li>
+		<li class="item_dt" id="grdtHtml">
+			<a href="/center/me/page.html"><i></i>动态</a>
+		</li>
+		<li class="item_gz" id="gzHtml">
+			<a href="/center/me/focus.html"><i></i>关注</a>
+		</li>
+		<li class="item_wd" id="gzHtml">
+			<a href="/center/me/wenti.html"><i></i>问答</a>
+		</li>
+		<li class="item_fs" id="gzHtml">
+			<a href="/center/me/funs.html"><i></i>粉丝</a>
+		</li>
+		<li class="item_sc" id="myscHtml">
+			<a href="/center/me/collect.html"><i></i>收藏</a>
+		</li>
+		<li>
+			<div class="telphone">
+				<p class="p_fw">24h客户服务电话</p>
+				<p class="number">400-087-3899</p>
+			</div>
+		</li>
+	</ul>
+
+</div>
+
+<script>
+	var UserName = getCookie("username"); //用户名
+	var UserImg = getCookie("headImgkz"); //用户头像
+	var Nickname=getCookie("nickname");
+	var str = "";
+	var getUse = "";
+	if ($.trim(Nickname) != "") {
+		getUse = Nickname; //用户昵称
+	} else {
+		getUse = shieldNumber(UserName);
+	}
+	if(UserImg == ""){
+		str = '<a href="/center/me/page.html"><i><img src="/img/first.png" alt="头像" width="16px" height="16px"/></i><span class="nicknames">' + getUse + '</span></a>'
+	}else{
+		if(UserImg.indexOf("http")>-1){
+			var UserImgs=UserImg;
+		}else{
+			var UserImgs=ImgHOST()+UserImg;
+		}
+		str = '<a href="/center/me/page.html"><i><img src="' + UserImgs + '" alt="头像" width="16px" height="16px"/></i><span class="nicknames">' + getUse + '</span></a>'
+	}
+	$(".item_tx").html(str);
+
+	$(function() {
+		var hre = window.location.href;
+		var tabId = hre.split("/")[hre.split("/").length - 1].split(".html")[0];
+		//console.log(tabId)
+		if(tabId=="zyfl"){
+			$("#zyqHtml").addClass("onbg");
+		};
+		if(tabId=="qqqlist"){
+			$("#qqqHtml").addClass("onbg");
+		};
+		$("#" + tabId + "Html").addClass("onbg");
+		//导航颜色变色 
+		//首页
+		if($(".item_sy").hasClass('onbg')){
+			$(".navList .nav_index").css({
+				"color":"#728bb9",
+				"background":"#728bb9"
+			});
+		}else{
+			$(".navList .nav_index").css("background","");
+		}
+		//闪聊
+		if(hre.indexOf("flashchat.html")>-1){
+			$(".sl").css({
+				"color":"#728bb9",
+				"background":"#728bb9"
+			});
+			$("#con_left ul li").removeClass("onbg");
+		}else{
+			$(".sl").css("background","");
+		}
+		
+		//找人
+		if(hre.indexOf("lookForSb.html")>-1){
+			$(".findThing").css({
+				"color":"#728bb9",
+				"background":"#728bb9"
+			});
+			$("#con_left ul li").removeClass("onbg");
+		}else{
+			$(".findThing").css("background","");
+		}
+		//视频
+		if(hre.indexOf("videoLists.html")>-1){
+			$(".header_video").css({
+				"color":"#728bb9",
+				"background":"#728bb9"
+			}).siblings('a').css("background","");
+			$("#con_left ul li").removeClass("onbg");
+		}else{
+			$(".header_video").css("background","");
+		} 
+		//		朋友圈
+		if(hre.indexOf("pyq.html")>-1){
+			$(".header_pyq").css({
+				"color":"#728bb9",
+				"background":"#728bb9"
+			});
+			$("#con_left ul li").removeClass("onbg");
+		}else{
+			$(".header_pyq ").css("background","");
+		}
+	})
+</script>

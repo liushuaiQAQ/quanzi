@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="/js/common/jquery-1.11.0.js" ></script>
+		<!--给button添加ajax事件-->
+		<script type="text/javascript">
+		    $(function(){
+		        //按钮单击时执行
+		        $("#testAjax").click(function(){
+				    //alert("我在调用ajax！！！");
+		            //Ajax调用处理
+		            $.ajax({
+		               type: "POST",
+		                url: "http://192.168.3.51/jingtaihua/goUserInfoPageEX.do",
+		               data:{myname:"17718435020",username:"15737921002",templetName:"pageJingtai"},
+					   dataType: "json",
+		               success: function(msg){
+//								alert(msg);
+//								alert("222")
+								var mssg = msg.data;
+								//alert(mssg);
+		                       // $("#myDiv").html('<h2>'+msg+'</h2>');
+		                      window.location.href=mssg+"?from=17701026478";
+		                  }
+		            });
+		        });
+		    });
+		</script>  
+	</head>
+	<body>
+		<h1>我是静态化测试启动页面</h1>
+        <button id="testAjax" type="button">请求静态化页面</button>
+	</body>
+</html>

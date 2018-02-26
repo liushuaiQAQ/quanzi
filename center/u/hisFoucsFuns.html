@@ -1,0 +1,43 @@
+<style>
+    #strangeNav ul {
+        margin-left: 311px;
+        text-align: center;
+    }
+    #strangeNav li {
+        overflow: hidden;
+        width: 170px;
+        display: inline-block;
+        text-align: center;
+    }
+    .nav ul li a{padding: 4px 15px;
+        font-size: 14px;
+        color: white;
+        float: none;
+        display: inline-block;}
+    /*#strangeNav ul li a {  margin-right: 65px;  }*/
+    .homepage_type ul li{font-size: 12px;line-height: 38px;display: inline-block;text-align: center;}
+    .conFunsFocus{width:100px;}
+    .homepage_type .activesF{color:#80bd7b;}
+    .homepage_type .activesF span{color:#80bd7b;}
+</style>
+<div class="homepage_type">
+    <ul>
+        <li class="conFunsFocus"><a  href="javascript:;" >关注<span class="focus_num"></span></a></li>
+        <li class="small_text">|</li>
+        <li class="conFunsFocus"><a href="javascript:;">粉丝<span class="funs_num"></span></a></li>
+    </ul>
+</div>
+<script>
+if(UserName){
+    $(".conFunsFocus a").eq(0).attr("href","/center/u/focus.html?from="+getURIArgs("from"));
+    $(".conFunsFocus a").eq(1).attr("href","/center/u/funs.html?from="+getURIArgs("from"));
+    var urlShowF=window.location.href;
+    if(urlShowF.indexOf("/center/u/focus.html")>-1){
+        $(".conFunsFocus a").eq(0).addClass("activesF");
+    }else if(urlShowF.indexOf("/center/u/funs.html")>-1){
+        $(".conFunsFocus a").eq(1).addClass("activesF");
+    }
+}else{
+	$(".conFunsFocus").addClass("login_window");
+}
+</script>

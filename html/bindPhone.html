@@ -1,0 +1,39 @@
+<!--遮盖弹窗-->
+<!--绑定手机号-->
+	<div class="bg_mask"></div>
+	<div class="viewbindPhone">
+		<p class="clearfix"><span class="binderrors">×</span></p>
+		<div class="bindLogin">
+			<p class="bindtit">绑定手机</p>
+			<div class="bindinputLogin">
+				<p class="bindmsg">您绑定的手机号，可通过手机号+密码的方式登圈子</p>
+					<ul>
+						<li>
+							<label for="#bindphone">手机号</label>
+							<input type="text" name="bindphone" id="bindphone" value="" placeholder="手机号"/>
+							<div class="commontit warn2 point3">     <!--错误提示-->
+								<i><img src="/img/daosanjiao.png"/></i>
+								<p>手机号有误</p>
+							</div>
+						</li>
+						<li>
+							<label for="#bindcode">验证码</label>
+							<input type="text" name="bindcode" id="bindcode" value="" placeholder="请输入验证码"/><button class="bindidentifyingCode bindbtn-small bindget-code">获取验证码</button><button class="bindidentifyingCode bindbtn-small bindreset-code" id="J_bindresetCode" style="display:none;"><span id="J_bindsecond">60</span>秒后重发</button>
+							<div class="commontit warn2 point4">     <!--错误提示-->
+								<i><img src="/img/daosanjiao.png"/></i>
+								<p>验证码有误</p>
+							</div>
+						</li>
+						<li>
+							<label for="#bindpassword">设置密码</label>
+							<input type="password" name="bindpassword" id="bindpassword" value="" placeholder="请输入6~20位新密码"/>
+							<div class="commontit warn2 point5">     <!--错误提示-->
+								<i><img src="/img/daosanjiao.png"/></i>
+								<p>密码有误</p>
+							</div>
+						</li>
+					</ul>
+				<a class="bindclickLogin" href="javascript:;">完成</a>
+			</div>
+		</div>
+	</div>

@@ -1,0 +1,121 @@
+<!--#include virtual="/html/doctype.html"-->
+
+<title>职业圈问题详情</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/detail/circle_detail.css">
+<link rel="stylesheet" type="text/css" href="/css/center/detail/detail_new.css">
+<link rel="stylesheet" type="text/css" href="/css/center/detail/wentixq.css">
+<link rel="stylesheet" type="text/css" href="/css/center/index/index.css"/>
+<script src="/js/common/com_ajaxfileupload.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/common/jquery.Jcrop.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="/js/center/detail/zhiye/common.js"></script>
+<script type="text/javascript" src="/js/common/publishIndex.js"></script>
+<script type="text/javascript" src="/js/common/index_shareThing.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="headss"></div>
+<div class="circleDetail_main">
+    <div class="detail_left">
+        <div class="publish_box">
+            <!--#include virtual="/html/index_shareThing.html"-->
+        </div>
+        <div class="left_nav">
+            <ul>
+                <li>
+                     <a href="javascript:;">动态(<span class="dayNum"></span>)</a>
+                </li>
+               <!--  <li class="on">
+                     <a href="javascript:;" class="left_nav_color">百问百答(<span class="ansNum"></span>)</a>
+                </li> -->
+                <li>
+                    <a href="javascript:;">成员 (<span class="join_num"></span> )</a>
+                </li>
+            </ul>
+        </div>  
+        <div class="bottom_left fl proCirs">
+            <div class="detailsProblem">
+            <div class="problem problem_list">
+                <div class="problem_content">
+                   
+                </div>
+                <div class="wt_publish">
+                    <div class="qz_face">
+                        <img src="/img/first.png">
+                    </div>
+                    <div class="p_input">
+                    <textarea class="Postcomment" placeholder="写回答…" name="review_1" id="txtId"></textarea>
+                    </div>
+                </div>
+                <div class="review_1"></div>
+            </div>
+            <div class="commentList_wt">
+                <div class="chitchatBox clear">
+                    <ul class="stairComment">
+                       
+                    </ul>
+                    <div class="To_view_more"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="detail_right">
+        <div class="right_top">
+            <div class="circle_bg"></div>
+            <a href="javascript:;" class="circle_img">
+                <img src="/img/first.png">
+            </a>
+            <p class="circle_name"></p>
+            <ul>
+                <li class="joinUs"><a href="javascript:;">加入圈子</a></li>
+                <li class="no_class">|</li>
+                <li class="chatRoom"><a href="javascript:;"><span class="chatroom_bg"></span>聊天室</a></li>
+                <li>|</li>
+                <li class="recommend_friends"><a href="javascript:;">推荐给好友</a></li>
+                <br class="clear">
+            </ul>
+        </div>    
+        <div class="bottom_type">
+            <ul>
+                <li>加入<span class="join_num"></span>
+                </li>
+                <li>|</li>
+                <li>动态&nbsp;<span class="dynamic_num"></span>
+                </li>
+                <br class="clear">
+            </ul>
+        </div>
+        <div class="hotQuestion">
+            <div class="hotHead">
+                <span>热门问题</span>
+                <span class="change inbatch">换一批</span>
+            </div>
+            <div class="hotContent">
+               
+            </div>
+        </div>
+        <!-- 推荐 -->
+        <!--#include virtual="/html/recommoned.html"-->
+    </div>
+    <!--返回置顶-->
+	<!--<div class="returnTop"></div>-->
+    <div class="clear"></div>
+</div>
+<!-- footer -->
+<div class="footerss"></div>
+<!-- 通讯录 -->
+<div class="Addressbook_box"></div>
+
+<!--修改加入职业圈-->
+<!--#include virtual="/html/changeorjoincarCir.html"-->
+
+
+<!--转发分享圈子朋友圈  圈子好友   圈子群组开始-->
+<!--#include virtual="/html/dynamicSharing.html"-->
+<!--转发分享圈子朋友圈  圈子好友   圈子群组结束-->
+<script type="text/javascript" src="/js/center/detail/wtxq.js"></script>
+<script type="text/javascript" src="/js/center/index/index.js"></script>
+</body>
+
+</html>

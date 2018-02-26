@@ -1,0 +1,101 @@
+<div class="shqfl">
+	<div class="boxlist">
+		<p>生活圈分类</p>
+		<div>
+			<ul>
+				
+			</ul>
+		</div>
+	</div>
+	<div class="recommend">
+		<p><i>可能认识</i><a class="more_s_t" href="javascript:;">查看更多</a></p>
+		<ul>
+			
+		</ul>
+		<div class="clear"></div>
+	</div>
+	<!--用二维码下载  -->
+	<!--#include virtual="/html/qrodeload.html"-->
+	<div class="nologin_footer">
+		<a href="/center/guanyuwomen.html">关于圈子</a>
+		<a href="/center/lianxiwomen.html">联系我们</a>
+		<a href="/center/quanziApp.html">圈子APP</a>
+	</div>
+</div>
+<script src="/js/common/center_rightPerson.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	//生活圈分类
+	function getAllThemeCatetories(){
+		var str="";
+		$.ajax({
+			type:"post",
+			url:serviceHOST()+"/themeCatetory/getAllThemeCatetories.do",
+			dataType:"json",
+			headers: {
+				"token": qz_token()
+			},
+			success:function(msg){
+				if(msg.status==0){
+					var mores='<li class="showmore">展开更多<span><img src="/img/zyq_zhankuaigengduo.png" alt=""></span></li>';
+					var lesss='<li class="showless">收起全部<span><img src="/img/zyq_shouqiquanbu.png" alt=""></span></li>';
+					str+='<li><a href="/center/shq.html">推荐</a></li>'
+					var num = -1;
+					for(var i=0;i<msg.data.length;i++){
+						//if(msg.data[i].count != null){
+							num = num+1;
+							str+='<li><a href="/center/shfl.html?id='+msg.data[i].id+'&t='+msg.data[i].name+'&n='+num+'">'+msg.data[i].name+'</a></li>'
+						//}
+					}
+					str+=lesss;
+					str+='<br class="clear" />';
+					$(".boxlist div ul").html(str);
+					$(".shqfl .boxlist ul li").eq(18).after(mores);       //插入展开更多   收起全部
+					$(".shqfl .boxlist ul").find(".showmore").nextAll().hide();
+//					if(getURIArgs("n")!=""){
+//						$(".boxlist div ul li").eq(Number(getURIArgs("n"))+1).find("a").css("color","#ff8a00");
+//						$(".boxlist div ul li").eq(Number(getURIArgs("n"))+1).siblings("li").find("a").css("color","#333");
+//					}else{
+//						$(".boxlist div ul li").eq(0).find("a").css("color","#ff8a00");
+//					}
+					var words=getURIArgs("t");
+					if(getURIArgs("n")!=""){
+						for(var n=1;n<$(".boxlist div ul li").length;n++){
+							if($(".boxlist div ul li").eq(n).text()==words){
+								$(".boxlist div ul li").eq(n).find("a").css("color","#ff8a00");
+								$(".boxlist div ul li").eq(n).siblings("li").find("a").css("color","#333");
+							}
+						}
+					}else{
+						$(".boxlist div ul li").eq(0).find("a").css("color","#ff8a00");
+					}
+					
+				}else if(msg.status==-3){
+					getToken();
+				}
+			},
+			error:function(){
+				console.log("error")
+			}
+		});
+	}
+	//点击展开更多
+	$(document).on("click",".showmore",function(){
+		$(this).hide();
+	 	$(".shqfl .boxlist ul").find(".showmore").nextAll().show();
+	 	$(".showless").show();
+	 	var top = $("#sideBar").css("top").split("px")[0];
+	 	/*top = Number(top) - 314;
+	 	$("#sideBar").css("top",top + "px");*/
+	 	$(".center_box").css("min-height",$("#sideBar").height());
+	});
+
+
+	//点击收起全部
+	$(document).on("click",".showless",function(){
+	 	$(".shqfl .boxlist ul").find(".showmore").nextAll().hide();
+	 	$(".showmore").show();
+	 	// $(".center_box").css("min-height","820px");
+	});
+	
+
+</script>

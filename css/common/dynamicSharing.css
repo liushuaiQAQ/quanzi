@@ -1,0 +1,191 @@
+.fixBoxs{display:none;width: 100%;height: 100%;left:0px;top:0px;background:#000;opacity:0.2; filter:alpha(opacity=20);position: fixed;z-index: 500;}
+.centetCon{display:none;position: fixed;width: 498px;padding-bottom:15px;border: 1px solid #E8E8E8;left: 50%;top:40%;margin: -139px 0px 0px -250px;background:#fff;z-index: 10000;}
+.nav_tit{height:36px;border-bottom: 1px solid #f2f2f5;font-size: 14px;color: #333;text-indent: 10px;line-height: 36px;}
+.nav_tit span{display: inline-block;float: right;margin-right: 10px;font-size:20px;font-weight: 500;cursor: pointer;}
+.marginBox{margin:16px 10px 0px;position: relative;}
+.tab_nav{height: 30px;font-size: 12px;color: #333;}
+.tab_nav span{display: inline-block;float: left;line-height: 30px;}
+/*差异开始    如果有群组启用注释的这一行  把第二行注释*/
+/*.tab_nav ul{float:left;line-height: 30px;border: 1px solid #e5e5e5;width: 274px;}*/   
+.tab_nav ul{float:left;line-height: 30px;border: 1px solid #e5e5e5;}
+/*差异结束*/
+.tab_nav ul li{float: left;width:90px;height: 28px;border-right: 1px solid #e5e5e5;text-align: center;line-height: 28px;cursor: pointer;background:#f2f1f6;}
+.tab_nav ul li.on{background:#fff;}
+.tab_nav ul li:last-child{border-right:0px;width: 92px;}
+.textarea_01,.textarea_04{margin: 10px 0px;position: relative;height: 80px;}
+.textarea_01 textarea,.textarea_04 textarea{display: inline-block;width: 470px;height:74px;border:1px solid #E5E5E5;padding: 3px;}
+.textarea_01 div,.textarea_04 div{position: absolute;right:10px;top:60px;}
+.bottomBox p{cursor:pointer;font-size: 12px;width:50px;height: 20px;line-height:20px;padding-left:22px;background:url(/img/biaoqing.png) no-repeat left center;float: left;}
+.bottomBox .partiallyVisible{cursor:pointer;font-size:12px;line-height:26px;float:left;position: relative;}
+.bottomBox .partiallyVisible i{font-style:normal;display: inline-block;background: url(/img/seeDynamic.png) no-repeat right center;padding-right:15px;}
+.bottomBox .partiallyVisible ul{display:none;position: absolute;top:34px;width:85px;background:#fff;border: 1px solid #E8E8E8;padding: 2px;cursor: pointer;}
+.bottomBox a{display: inline-block;width: 74px;height: 26px;border-radius:3px;background: #3ea436;color: #fff;text-align: center;line-height: 26px;float: right;margin-left:10px;}
+.bottomBox .positionR{position: absolute;right:0px;}
+/*圈子好友*/
+.inputShare{margin:20px 0px 10px;position: relative;}
+.inputShare span{font-size: 12px;color: #333;float: left;line-height:30px;}
+.inputShare input{display:inline-block;width:420px;height:28px;border:1px solid #E5E5E5;padding: 0px 2px;font-size: 12px;color: #333;cursor: pointer;}
+.inputShare .hailFellow_list{display:none;width: 424px;border: 1px solid #e5e5e5;box-shadow:2px 2px 2px #e5e5e5;background:#fff;position: absolute;left:48px;top:29px;z-index: 99;height: 222px;}
+.inputShare .hailFellow_list ul{padding:10px 10px 10px 20px;margin-bottom: -10px;height:202px;overflow-y: scroll;}
+.inputShare .hailFellow_list ul li{height:38px;line-height:38px;font-size:12px;color: #333;margin-bottom: 10px;}
+.inputShare .hailFellow_list ul li:hover{background: #3ea437;color: #fff;border-radius:5px 0px 0px 5px;cursor: pointer;}
+.inputShare .hailFellow_list ul li span{display:inline-block;width:38px;height:38px;border-radius:3px;margin-right: 10px;}
+.inputShare .hailFellow_list ul li span img{display: block;width:38px;height:38px;border-radius:3px;}
+.inputShare .hailFellow_list ul::-webkit-scrollbar{width: 5px;}
+.inputShare .hailFellow_list ul::-webkit-scrollbar-track{background-color:#fff;}
+.inputShare .hailFellow_list ul::-webkit-scrollbar-thumb{background-color:#999;}
+.friendsCircles,.hail-fellow,.circleGroup{display: none;}
+#FaceBox_02,#FaceBox_03{position: absolute;left: 10px;top:150px;}
+.successAlert{display:none;position: absolute;left:50%;top:50%;margin:-37px 0px 0px -82px;padding-left:80px;width:85px;height:74px;line-height:74px;background:#fff url(/img/addFriend_success.png) no-repeat 17px center;}
+
+
+/*显示谁可以看的好友选框开始*/
+.showFriend{width: 330px;height: 420px;box-sizing: border-box;border:1px solid #e5e5e5;position: fixed;top:50%;left: 50%;margin-top:-215px;margin-left:-165px;z-index: 10002;background: #ffffff;display: none;overflow:hidden;}
+.visibleBox{height:370px;overflow-y: scroll;overflow-x: hidden;margin-top: 10px;}
+.cancelBtn{height: 39px;line-height: 39px;margin-right: 80px;}
+.showFriendTop span{font-size: 13px;}
+.confirmBtn{width: 48px;height: 20px;display: inline-block;border-radius: 2px;float: right;background: #3ea435;text-align: center;line-height: 20px;color:#ffffff;margin-top: 9px;}
+.selectLabel_t ul{margin-top: 15px;margin-bottom:-5px;}
+.selectLabel_t ul li{margin-bottom: 10px;}
+.selectLabel_t ul li b{display:inline-block;float: left;margin-top: 11px;margin-right: 10px;width: 16px;height: 16px;border-radius:2px;background:#fff url(/img/qz_xzxq_weixuanzhong.png) no-repeat left center;cursor: pointer;}
+.selectLabel_t ul li b.on{background:#fff url(/img/qz_xzxq_xuanzhong.png) no-repeat left center;cursor: pointer;}
+.selectLabel_t ul li dl{float: left;}
+.selectLabel_t ul li dl dd{white-space:nowrap;overflow: hidden;width: 230px;text-overflow:ellipsis;color:#a8a8a8;}
+.selectLabel_t ul li dl dd span{margin-right:5px;}
+.selectLabel_t ul li dl dd.friendType{line-height: 19px;font-size:14px;font-weight:600;color: #333;}
+.friendName{line-height: 18px;font-size: 11px;}
+.selectLabel_t ul li a{float: right;color:#5d78a9;}
+.showFriend .Edit_01 .showFriendTop,.selectLabel_t ul{padding: 0 6px 0 14px;}
+.EditTags{font-size: 12px;line-height:30px;color:#1592e4;text-indent: 26px;display: block;}
+/*选择联系人*/
+.showFriend .choose_box{padding: 0 14px;font-size: 12px;}
+.showFriend .Edit_03 .choose,.showFriend .Edit_04 .choose{text-align: center;line-height:39px;height:39px;border-bottom: 1px solid #e5e5e5;padding:0 14px;}
+.showFriend .Edit_03 .choose .cancel,.showFriend .Edit_04 .choose .cancel{float:left;font-size: 12px;}
+.showFriend .Edit_03 .choose .determine,.showFriend .Edit_04 .choose .determine{float:right;font-size: 12px;display: inline-block;width:48px;height:20px;color:#fff;background:#3ea435;border-radius: 2px;line-height:20px;margin-top: 10px;}
+.showFriend .Edit_02 .choose_box .choose_list{color:#999;border-bottom:1px solid #e5e5e5;height:48px;}
+.showFriend .Edit_02 .choose_box .choose_list input{float:left;height:20px;background:url(/img/sousuo.png) no-repeat left;padding-left: 16px;margin:15px 0;width:62px;}
+.showFriend .Edit_02 .choose_box .choose_list .xz_img_list{float: left;max-width:192px;overflow-wrap: break-word;overflow: hidden;height:48px;}
+.showFriend .Edit_02 .choose_box .choose_list .xz_img_list img{float: left;width:40px;height:40px;border-radius: 3px;margin:4px 8px 4px 0;}
+.showFriend .Edit_02 .choose_box .Group_import a{display:block;color:#999;padding:10px 0;border-bottom:1px solid #e5e5e5;background:url(/img/zheye_sj.png) no-repeat center right;}
+.showFriend .Edit_02 .choose_box .friend_list ul li{height:40px;width:107px;margin:20px 12px 0 0;padding-left:16px;background:url(/img/qz_xzxq_weixuanzhong.png) no-repeat left center;line-height:40px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;float: left;cursor: pointer;}
+.showFriend .Edit_02 .choose_box .friend_list ul li img{width:40px;height:40px;border-radius:3px;margin:0 6px 0 10px;}
+.showFriend .Edit_02 .choose_box .friend_list ul li.checkOn{background:url(/img/qz_xzxq_xuanzhong.png) no-repeat left center;}
+/*选择群*/
+.SelectGroup{width:300px;height:360px;background:#fff;position: fixed;top:50%;left:50%;margin-left:-150px;margin-top:-180px;z-index: 9999;overflow:hidden;overflow-y:scroll;}
+.SelectGroup .Select_title{text-align:center;height:40px;padding:0 15px;border-bottom:1px solid #e5e5e5;line-height: 40px;}
+.SelectGroup .Select_title .back{color:#1493e2;float:left;}
+.SelectGroup .Select_title .determine{float:right;width:48px;height:21px;color:#fff;border-radius:2px;background:#3ea435;margin-top: 10px;line-height: 21px;}
+.SelectGroup ul{padding:0 15px;}
+.SelectGroup ul li{height:40px;margin-top:20px;line-height:40px;color:#666;padding-left:22px;background:url(/img/qz_xzxq_weixuanzhong.png) no-repeat left center;white-space:nowrap;}
+.SelectGroup ul li span{color:#999;}
+.SelectGroup ul li img{width:40px;height:40px;border-radius:3px;margin-right:10px;}
+.SelectGroup ul li.checkOn{background:url(/img/qz_xzxq_xuanzhong.png) no-repeat left center;}
+.Select_mask{position: fixed;width:100%;height:100%;left:0;top:0;background:rgba(0,0,0,0.5);z-index:9998;}
+
+
+/*滚动条样式*/
+.SelectGroup::-webkit-scrollbar,.showFriend::-webkit-scrollbar{width:5px;}
+.SelectGroup::-webkit-scrollbar-track,.showFriend::-webkit-scrollbar-track{background-color:#fff;}
+.SelectGroup::-webkit-scrollbar-thumb,.showFriend::-webkit-scrollbar-thumb{background-color:#999;}
+.SelectGroup::-webkit-scrollbar-thumb:hover,.showFriend::-webkit-scrollbar-thumb:hover{background-color:#9c3}
+.SelectGroup::-webkit-scrollbar-thumb:active,.showFriend::-webkit-scrollbar-thumb:active{background-color:#00aff0}
+
+/*创建 标签*/
+.Edit_03 ul{margin-left: 15px;}
+.Edit_03 ul li{text-align: center;width:42px;border:1px solid #fff;height:42px;margin:15px 12px 15px 0;float:left;position: relative;}
+.Edit_03 ul.xzcontact li{border:1px solid #E5E5E5;position: relative;}
+.Edit_03 ul li img{width:42px;height:42px;}
+.Edit_03 ul li .DeletePoint{width:20px;height:20px;display: inline-block;position: absolute;right:-10px;top:-11px;background: url(/img/qz_pyq_jianhao.png) no-repeat center;cursor: pointer;display: none;}
+
+/*修改标签*/
+.editFriends .TagName{padding:16px 15px 0 15px;}
+.editFriends .TagName input{width:204px;height:22px;margin-left: 8px;border: 1px solid #E5E5E5;}
+.editFriends ul li{text-align: center;width:42px;border:1px solid #fff;height:42px;margin:15px 10px 15px 0;float:left;position: relative;}
+.editFriends ul.xzcontact li{border:1px solid #E5E5E5;position: relative;}
+.editFriends ul li img{width:42px;height:42px;}
+.editFriends ul li .DeletePoint{width:42px;height:42px;display: inline-block;position: absolute;background: url(/img/hykj_del.png) no-repeat center;cursor: pointer;top: 0;left: 0;display: none;}
+.editFriends ul li.RemoveLabel{width:32px;border: 1px solid #e5e5e5;padding:0 6px;cursor: pointer;color:#999;margin-right: 0;}
+
+.popMask{width:100%;height:100%;background:rgba(0,0,0,0.5);z-index: 10005;    position: fixed;top: 0;left: 0}
+.commonNotice{width:256px;height:213px;background:#fff;position:fixed;top:50%;left: 50%;margin-top:-107px;margin-left: -128px;z-index: 10006;}
+.commonNotice a.huntClose{display: inline-block;width:10px;height:10px;background: url(/img/choseDel.png) no-repeat center;float: right;margin:10px 10px 0 10px;}
+.commonNotice .friendNotice{height:95px;width:100%;background:url(/img/wen_03_03.png) no-repeat center;margin-top: 20px;}
+
+.commonNotice .noticeArtic{text-align: center;margin:0 10px 30px 10px;font-size: 13px;}
+.commonNotice .controlArea{height:56px;text-align: center;background: #f2f1f6;}
+.commonNotice .controlArea button{width:72px;height:26px;border-radius:2px;margin:0 7px;border:none;margin-top: 15px;cursor: pointer;}
+.commonNotice .controlArea #btnSure{background:#3ea436;color:#fff;border:1px solid #3ea436;}
+.commonNotice .controlArea #btnCancel{background:#fff;color:#333;border:1px solid #E5E5E5;}
+
+
+/*动态可见好友*/
+.VisibleFriends{width:300px;height:430px;background: #fff;position: fixed;top:50%;left: 50%;margin-top:-215px;margin-left: -150px;box-shadow: 1px -1px 9px #999;display: none;z-index: 999;}
+.VisibleFriends p{font-size: 15px;color:#666;padding:12px 15px;text-align: center;border-bottom: 1px solid #E5E5E5;}
+.VisibleFriends p a{float:right;color:#3fa634;font-size: 12px;margin-top:3px;}
+.VisibleFriends ul{height:370px;margin:0px 0px 0 15px;overflow-y:scroll;padding-top: 15px;}
+.VisibleFriends ul li{height:40px;line-height: 40px;margin-bottom: 20px;}
+.VisibleFriends ul li img{width:40px;height: 40px;border-radius: 3px;margin-right: 10px;}
+
+
+/*2017-8-4*/
+.selectLabel{height:30px;line-height: 30px;background:#f5f5f5;text-indent: 34px;}
+.Edit_02_pyq .selectLabel{margin-top: 16px;}
+.showFriend .Edit_02 .choose .determine{color:#5d78a9;float: right;margin-right:10px;}
+.TagName{padding:16px 15px 0 0;}
+.TagName>em{background:url(/img/qz_xzxq_weixuanzhong.png)left bottom no-repeat;display: inline-block;width:15px;height:15px;margin-left: 14px;cursor: pointer;}
+.TagName>em.checkOn{background: url(/img/qz_xzxq_xuanzhong.png)left bottom no-repeat;}
+.TagName>span{color:red;}
+.TagName input{width:172px;height:22px;margin-left: 8px;border: 1px solid #E5E5E5;}
+.editFriends{display: inline-block;display: none;}
+
+.visibleBox .redact{margin:0;}
+.JSsee_tj .showFriendTop{border-bottom: 1px solid #e5e5e5;}
+.JSsee_xz .labelIn{display: none;}
+.JSsee_xz .label_t{display: none;text-align: center;padding:10px 0;border-top: 1px solid #E5E5E5;margin-top: 10px;color:#5d78a9;cursor: pointer;font-size: 12px;}
+
+/*分享问题样式*/
+.newsDetails{ max-width:640px; margin:0 auto;}
+.newsDetails .header{ display:block;width:100%;background-color:#4c4c4c; position:fixed; left:0px;top:0px; z-index:999;}
+.newsDetails .header>p{ color:#fff; line-height:45px; text-indent:12px; }
+.newsDetails .header a.moreCon{ display:block; padding-left:0px; width:75px; position:absolute; background:#39c52e; border-radius:3px; padding:none; line-height:28px; right:12px; top:8px; color:#fff; height:28px;}
+a.loadmore{ display:block; height:35px; line-height:35px; text-align:center; border-top:1px solid #d9d9d9; background-color:#f0eff5; font-size:14px; color:#999; }
+.newsDetails table a.friendBtn{ top:10px;}
+.isPraise a.loadmore{ border-bottom:none;}
+.isPraise .newsComment{ margin-bottom:0px;}
+.newsDetails .content{ padding-top:45px; margin-bottom:50px;}
+.newsDetails .content .autoCon{padding: 0px 15px 5px;background: #fff;border-bottom: 1px solid #E8E8E8;}
+.newsDetails .content .autoCon h3{font-size:18px;line-height: 60px;}
+.newsDetails .content .autoCon span{display: inline-block;margin-bottom: 10px;color:#999;}
+.newsDetails .content .autoCon p{font-size: 16px;color: #333;text-align: justify;}
+.newsDetails .content .autoCon i{display:block;font-style: normal;font-size: 12px;color: #999;margin: 10px 0px;}
+.newsDetails .content .comments{font-size: 14px;color: #333;padding:10px 15px;}
+.newsDetails .content .ullist{border-top: 1px solid #E8E8E8;border-bottom: 1px solid #E8E8E8;background: #fff;padding: 10px 15px;}
+.ullist{border-top:1px solid #38ACFF;}
+.ullist li{padding: 10px 0;border-bottom: 1px solid #e3e4e0;}
+.ullist li:last-child{border-bottom: 0px;}
+.headImg{width:44px;height: 44px;margin:0px 10px 0px 12px;float: left;border-radius:5px;}
+.headImg img{width: 100%;height: 100%;display: block;border-radius:5px;}
+.posText{height: 44px;float:left;position: relative;}
+.posText p{font-size: 12px;color:#000;}
+p.useName{color:#38ACFF;}
+.posText p:nth-child(2){position: absolute;bottom:0px;width:50px;}
+.word{font-size: 12px;color:#000;margin:10px 12px 0px 66px;word-wrap:break-word;word-break:break-all;}
+.noComment{font-size:16px;color: #000;text-align: center;margin-top:40px;}
+
+
+.footer_b{ border-top:1px solid #ccc; background:#fff; position:fixed; bottom:0px; left:0px; width:100%;z-index: 999;}
+.footer_b>a{ margin:10px 15px; background:#39c52e; display:block; border-radius:3px; height:35px; line-height:35px; text-align:center; color:#FFF; font-size:14px;}
+
+span.sblue{ color:#38acff;}
+.newsContent .face-p{ vertical-align:top; height:20px;}
+
+
+
+
+
+
+
+
+
+
+

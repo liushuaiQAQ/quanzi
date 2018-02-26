@@ -1,0 +1,72 @@
+<!--动态导航栏-->
+
+<div class="classification">
+  <div class="overspread"><div class="spread"></div></div>
+  <ol>
+    <li class="qz_classify pitch" data-fl="0">热门</li>
+    <li class="qz_classify" data-fl="1">职业圈</li>
+    <li class="qz_classify" data-fl="3">生活圈</li>
+    <li class="qz_classify" data-fl="2">全球圈</li>
+  </ol>
+</div>
+
+
+<script>
+
+	//热门分类切换
+	/*
+	未登录状态推荐帖子recommendTopic
+	Int catetory 分类：0-全部帖子；1-职业圈帖子；2-全球圈帖子；3-生活圈帖子
+	*/
+	$(document).on("click",".classification .qz_classify", function() {
+		var catetory = $(this).index();
+		$(".classification li").removeClass("pitch");
+		$(".dynamic .home a").html($(this).text());
+		$(this).addClass("pitch");
+		$(".content_items").remove();
+		stop = false;
+		$(".jiazai").show();
+		$(".Toloadmore").remove();
+		page = 1;
+		window.location.href = "/center/index.html?t=" + catetory
+	});
+
+	//按关键字搜索
+	$(document).on("click",".classification .s_keyword",function(){
+		$(".dynamic .home a").html($(this).text());
+		var t = $(this).index();
+		var w = $(this).html();
+		$(".content_items").remove();
+		$(".jiazai").show();
+		window.location.href = "/center/index.html?t=" + t + "&w=" + w
+	})
+
+
+
+	//生活圈分类
+	getAllThemeCatetories()
+	function getAllThemeCatetories(){
+		var str="";
+		$.ajax({
+			type:"post",
+			url:serviceHOST()+"/themeCatetory/getAllThemeCatetories.do",
+			dataType:"json",
+			headers: {
+				"token": qz_token()
+			},
+			success:function(msg){
+				if(msg.status==0){
+					for(var i=0;i<msg.data.length;i++){
+						str += '<li class="s_keyword">'+msg.data[i].name+'</li>';
+					}
+					$(".classification ol").append(str);
+				}else if(msg.status==-3){
+					getToken();
+				}
+			},
+			error:function(){
+				console.log("error")
+			}
+		});
+	}
+</script>

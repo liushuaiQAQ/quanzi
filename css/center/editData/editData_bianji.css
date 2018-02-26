@@ -1,0 +1,149 @@
+/*解除头部定位*/
+/*.headerBox{position:static;}*/
+/*.AddressBook{position: absolute;}*/
+.main{margin: 0 auto;width: 1000px;max-width: 1000px;margin-top: 140px;}
+.clear{clear: both;}  
+.main_left ul li.accoutNum a{background: #fff url(/img/01_1zhanghao.png) no-repeat 10px center;}
+.main_left ul li.headpic a{background: #fff url(/img/02_1touxiang.png) no-repeat 10px center;}
+.main_left ul li.editDatas a{background: #fff url(/img/03_2bianji.png) no-repeat 10px center;font-weight: bold;color: #42a236;}
+.main_left ul li.editpbsz a{background: #fff url(/img/pingbishezhi1.png) no-repeat 10px center;}
+.main_left ul li.Feedback a{background: #fff url(/img/04_1yijian.png) no-repeat 10px center;}
+.main_left ul li.edithmd a{background: #fff url(/img/sz_heimingdan.png) no-repeat 10px center;}
+.main_right div{color: #666;}
+.main_right .personal_data{font-size: 16px;margin: 20px 0px 20px 3px;}
+.main_right .accout_box{margin-bottom: 16px;position: relative;}
+.main_right .title{float: left;text-align: right;width:66px;line-height: 28px;margin-right: 20px;}
+.main_right .red_info{color: #fb7161;}
+.main_right .nicknamess,.company,.positions{width: 278px;height: 16px;padding: 5px 10px;border:1px solid #e5e5e5;font-size: 12px;float: left;line-height: 16px;}
+.main_right .accout_box .titWord{width:200px;border-radius:4px;font-size: 12px;padding:5px 12px;margin-left:5px;color:#f95339;float: left;display: none;}
+.main_right .accout_box.bindMobile{display: none;}
+.info,.zhiye,.phone{line-height: 28px;}
+.main_right .pidentity{font-size: 14px;color:#333;margin:18px 0px 12px 25px;cursor: pointer;display: none;}
+.main_right .pidentity span{font-size: 14px;color:#ff9600;display:inline-block;margin-left: 5px;}
+.level{height: 20px;display: block;text-align: center;line-height: 20px;margin-top: 3px;float: left;background:#b7d9fc;color: #fff;padding:0px 10px;border-radius: 3px;}
+.sexss{line-height: 28px;}
+.sexss input{vertical-align: middle;margin:4px 10px 4px 0px;}
+.sexss input#women{margin-left: 10px;}
+.births select{width: 98px;height: 26px;border:1px solid #e5e5e5;}
+.births .dataTit{font-size: 12px;color:#f95339;display: none;}
+.dates{margin: 8px 16px 8px 6px;font-weight: normal;}
+.titIntro{margin: 0px 0px 30px 85px;}
+.titIntro p{color: #b5b5b5;}
+.titIntro span{display:inline-block;width:12px;height:12px;margin-bottom:-2px;background:url(/img/zy_V.png) no-repeat center;};
+.zhiye span{line-height: 28px;}
+.zhiye b{font-weight: normal;display: inline-block;margin-right:10px;}
+.zhiye i{font-style: normal;display: inline-block;margin-left: 15px;color: #41a533;cursor:pointer;}
+.phone.on{color: #40a434;cursor: pointer;}
+.phone{color:#666;}
+/*地区开始*/
+.floatL{float: left;margin-right: 10px;}
+.chanel_area{width: 163px;height: 32px;border:1px solid #e5e5e5;cursor: pointer;display: block;}
+.accout_box select{color: #666;}
+/*地区结束*/
+/*.chanel_area>span{width: 149px;height: 12px;background: url("/img/xiala.png") right center no-repeat;display: block;}*/
+.edit{width: 600px;min-height: 100px;border:1px solid #e5e5e5;float: left;padding:9px;box-sizing: border-box;}
+.count{position: absolute;right: 80px;bottom: 9px;}
+.sub{margin-left: 91px;}
+.sub>button{width: 80px;height: 32px;display: block;font-size: 14px;text-align: center;line-height: 32px;background: #dddddd;border-style: none;float: left;margin-right: 20px;cursor: pointer;border-radius:3px;}
+.sub>button.cancel{color: #b1b1b1;}
+.sub .sub_active{background:#3fa435;color: #ffffff;border-radius:3px;}
+.sub>button:hover{background:#3fa435;color: #ffffff;}
+.main_right{position: relative;}
+.successTit{position:absolute;left:45%;top:140px;display:none;}
+.successTit span{display:inline-block;padding:15px 10px 15px 40px;background:#eeeeee url(/img/duihaoG.png) no-repeat 10px center;border:1px solid #ccc;font-size: 12px;color: #333;}
+
+/*验证职业身份*/
+.bgtilt{display:none;width: 100%;height: 100%;position: fixed;top:0px;left:0px;background: #000;filter:alpha(Opacity=30);-moz-opacity:0.3;opacity: 0.3;}
+.conposition{display:none;width: 528px;height: 588px;background: #fff;border: 1px solid #e5e5e5;position: fixed;top:50%;left: 50%;margin:-295px 0px 0px -265px;cursor: pointer;}
+.conposition .errBack span{font-size:22px;color: #161616;float: right;display: inline-block;margin:0px 10px 0px 0px}
+.conposition .conAuto{width:478px;margin: 0 auto;}
+.conposition .conAuto .userInfo {height:56px;}
+.conposition .conAuto .useImgHead {width:56px;height:56px;float: left;}
+.conposition .conAuto .useImgHead img{display:block;width:56px;height:56px;border-radius:3px;}
+.conposition .conAuto .positStatus{float: left;width:412px;height: 56px;margin-left: 10px;}
+.conposition .conAuto .positStatus p{margin:9px 0px 7px 0px;}
+.conposition .conAuto .positStatus p b{float: right;font-weight: normal;font-size: 13px;color: #4a70ba;}
+.conposition .conAuto .positStatus p span{font-size: 16px;color: #333;}
+.conposition .conAuto .positStatus p i{display: inline-block;margin-bottom: -2px;margin-left: 5px;}
+.conposition .conAuto .positStatus p i img{display: block;width:19px;height:14px;}
+.conposition .conAuto .positStatus div span{font-size: 14px;color:#333;}
+.conposition .conAuto .positStatus div span.companyName{margin-right:5px;}
+.conposition .conAuto .positStatus div span.cerStatus{float: right;}
+.conposition .conAuto .positStatus div span.cerStatus b{font-weight: normal;font-size: 12px;color: #acacac;margin-left: 5px;}
+.conposition .conAuto .positStatus div span.cerStatus i{display: inline-block;margin-bottom: -2px;height: 16px;}
+.conposition .conAuto .positStatus div span.cerStatus i img{display: block;}
+.conposition .conAuto .realNamebox{margin:23px 0px 20px 0px;}
+.conposition .conAuto .realNamebox span{font-size: 14px;color: #333;display: inline-block;margin-right: 10px;}
+.conposition .conAuto .realNamebox input{width:394px;height:28px;border: 1px solid #e6e6e6;border-radius:2px;padding-left: 8px;}
+.conposition .conAuto .realNamebox i{display:none;font-size: 14px;color: #333;font-style:normal;}
+.conposition .authentication{width:476px;height:372px;border: 1px solid #e6e6e6;}
+.conposition .authentication .ulList{height: 34px;background:#f5f5f5;}
+.conposition .authentication .ulList li{float:left;height:12px;width: 118px;text-align: center;line-height: 12px;border-right: 1px solid #e6e6e6;margin-top:11px;cursor: pointer;} 
+.conposition .authentication .ulList li:last-child{border:0px;}
+.conposition .authentication .ulList li i{font-style:normal;display: inline-block;padding:0px 0px 10px;font-size: 12px;color: #666;}
+.conposition .authentication .ulList li.on i{color: #3fa435;border-bottom:1px solid #3fa435;}
+.conposition .authentication .ulList li.noClick i{color: #d2d2d2;}
+.conposition .explainBox{width: 446px;margin:20px auto 0px;}
+.conposition .explainBox .explain{display: none;}
+.conposition .explainBox .explain.on{display: block;}
+.conposition .explainBox .explain .leftBar{width: 134px;float: left;}
+.conposition .explainBox .explain .leftBar .leftBox{height: 212px;border: 1px solid #e6e6e6;}
+.conposition .explainBox .explain .leftBar .leftBox div{width: 134px;height:172px;padding-top:10px;line-height: 172px;}
+.conposition .explainBox .explain .leftBar .leftBox div img{display: block;margin:0px auto 10px;}
+.conposition .explainBox .explain .leftBar .leftBox p{height: 30px;background: #c6c6c6;text-align: center;font-size: 14px;line-height: 30px;color: #fff;}
+.conposition .explainBox .imgupLoad{width: 94px;height: 30px;position: relative;margin: 27px auto 0px;}
+.conposition .explainBox .imgupLoad span{display: block;width: 94px;height: 30px;background: #40a336;font-size: 14px;color: #fff;text-align: center;line-height: 30px;}
+.conposition .explainBox .explain .imgupLoad input{display: block;width: 94px;height: 30px;position: absolute;top:0px;left: 0px;filter:alpha(Opacity=0);-moz-opacity:0;opacity:0;z-index: 2px;}
+.conposition .explainBox .rightBar{float:left;margin-left:35px;width:276px;}
+.conposition .explainBox .rightBar .imgB img{display: block;}
+.conposition .explainBox .rightBar p{font-size:16px;color: #666;position: relative;top: -15px;left: 20px;}
+.conposition .explainBox .rightBar li{font-size: 14px;color: #666;line-height: 22px;}
+.conposition .explainBox .rightBar li span{color: #ff9f0a;font-size: 14px;}
+.conposition .btnBox{position: relative;}
+.conposition .btnBox span{display:inline-block;color: #999;font-size: 13px;margin: 10px 0px 0px 0px;}
+.conposition .btnBox button{cursor:pointer;position:absolute;right:0px;top:10px;height: 30px;background: #c6c6c6;font-size: 14px;color: #fff;border: 0px;border-radius: 2px;}
+.conposition .btnBox button.subBtnss{width: 69px;}
+.conposition .btnBox button.updataBtns{width: 95px;display: none;background: #40a336;}
+.conposition .btnBox button.subBtnss.on{background: #40a336;}
+.conposition .btnBox button.updatesPos{width: 69px;background: #40a336;display: none;}
+/*图片上传，图片展示*/
+.conposition .explainBox.pictureShow{display: none;}
+.conposition .explainBox.pictureShow .uploadImg{width:178px;height:220px;margin:64px auto 0px;border: 1px solid #e6e6e6;position: relative;display:none;}
+.conposition .pictureShow .uploadImg img.imgshows{display:block;width: 156px;height: 198px;margin:11px auto;}
+.conposition .pictureShow .uploadImg span.chahao{display:block;width:24px;height: 24px;background: #5b5b5b;font-size: 20px;color: #fff;text-align: center;line-height:22px;border-radius: 50%;position: absolute;top:-12px;right: -12px;}
+.conposition .pictureShow .uploadImg .successMsg{display:none;width: 136px;height: 48px;border-radius: 5px;/*background: #000;filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5;*/background:rgba(0,0,0,0.6);font-size: 14px;color: #fff;text-align: center;line-height: 48px;position: absolute;top:90px;left:20px;}
+.conposition .pictureShow .uploadImg .loadGif{width:164px;height: 80px;border-radius:5px;background: rgba(0,0,0,0.6);position: absolute;top:50px;left:7px;display: none;}
+.conposition .pictureShow .uploadImg .loadGif span{display: block;width: 32px;height: 32px;background: url(/img/loading.gif) no-repeat center;margin: 10px auto;}
+.conposition .pictureShow .uploadImg .loadGif p{font-size:14px;color: #fff;text-align: center;}
+/*图片上传成功*/
+.conposition .submitSuccess{width:100%;height:560px;background:#fff;position:absolute;top:30px;display: none;} 
+.conposition .submitSuccess span{display: block;width:54px;height: 54px;background: url(/img/rz_tijiaochenggong.png) no-repeat center;margin:110px auto 26px; }
+.conposition .submitSuccess p{font-size:20px;color:#636363;text-align: center;}
+.conposition .submitSuccess b{display:block;font-size:14px;color: #636363;font-weight: normal;text-align: center;margin:14px auto 84px;}
+.conposition .submitSuccess div{width:298px;height:40px;margin:0 auto;border-radius:3px;background: #40a336;color: #fff;font-size:14px;text-align: center;line-height: 40px;}
+/*认证攻略*/
+.conposition .positstepbox{width:94%;padding:0px 3%;height:560px;background:#fff;position:absolute;top:28px;display:none;}
+.conposition .positstepbox p{font-size: 16px;color:#333;}
+.conposition .positstepbox dl{margin-top: 10px;font-size: 13px;}
+.conposition .positstepbox dl dt{margin-bottom: 5px;}
+.conposition .positstepbox dl dt.spacial{margin-top: 5px;}
+.conposition .positstepbox dl dd{line-height: 20px;text-align: justify;}
+/*认证中图片展示页*/
+.uploadImg .shuilogo{width:147px;height: 148px;position: absolute;top:25px;left: 15px;}
+.uploadImg .shuilogo img{display:block;}
+
+
+/*审核信息失败*/
+.autoerrBox{display:none;position: fixed;width:528px;height:350px;background: #fff;top:50%;left: 50%;margin:-175px 0px 0px -264px;}
+.autoerrBox .errBack2 span{font-size:22px;color: #161616;float: right;display: inline-block;margin:0px 10px 0px 0px;cursor: pointer;}
+.autoerrBox .imgWrong{display: block;width: 53px;height: 53px;background: url(/img/rz_shibai.png) no-repeat center;margin:30px auto 0px;}
+.autoerrBox i{display: block;font-size: 16px;color:#333;text-align: center;margin: 40px auto 30px;font-style: normal;}
+.autoerrBox .reason{width: 440px;margin: 0 auto;}
+.autoerrBox .reason span{float:left;display:block;font-size: 14px;color:#666;margin-top:2px; }
+.autoerrBox .reason ul{float: left;font-size: 14px;color: #666;}
+.autoerrBox .reason ul li{line-height: 25px;}
+.autoerrBox .btns{width: 100%;text-align: center;margin-top:30px;}
+.autoerrBox .btns span{display: inline-block;width:90px;height:30px;background: #c6c6c6;font-size:12px;color: #fff;text-align: center;line-height: 30px;border-radius: 3px;cursor: pointer;}
+.autoerrBox .btns span.reUpload{background: #3ea434;margin-left:20px;}
+.autoerrBox .btns span.cancels{margin-right: 20px;}
+

@@ -1,0 +1,86 @@
+/*解除头部定位*/
+/*.headerBox{position:static;}
+.AddressBook{position: absolute;}*/
+.main{margin: 0 auto;width: 1000px;max-width: 1000px;margin-top: 140px;}
+.main_left ul li.accoutNum a{background: #fff url(/img/01_1zhanghao.png) no-repeat 10px center;}
+.main_left ul li.headpic a{background: #fff url(/img/02_2touxiang.png) no-repeat 10px center;font-weight: bold;color: #42a236;}
+.main_left ul li.editDatas a{background: #fff url(/img/03_1bianji.png) no-repeat 10px center;}
+.main_left ul li.editpbsz a{background: #fff url(/img/pingbishezhi1.png) no-repeat 10px center;}
+.main_left ul li.Feedback a{background: #fff url(/img/04_1yijian.png) no-repeat 10px center;}
+.main_left ul li.edithmd a{background: #fff url(/img/sz_heimingdan.png) no-repeat 10px center;}
+.personal_data{font-size: 17px;margin: 20px 0 5px 20px;}
+.touxiang_wrap>span{font-size: 13px;margin-top: 23px;margin-left: 45px;float: left;}
+.touxiang_default{float: left;margin-top: 15px;margin-left: 20px;width: 650px;}
+
+/*删除确认框*/
+.delete_box{width: 100%;height: 100%;background: rgba(0,0,0,0.6);position: absolute;left: 0;top: 0;display: none;}
+.delete_wrap {width:360px;height: 182px;position: absolute;left: 50%;top:50%;margin-left: -180px;margin-top: -91px;background: #fff;}
+.delete_wrap img{padding-top: 26px;padding-bottom: 16px;margin-left: 160px;}
+.delete_wrap p{font-size: 14px;text-align: center;margin-bottom: 30px;}
+.delete_wrap button{width: 80px;height: 32px;display: block;font-size: 14px;text-align: center;line-height: 32px;background: #dddddd;border-style: none;float: left;cursor: pointer;}
+.delete_wrap button:nth-of-type(1){margin-left: 90px;background:#3fa435;color: #ffffff;}
+.delete_wrap button:nth-of-type(2){margin-left: 20px;}
+.delete_wrap>button:hover{background:#3fa435;color: #ffffff;}
+
+/*默认头像*/
+/*.touxiang_default .moren{float: left;}
+.touxiang_default .boxqz{float: left;width: 120px;height: 150px;margin:0px 10px 10px 0px;font-size: 12px;color:#b6b6b6;}
+.touxiang_default .bgHead{float: left;}
+.touxiang_default .moren .imgPer{width:120px;height:120px;} 
+.touxiang_default .moren .imgPer img{display:block;width:120px;height:120px;}
+.touxiang_default .moren .chooses{width: 120px;margin-top: 10px;}
+.touxiang_default .moren .chooses .dels{display: inline-block;float:left;cursor:pointer;}
+.touxiang_default .moren .chooses .uploadImg{display: inline-block;float: right;position: relative;width: 28px;height:20px;}
+.touxiang_default .moren .chooses .uploadImg span{display: inline-block;text-align: right;}
+.touxiang_default .moren .chooses .uploadImg input{display: inline-block;width: 20px;height: 20px;position: absolute;left: 0;top: 0px;opacity:0;filter:alpha(opacity=0);cursor:pointer;}*/
+/*头像上传*/
+/*.touxiang_default ul{float: left;}
+.touxiang_default li{float: left;width: 120px;height: 150px;margin:0px 10px 10px 0px;font-size: 12px;color:#b6b6b6;}
+.touxiang_default li .imgPer{width:120px;height:120px;} 
+.touxiang_default li .imgPer img{display:block;width:120px;height:120px;}
+.touxiang_default li .chooses{width: 120px;margin-top: 10px;}
+.touxiang_default li .chooses .dels{display: inline-block;float:left;cursor:pointer;}
+.touxiang_default li .chooses .uploadImg{display: inline-block;float: right;position: relative;width: 28px;height:20px;}
+.touxiang_default li .chooses .uploadImg span{display: inline-block;text-align: right;}
+.touxiang_default li .chooses .uploadImg input{display: inline-block;width: 20px;height: 20px;position: absolute;left: 0;top: 0px;opacity:0;filter:alpha(opacity=0);cursor:pointer;}
+.bgHead{float: left;width: 120px;height: 120px;background:#fff url(/img/touxiang_add.png) no-repeat center;position: relative;}
+#file1{width: 120px;height: 120px;position: absolute;left: 0;top:0;opacity: 0;filter:alpha(opacity=0)}*/
+
+
+.touxiang_default .headIMG{float: left;width: 120px;height: 150px;margin:0px 10px 10px 0px;font-size: 12px;color:#b6b6b6;}
+.touxiang_default .headIMG .imgPer{width:120px;height:120px;} 
+.touxiang_default .headIMG .imgPer img{display:block;width:120px;height:120px;}
+.touxiang_default .headIMG .chooses{width: 120px;margin-top: 10px;}
+.touxiang_default .headIMG .chooses .dels{display: inline-block;float:left;cursor:pointer;}
+.touxiang_default .headIMG .chooses .uploadImg{display: inline-block;float: right;position: relative;}
+.touxiang_default .headIMG .chooses .uploadImg span{display: inline-block;text-align: right;cursor: pointer;}
+.touxiang_default .headIMG .chooses .uploadImg input{display: inline-block;width: 20px;height: 20px;position: absolute;left: 0;top: 0px;opacity:0;filter:alpha(opacity=0);cursor:pointer;}
+.bgHead{float: left;width: 120px;height: 120px;background:#fff url(/img/touxiang_add.png) no-repeat center;position: relative;}
+#file1{width: 120px;height: 120px;position: absolute;left: 0;top:0;opacity: 0;filter:alpha(opacity=0)}
+/**********头像上传弹出框******************/
+/*图片裁剪弹窗*/
+.maskFix{width: 100%;height: 100%;position:fixed;left: 0;top: 0;background:#333333;opacity: 0.4;filter:alpha(opacity=40);z-index: 9998;display: none;}
+.maskCenter{width: 798px;height:484px;border: 1px solid #a8a8a8;background: #fff;position: fixed;z-index:9999;left: 50%;top: 50%;margin:-242px 0 0 -394px;display: none;}
+.errors{display: block;font-size:20px;font-weight:bold;color: #555659;text-align: right;margin:0px 10px 10px 0;cursor: pointer;}
+.uploads{width:706px;height: 402px;margin: 0 auto;}
+.leftBar{width: 490px;height: 402px;border-right: 1px solid #d1d1d1;float: left;}
+.leftBar h4{font-size:16px;color:#333;margin-bottom:16px;font-weight: normal;}
+.startUpload{width: 120px;height: 36px;background: #40a336;position: relative;}
+.startUpload p{width: 120px;height: 36px;text-align: center;line-height: 36px;color: #fff;font-size: 14px;}
+.startUpload input{display: block;width: 120px;height: 36px;opacity:0;filter:alpha(opacity=0);position:absolute;top:0px;left: 0;z-index: 99;}
+.leftBar p.formatTit{font-size: 12px;color: #666;line-height: 30px;}
+.upLoading{width: 440px;height: 24px;background: #f5f5f5;border-radius: 4px;display:none;}
+span.name{font-size: 12px;color: #333;float: left;line-height: 24px;margin: 0 46px 0 10px;width: 86px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.progress{width:146px;height: 4px;background: #e6e2e2;float: left;margin:10px 3px 0 0;overflow: hidden;}
+.progress .bar{width:100px;height: 4px;background: #008000;}
+.pro{font-size: 12px;color: #008000;float: left;line-height: 24px;margin: 0 30px 0 2px;}
+.stopErr{float: left;color: #333;font-size: 12px;line-height: 24px;cursor: pointer;}
+.stopErr b{display:inline-block;font-size: 14px;color: #a5a5a5;}
+.rightBar{/*float: left;*/width:215px;height: 402px;position: relative;left: 491px;}
+.previewImg{cursor: pointer;width: 173px;height: 175px;background:#eeeeee url('/img/bgHead.png') no-repeat center;border-radius: 4px;position: absolute;right: 0px;bottom:50px;z-index: 999;overflow: hidden;}
+.previewImg img{width: 173px;height: 175px;display: block;line-height: 175px;text-align: center;vertical-align: top;position:relative;}
+.rightBar p{font-size: 14px;color:#3fa336;text-align: center;position: absolute;bottom:15px;left:100px;cursor: pointer;}
+/*图片上传后*/
+.headImgBox{width: 440px;height: 280px;border: 1px solid #a8a8a8;margin-top:40px;display:none;line-height: 280px;text-align: center;cursor: pointer;overflow: hidden;position: relative;display: none;}
+.headImgBox img {max-width: 100%;vertical-align: middle;position: relative;}
+

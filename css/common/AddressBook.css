@@ -1,0 +1,270 @@
+/*通讯录*/
+.AddressBooks{ position:fixed;top:130px;right:0;z-index:9997;width:280px;/*height:44px;*/border:1px solid #E5E5E5;border-radius:2px;background:#fff;box-shadow:2px 0px 11px 0 #888888;}
+.AddressBook{position: absolute;left: 6px;top: 130px; /*width: 298px;*/ width: 280px;height: 100%; z-index: 2; background: #eceaea;border:1px solid #E5E5E5;border-radius:2px;background:#fff;}
+.AddressBook .AddressBook_head,.AddressBooks .AddressBook_head{font-size: 14px;font-weight:bold;line-height: 44px;margin:0 10px;cursor: pointer;}
+.AddressBook .AddressBook_head .an{float:right;display: inline-block;width:20px;height:44px;background:url(/img/05_2shouqi.png)no-repeat center;}
+.AddressBook .AddressBook_head .prompts,.AddressBook_head .AddressBook_head .prompts{width:6px;height:6px;background: url(/img/04xiaoxi.png) no-repeat;display: inline-block;margin-right:6px;}
+.AddressBook .AddressBook_head .PackUp{transform: rotate(180deg);}
+
+/*机器人*/
+.robot,.serverOnline{margin-top: 10px;height: 40px;}
+.official{background: #fa543e;color: #fffffd;padding:2px 4px;margin-left: 10px;height:20px;line-height:20px;font-size: 12px;border-radius: 3px;}
+
+.AddressBook .CommunicationsGroup{border-top:1px solid #E5E5E5;padding:0 14px 0 10px;overflow-y:scroll;height:305px;}
+.recmdList .CommunicationsGroup{border-top:1px solid #E5E5E5;padding:0 14px 0 10px;}
+/*滚动条样式*/
+.AddressBook .CommunicationsGroup::-webkit-scrollbar,.AddressBook .SearchResults::-webkit-scrollbar,.rightRecommondFriends .recmdList::-webkit-scrollbar{width:10px;}
+.AddressBook .CommunicationsGroup::-webkit-scrollbar-track,.AddressBook .SearchResults::-webkit-scrollbar-track,.rightRecommondFriends .recmdList::-webkit-scrollbar-track{background-color:#fff;}
+.AddressBook .CommunicationsGroup::-webkit-scrollbar-thumb,.AddressBook .SearchResults::-webkit-scrollbar-thumb,.rightRecommondFriends .recmdList::-webkit-scrollbar-thumb{background-color:#d3d2d2;}
+.addressContent{position: relative;}
+.AddressBook .CommunicationsGroup .Group_list,.recmdList .CommunicationsGroup .Group_list{padding:10px 0;font-size: 14px;cursor: pointer;position: relative;}
+.AddressBook .CommunicationsGroup .Group_list .userInformation{width:120px;height:62px;box-shadow:3px 1px 11px 0 #888888;padding:10px 20px;position: absolute;z-index: 9999;background: #fff;}
+.AddressBook .CommunicationsGroup .Group_list .userInformation h3{font-size:14px;}
+.AddressBook .CommunicationsGroup .Group_list .userInformation p{font-size:12px;color:#333;padding-top:7px;}
+.AddressBook .CommunicationsGroup .Group_list .userInformation i{position:absolute;top:45%;right:-10px;display: inline-block;width: 0; height: 0;border-top: 5px solid transparent;border-left: 10px solid #fff;border-bottom: 5px solid transparent;}
+
+.AddressBook .CommunicationsGroup .Group_list .triangle{display: inline-block;width:8px;height:8px;background: url(/img/01_1shouqi.png) no-repeat right center;margin-right:6px;}
+.recmdList .CommunicationsGroup .Group_list .triangle{display: inline-block;width:8px;height:8px;background: url(/img/01_1shouqi.png) no-repeat center right;margin-right:6px;}
+.AddressBook .CommunicationsGroup .Group_list .perform,.rightRecommondFriends .Group_list .perform{transform: rotate(90deg);background: url(/img/01_1shouqi.png) no-repeat center top;}
+.AddressBook .CommunicationsGroup .Group_list ul{display: none;}
+.AddressBook .CommunicationsGroup .friends{margin-bottom:42px;}
+.AddressBook .CommunicationsGroup .Group_list ul .Chat_list,.SearchResults .Chat_list,.recmdList .CommunicationsGroup .Group_list ul .Chat_list{margin-top: 10px;height:40px;}
+.AddressBook .CommunicationsGroup .Group_list ul .Chat_list dl,.SearchResults .Chat_list dl,.recmdList .CommunicationsGroup .Group_list ul .Chat_list dl{float:left;}
+.AddressBook .CommunicationsGroup .Group_list ul .Chat_list dl dt,.SearchResults .Chat_list dl dt,.recmdList .CommunicationsGroup .Group_list ul .Chat_list dl dt{float: left;background: #DFDEDC;text-align: center;vertical-align: middle;cursor: pointer;}
+.AddressBook .CommunicationsGroup .Group_list ul .Chat_list dl dt .img,.SearchResults .Chat_list dl dt .img,.recmdList .CommunicationsGroup .Group_list ul .Chat_list dl dt .img{width:40px;height:40px;border-radius:3px;}
+.AddressBook .CommunicationsGroup .Group_list ul .Chat_list dl dd,.SearchResults .Chat_list dl dd,.recmdList .CommunicationsGroup .Group_list ul .Chat_list dl dd{float:left;line-height:40px;margin-left:10px;width:120px; white-space: nowrap;overflow:hidden;text-overflow:ellipsis}
+.AddressBook .CommunicationsGroup .Group_list ul .Chat_list .time,.recmdList .CommunicationsGroup .Group_list ul .Chat_list .time{float:right;line-height: 40px;color:#999;font-size: 12px;text-align: right;}
+.AddressBook .CommunicationsGroup .Group_list ul .Chat_list .time .remind{padding:0 4px;border-radius: 8px;border:1px solid #fa533d;font-size:9px;color:#fa533d;font-style: normal;}
+/*搜索结果*/
+.AddressBook .addressContent .SearchResults,.rightRecommondFriends .SearchResults{padding:0 14px;background:#f5f5f5;height: 100%;overflow-y:scroll;display: none;}
+.AddressBook .addressContent .SearchResults h4,.rightRecommondFriends .SearchResults h4{font-size: 14px;line-height: 20px;}
+
+/*通讯搜索*/
+.AddressBook .CommunicationsSearch{height:42px;padding:0 10px;border-top:1px solid #E5E5E5;/*bottom:-1px;*/left: 0;background: #fff;}
+.AddressBook .CommunicationsSearch .Search_box,.recmdSearch .recmdSearchBox{border-radius: 2px;/*width:278px;*/width:258px;height:24px;border:1px solid #E5E5E5;background:#f5f5f5;margin-top:8px;}
+.AddressBook .CommunicationsSearch .Search_box .searchOn,.recmdSearch .recmdSearchBox .searchOn{display: inline-block;width:14px;height:24px;background:url(/img/03sousuo.png) no-repeat center;float:left;margin:0 8px 0 10px;}
+.AddressBook .CommunicationsSearch .Search_box input,.recmdSearch .recmdSearchBox>input{float:left;background: #f5f5f5;height:24px;width:202px;}
+.AddressBook .CommunicationsSearch .Search_box i,.recmdSearch .recmdSearchBox i{width:24px;height:24px;background: url(/img/cha_01.png) no-repeat center;display: inline-block;cursor: pointer;}
+
+/*群聊图片展示*/
+.AddressBook dt,.messageContent dt{width:40px;height:40px;}
+.AddressBook .Chat_list img,.messageContent .top_msglist img{display:inline-block;}
+.AddressBook .img_list_1 img,.messageContent .img_list_1 img{width:18px;height:18px;margin-top: 12px;}
+.AddressBook .img_list_2 img,.messageContent .img_list_2 img{width:18px;height:18px;margin:12px 1px 0 1px;float: left;}
+.AddressBook .img_list_3 img,.messageContent .img_list_3 img{width:18px;height:18px;margin:1px;float: left;}
+.AddressBook .img_list_3 img:nth-child(1){margin-left:12px;}
+.messageContent .img_list_3 img:nth-child(1){margin-left:12px;}
+.AddressBook .img_list_4 img,.messageContent .img_list_4 img{width:18px;height:18px;margin:1px;float: left;}
+.AddressBook .img_list_5 img,.messageContent .img_list_5 img{width:12px;height:12px;margin: 1px 0 0px 1px;float: left;}
+.AddressBook .img_list_5 img:nth-child(1){margin:8px 2px 0 7px;}
+.messageContent .img_list_5 img:nth-child(1){margin:8px 2px 0 7px;}
+.AddressBook .img_list_5 img:nth-child(2){margin-top:8px;}
+.messageContent .img_list_5 img:nth-child(2){margin-top:8px;}
+.AddressBook .img_list_6,.messageContent .img_list_6{height:24px;padding:8px 0;}
+.AddressBook .img_list_6 img,.AddressBook .img_list_7 img,.AddressBook .img_list_8 img,.AddressBook .img_list_9 img,.messageContent .img_list_6 img,.messageContent .img_list_7 img,.messageContent .img_list_8 img,.messageContent .img_list_9 img{width:12px;height:12px;margin: 1px 0 0px 1px;float: left;}
+.AddressBook .img_list_7 img:nth-child(1){margin:1px 14px 0 14px;}
+.messageContent .img_list_7 img:nth-child(1){margin:1px 14px 0 14px;}
+.AddressBook .img_list_8 img:nth-child(1){margin:1px 2px 0 7px;}
+.messageContent .img_list_8 img:nth-child(1){margin:1px 2px 0 7px;}
+.allFace #SmohanFaceBox .Corner{left: 24px;}
+/* 右侧推荐给朋友的通讯录start*/
+.rightRecommondFriends{width: 280px;border:1px solid #dddddd;background: #ffffff;z-index: 9999}
+.rightRecommondFriends .recmdList{overflow-y: scroll;}
+.recmdHead .recmdCloseBtn{display: block;padding-top: 7px;font-size: 14px;text-indent: 6px;}
+.recmdSearch{height:42px;padding:0 10px;background: #fff;}
+.recmdCircle{background: url(/img/noChoseCircle.png) 0 center no-repeat;height: 40px;float: right;width: 20px;}
+/* 右侧推荐给朋友的通讯录end*/
+
+.chat_video_wrap{display: inline-block;max-width:300px;position: relative;}
+.video-show{width:110px;height:110px;}
+/* 名片 */
+.myMessage{margin-left: 18px;margin-top: 8px;overflow: hidden;}
+.myMessage>span:nth-of-type(1){width: 34px;height: 34px;border-radius: 2px;display: block;float: right;margin-right: 18px;}
+/*.myMessage>span:nth-of-type(2){background: #9ce554;color: #333333;display: inline-block;padding-left: 10px;padding-right: 10px;font-size: 12px;line-height: 34px;float: right;border-radius: 2px;word-wrap: break-word;max-width:300px;}*/
+.myMessage>i{height: 34px;width: 6px;background: url(/img/me.png) 0 center no-repeat;display: inline-block;float: right;margin-right: 6px;}
+.idCard{width:180px;height: 100px;background: #e5e5e5;float: right;}
+.idCardTittle{font-size: 11px;height: 33px;line-height: 33px;text-indent: 12px;}
+.cardImg{float: left;margin: 3px 10px 11px 12px;}
+.cardImg>img{width:53px;;height: 53px;}
+.cardNikeName{font-size: 12px;font-weight: bold;height: 24px;line-height: 24px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.cardTel{font-size: 11px;line-height: 23px;}
+.elseMessage{margin-left: 18px;margin-top: 8px;overflow: hidden;}
+.elseMessage>span:nth-of-type(1){width: 34px;height: 34px;border-radius: 2px;display: block;float: left;margin-right: 6px;}
+.elseMessage>i{height: 34px;width: 6px;background: url(/img/else.png) 0 center no-repeat;display: inline-block;float: left;}
+.groupWrap{overflow: auto;height: 554px;}
+
+/*语音*/
+.audio{min-width: 60px;background: #e5e5e5;display: inline-block;height: 34px;border-radius: 2px;cursor: pointer;float: left;}
+.audioPic{width: 9px;height: 16px;background: url(/img/yuyin-03.gif) 0 0 no-repeat;position: absolute;top:10px;left: 10px;}
+.playTime{position: absolute;bottom: 0px;right: -30px;width: 24px;text-align: center;}
+.noPlay{width: 6px;height: 6px;background: red;border-radius: 50%;margin-left: 10px;float: left;}
+
+/*视频按钮*/
+.chat_video_play{width: 40px;height: 40px;background: url(/img/chat_video_play.png) 0 0 no-repeat;position: absolute;top:50%;left: 50%;margin-left: -20px;margin-top: -20px;cursor: pointer;}
+.video_time{height: 22px;line-height: 22px;width:100%;font-size: 10px;text-align: right;right: 16px;color:#fff;position: absolute;bottom: 10px;}
+/*好友分享转发*/
+
+.friendShare{width: 180px;height: 93px;background: #e5e5e5;float: right;}
+.friendShareImg{width: 53px;height: 53px;float: left;padding: 17px 10px 21px 11px;position: relative;}
+.shareTittle{padding-top: 10px;height: 22px;line-height: 22px;font-size: 12px;font-weight: bold;}
+.shareContent{font-size: 12px;line-height: 24px;margin-right: 22px;overflow: hidden;height:48px;width: 95px;display: block;text-overflow:ellipsis;white-space:nowrap;}
+.videoPoster{position:absolute;width:26px;height:26px;left:50%;top:50%;margin-top:-13px;margin-left:-13px;}
+.showImg{position: fixed;top:0;left: 0;width:100%;height: 100%;background: rgba(0,0,0,.4);z-index: 99999999;display: none;}
+.showVideo{position: fixed;top:0;left: 0;width:100%;height: 100%;background: rgba(0,0,0,.4);z-index: 99999999;display: none;}
+.videWrap{width:800px;height: 600px;position: absolute;left: 50%;top:50%;margin-left: -400px;margin-top: -300px;}
+.publish_close,.video_close{background: url('/img/sp_X.png') 0 0 no-repeat;width:46px;height: 46px;position: absolute;right: -23px;top:-23px;cursor: pointer;}
+
+/* 客服 */
+.serverBox{display: none;}
+.serverMask{position: fixed;z-index: 99999998;top: 0;left: 0;background: #333333;width: 100%;height: 100%;opacity: 0.4;}
+.serverOffline{position: fixed;top:50%;left: 50%;margin-left: -128px;margin-top: -78px;background: #ffffff;z-index: 99999999;}
+.serverWrap h3{height: 26px;line-height: 26px;font-size: 16px;color:#000000;text-align: center;margin-top: 9px;}
+.serverWrap p{padding:0 32px;line-height:23px;font-size: 13px;color:#666666;margin-bottom: 5px;margin-left: 26px;}
+.knowClose{background: #f2f1f6;height: 46px;}
+.knowClose button{width: 72px;height: 26px;text-align: center;font-size: 15px;background: #3ea436;color:#ffffff;margin: 10px 105px 10px;border-style: none;cursor: pointer;border-radius: 3px;}
+.menu{position: absolute;top: 27px;right: 60px;width: 20px;height: 12px;cursor: pointer;background: url(/img/qz_ltck_caidan.png) 0 0 no-repeat;}
+
+
+.sendWrap>span{height: 26px;line-height: 26px;font-size: 11px;display: inline-block;}
+.member{position: absolute;display: none;right: 0;top:59px;width: 200px;height: 528px;border-left: 1px solid #e5e5e5;background: #ffffff;padding-left: 20px;padding-right: 20px;box-sizing: border-box;}
+.cicle_text{display: block;height: 26px;line-height: 26px;font-size: 12px;margin-top: 13px;color:#999999;}
+.cicle_call{display: block;height: 27px;line-height: 27px;font-size: 13px;margin-bottom: 13px;color:#333333;width: 150px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.member ul{border-bottom: 1px solid #e5e5e5;border-top: 1px solid #e5e5e5;height: 402px;overflow: auto;}
+.member ul li{margin-top: 20px;cursor: pointer;position: relative;}
+.member ul li>span{display: inline-block;height: 30px;line-height: 30px;margin-left: 15px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 80px;}
+.member_src{width: 30px;height: 30px;background-size: 100% 100%;border-radius: 50%;}
+.exit_btn{height: 34px;width: 110px;line-height: 34px;text-align: center;color: #333333;cursor: pointer;position: absolute;top: 30px;right: -15px;border: 1px solid #e5e5e5;z-index: 10002;box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.1);background: #fff;}
+.rightRecommondFriends{position: fixed;top:130px;right: 0;display: none;}
+.memberShow{display: none;width: 178px;position: absolute;top: 10px;left: 20px;box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.2);background:#ffffff;}
+.memberAvar{width:100%;height:178px;}
+.memberNikename{height: 42px;line-height: 42px;display: inline-block;margin-left: 14px;font-size: 14px;color: #333333;float: left;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 60px;margin-right: 2px;}
+.memberSex{background: #9dcaf7 url(/img/nan02.png) 4px center no-repeat;min-width: 10px;height: 16px;display: inline-block;text-indent: 10px;margin-top: 13px;margin-left: 2px;line-height: 16px;font-size: 12px;color: #fff;float: left;padding:0 4px;border-radius: 2px;}
+.memberShip{cursor:pointer;display: inline-block;min-width: 25px;height: 20px;background:url(/img/qz_ltck_liaotian.png) center center no-repeat;float: right;margin-right: 16px;margin-top: 14px;}
+.memberAvarWrap{display: block;}
+.deleteChat{width:94px;height:34px;background:#ffffff;line-height:34px;text-align:center;font-size:12px;position: fixed;z-index: 100000000;border:1px solid #e5e5e5;}
+.message_person_data{height: 42px;}
+.message_ship{padding: 0 7px 10px;height: 26px;}
+.message_ship a{height: 26px;box-sizing: border-box;border:1px solid #e5e5e5;display: block;float: left;line-height: 26px;font-size: 11px;width: 70px;text-align: center;padding: 0 10px;margin:0 6px;}
+.message_ship i{background: url(/img/add.png) center center no-repeat;width: 10px;height: 10px;float: left;display: block;margin-right: 2px;margin-top: 8px;}
+
+/*通讯录2.0*/
+.toolbar{position: fixed;right: 0; top: 0;width: 0;height: 100%;border-right: 6px solid #768cb5;-webkit-transition: right .3s ease-in-out 0s;-moz-transition: right .3s ease-in-out 0s;transition: right .3s ease-in-out 0s;z-index: 1000;}
+.toolbar-tabs{position: absolute;left: -30px;width: 36px;margin-top:308px;background: #6b80a7;color:#fff;}  
+.toolbar-tabs li{border-bottom: 1px solid #6378a0;cursor: pointer;height: 35px;}
+.toolbar-tabs li:hover{background-color: #ff9600;}
+.toolbar-tabs li:hover span{width: 90px;transition:width .3s; -webkit-transition::width .3s; -moz-transition::width .3s;opacity: 1;}
+.toolbar-tabs .toolbar_appdownload:hover span{width: 120px;transition:width .3s; -webkit-transition::width .3s; -moz-transition::width .3s;opacity: 1;padding-left: 8px;height: 143px;}
+.toolbar-tabs .toolbar_hotline:hover span{width: 170px;transition:width .3s; -webkit-transition::width .3s; -moz-transition::width .3s;opacity: 1;padding-left: 8px;height: 143px;}
+
+.toolbar-tabs li:last-child{border:none;}
+.toolbar-tabs .open_ad{height: 106px;background:url(/img/qz_sy_tongxunlu.png) center 13px no-repeat;}
+.toolbar-tabs li.open_ad em{padding: 45px 10px 0 10px;font-style: normal;display: inline-block;line-height: 16px;}
+.toolbar_group{background: url(/img/qz_sy_qunliao.png) center no-repeat;}
+.toolbar_groupChat{background: url(/img/qz_sy_liaotianshi.png) center no-repeat;}
+.toolbar_friends{background: url(/img/qz_sy_haoyou.png) center no-repeat;}
+.toolbar_appdownload{background: url(/img/quanzi_app_download.png) center no-repeat;}
+.toolbar_weibo{background: url(/img/qz_sy_weibo.png) center no-repeat;}
+
+.toolbar_qq{background: url(/img/qz_sy_qq.png) center no-repeat;}
+.toolbar_hotline{background: url(/img/qz_sy_dianhua.png) center no-repeat;}
+.toolbar_backtop{background: url(/img/qz_sy_zhiding.png) center no-repeat;}
+.toolbar-tabs li span{height: 35px;background: #ff9600;line-height: 35px;text-indent:-8px;text-align:center;display: inline-block;width: 0;position: absolute;right:30px;opacity: 0;overflow: hidden;background: url(/img/qz_sy_tankuang2.png) no-repeat right top;z-index: 99;color: #333;}
+.toolbar-qz{right:282px;}
+.toolbar-tabs li.toolbar-tabs-color{background-color: #ff9600;}
+
+
+/*未登录推送消息展示*/
+.pushContent{width:280px;background:#fff;border:1px solid #E5E5E5;position: absolute;z-index:9999;left:6px;top:130px;bottom:0;overflow: hidden;}
+.pushContent .quanziContent{height:58px;border-bottom: 1px solid #E5E5E5;}
+.pushContent .quanziContent .qz_name_ts{width:224px;height:40px;margin:9px 0 9px 18px;float:left;}
+.pushContent .quanziContent .qz_name_ts dt{float:left;width:40px;height:40px;margin-right:8px;}
+.pushContent .quanziContent .qz_name_ts dt img{width:40px;height:40px;border-radius:3px;}
+.pushContent .quanziContent .qz_name_ts dd{line-height: 20px;font-size: 12px;}
+.pushContent .quanziContent .qz_name_ts dd h4{display: inline;font-size:13px;font-weight:500;}
+.pushContent .quanziContent .qz_name_ts dd span{color:#fff;background:#fb5942;padding:0 2px;margin-left: 5px;font-size:12px;}
+.pushContent .quanziContent .del{background: url(/img/choseDel.png) center no-repeat;display: inline-block;width:10px;height:10px;margin-left: 9px;}
+.pushContent .quanziContent .choseDel{width:20px;float:right;margin:9px 18px 9px 0;cursor: pointer;}
+
+.pushContent .ChatContent{margin-left:18px;margin-bottom: 58px;overflow-y: scroll;overflow-x: hidden;}
+.pushContent .ChatContent .ChatTime{margin:8px 0 16px 0;text-align: center;color:#999;font-size: 12px;}
+.pushContent .ChatContent .Chat_list{margin-bottom: 16px;}
+.pushContent .ChatContent .Chat_list .Chat_headImg{float: left;}
+.pushContent .ChatContent .Chat_list .Chat_headImg img{width:34px;height:34px;border-radius: 3px;}
+.pushContent .ChatContent .Chat_list .ChatText{max-width: 150px;border-radius:3px;padding:4px 14px;background:#e5e5e5;line-height: 20px;float: left;/*letter-spacing: 1px;*/margin-left: 18px;position: relative;font-size: 12px;}
+.pushContent .ChatContent .Chat_list .tag{height: 34px;width: 6px;background: url(/img/else.png) 0 center no-repeat;display: inline-block;float: left;position: absolute;left:-6px;}
+.pushContent .ChatContent .Chat_list .ChatImg{margin-left: 12px;float: left;cursor: pointer;}
+.center_box .center_publisher .publisher_top .ChooseCircle{font-size:12px;padding-right: 10px;background:url(/img/qz_shq_xiala.png) no-repeat right center;width:62px;position: relative;margin: 10px 10px 0 0;cursor: pointer;float: right;color: black;}
+.pushContent_qz{right:280px;}
+.toolbar-tabs .open_ts{height: 106px;background:url(/img/qz_sy_xx.png) center 13px no-repeat;}
+.toolbar-tabs li.open_ts em{padding: 45px 10px 0 10px;font-style: normal;display: inline-block;line-height: 24px;}
+
+
+
+/*newchat*/
+
+.qzChatBox{position: fixed;bottom: 0;left: 0;right: 0;z-index: 9999;}
+.chatMain{height:2px;float: right;position: relative;padding-right: 336px;max-width: 1112px;align-items: flex-end;display: flex;}
+.qzchat_frame{margin-left: 16px;float: right;height: auto;position: absolute;}
+.minimize{background: #f6f7f9;width:158px;height: 34px;display: none;line-height: 34px;text-indent:10px;border:1px solid #d9d9d9;border-bottom: none;border-top-right-radius: 3px;border-top-left-radius: 3px;}
+.minimize a{display: block;width: 120px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;float: left;}
+.qz_inform{width:30px;height: 34px;display: inline-block;background: url(/img/qz_ltk_hongdian.png) center no-repeat;float: right;}
+.qz_chatBox{height:335px;width:260px;background: #fff;border:1px solid #d4d4d5;border-bottom: none;box-shadow: 0 0 1px rgba(0,0,0,0.4);}
+.titlebar{background: #f5f8f8;height: 30px;padding: 0 10px;cursor: pointer;cursor: move;}
+.titlebar a{font-size: 12px;color: #999;}
+.titlebarName:hover{text-decoration: underline;}
+.titlebarWrapper{max-width: 120px;float: left;color:#999;line-height: 30px;text-overflow:ellipsis;white-space: nowrap;overflow: hidden;}
+.titlebar .options{float: right;}
+.options li{float: left;}
+.options li a{display: inline-block;width:14px;height:14px;margin:8px 0 0 14px;}
+.options li .closeChat{background:url(/img/qz_ltk_x.png) no-repeat center;}
+.options li .qzMember{background:url(/img/qz_ltk_qunchengyuan.png) no-repeat center;}
+.options li .qzSet{background:url(/img/qz_ltk_shezhi.png) no-repeat center;}
+.options li .qzMinimize{background:url(/img/qz_ltk_suoxiao.png) no-repeat center;}
+.qzMsgContent{height: 230px;min-width:240px;overflow:auto;overflow-y: scroll;padding: 10px 10px 0 10px;border-bottom: 1px solid #f3f3f3;}
+.titlebar_color{background: #4080fe;}
+.titlebar_color a{color:#fff;}
+.titlebar_color li .closeChat{background:url(/img/qz_ltk_x_1.png) no-repeat center;}
+.titlebar_color li .qzMember{background:url(/img/qz_ltk_qunchengyuan_1.png) no-repeat center;}
+.titlebar_color li .qzSet{background:url(/img/qz_ltk_shezhi_1.png) no-repeat center;}
+.titlebar_color li .qzMinimize{background:url(/img/qz_ltk_suoxiao_1.png) no-repeat center;}
+
+.memberList{position: absolute;right:-154px;top:0;width:154px;height: 100%;border:1px solid #e5e5e5;background:#ffffff;box-sizing: border-box;z-index: 10000;box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.1);}
+.memberList >p{font-size: 11px;height: 15px;line-height: 15px;margin-top: 18px;color: #999999;margin-left: 14px;}
+.memberList ul{border-bottom: 1px solid #e5e5e5;height: 293px;overflow: auto;margin-top: 2px;padding: 0px 0px 0px 13px;}
+.memberList ul li{padding-top: 10px;cursor: pointer;position: relative;}
+.memberList ul li:last-child{margin-bottom: 10px;}
+.memberList ul li>span{display: inline-block;height: 30px;line-height: 30px;margin-left: 12px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 68px;}
+
+
+/*消息*/
+.qzcht_msg{display: inline-block;width: 100%;}
+.UserInformation{height: 40px;}
+.UserInformation dl dt{float: left;margin-right: 8px;cursor: pointer;}
+.groupInformation{float: left;margin-right: 8px;text-align: center;vertical-align: middle;width: 40px;height: 40px;}
+.UserInformation dl dt .df_img{width:40px;height:40px;border-radius: 3px;}
+.UserInformation .occupation{font-size: 12px;color:#999;line-height: 22px;}
+.UserInformation .qz_dfuser{width:130px; white-space: nowrap;overflow:hidden;text-overflow:ellipsis}
+.qzcht_msg .qz_xx{margin-top: 10px;}
+.qzcht_msg .qz_xx01{float: left;}
+.qz_xx01 .yh_t1{float: left;margin-right: 10px;}
+.qz_xx01 .yh_t1 img{width: 30px;height: 30px;border-radius: 50%;}
+.qz_xx .lt_xx{min-height: 26px;float: left;max-width: 182px;overflow: hidden;}
+.qz_xx .lt_xx>img,.qz_xx02>img{height:110px;}
+.qz_xx .lt_xx .txt{border-radius: 13px;line-height: 26px;padding:0 10px;display: inline-block;font-size: 12px;word-break: break-all;}
+.qz_xx01 .lt_xx .txt{background: #f0f0f0;max-width: 160px;}
+.qzcht_msg .qz_xx02{float: right;}
+.qz_xx02 .lt_xx .txt{background: #4380ff;color:#fff;max-width: 160px;}
+/*聊天框*/
+.qzChtFooter{padding:0 10px;}
+.faceBtns{background:url(/img/chat_biaoqing.png) 0 center no-repeat;height:20px;width: 16px;margin-right: 10px;display: inline-block;cursor: pointer;}
+.allFace{display: inline-block;}
+
+.dialogs{display:none;width:59px;height:51px;background: url(/img/qz_xx_liaotiankuangzhenghe.png) center no-repeat;/* display: inline-table; */cursor: pointer;position: absolute;left: -40px;top:-38px;}
+.dialogs:hover .dialogs_in{display: block;}
+.dialogs_in{position: absolute;bottom:42px;right:15px;width: 96px;display: none;}
+.dialogs_in ul{background: #282828;border-radius: 3px;padding:6px 0;margin-bottom: 6px;}
+.dialogs_in li{line-height: 21px;padding:0 8px 0 10px;display: flex;height: 21px;}
+.dialogs_in span{color:#fff;font-size: 12px;width: 70px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;display: inline-block;}
+.x_triangle{width:9px;height: 4px;background: url(/img/qz_ltk_caidan_sanjiao.png)center no-repeat;display: inline-block;position: absolute;bottom: 3px;right: 12px;}
+.closeDialog{width:8px;height: 22px;background: url(/img/qz_ltk_caidan_x.png) center no-repeat;}
+.closeDialog:hover{background: url(/img/qz_ltk_caidan_x_1.png) center no-repeat;}

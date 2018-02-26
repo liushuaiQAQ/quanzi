@@ -1,0 +1,42 @@
+.center_box .dynamic{font-size:14px;font-weight: 600;}
+/*#dynamic_list{margin: 10px 0px;}
+.lists{padding:0 14px;}
+.lists li{height:70px;border-bottom:1px solid #e5e5e5;position: relative;}
+.lists li span.themeImg{display:block;width:50px;height:50px;margin:10px 10px 10px 0px;border-radius:50%;float: left;}
+.lists li span.themeImg img{display:inline-block;width:50px;height:50px;border-radius: 50%;}
+.lists li .themes{height: 50px;float: left;margin: 10px 0px;}
+.lists li p{font-size: 14px;color: #333;}
+.lists li p:hover{color: #fe8b21;}
+.lists li div span{font-size: 12px;color: #999;line-height: 35px;margin-right: 5px;}
+.lists li div span i{font-size: 12px;color: #999;font-style: normal;}
+.lists li div.sh_joins,.lists li div.joins{position:absolute;right:0px;top:21px;width:68px;height: 26px;border: 1px solid #ff8a00;font-size: 14px;color: #ff8a00;text-align: center;line-height: 26px;cursor: pointer;border-radius: 2px;}
+.lists li div.noadd{position:absolute;right:0px;top:21px;width:38px;height: 21px;border: 1px solid #E5E5E5;font-size: 14px;color: #40A336;text-align: center;line-height: 21px;cursor: pointer;border-radius: 2px;}
+
+.topicsContent{position:relative;padding:14px 0px 0 0px;margin:0px 14px;border-bottom:1px solid #E5E5E5;background: #fff;text-align: center;min-height: 21px;display: none;}
+.topicsContent a{float:left;color:#1493e2;position: absolute;left: 14px;top:14px;}
+.topicsContent span{line-height: 30px;font-size: 12px;color:#999;padding: 0 4px;}
+.topicsContent div.joins{position:absolute;right:0px;top:19px;width:60px;height: 24px;border: 1px solid #ff8a00;font-size: 14px;color: #ff8a00;text-align: center;line-height: 24px;cursor: pointer;border-radius: 2px;}
+
+.Isempty{height:352px;background:#fff url(/img/qz_shq_logo.png) no-repeat center 120px;text-align: center;}
+.Isempty p{padding-top: 216px;}*/
+
+/*生活圈右侧栏目*/
+/*#sideBar{position: fixed;margin-left: 710px;}*/
+
+/*新添加部分*/
+#dynamic_list .professional .conList{background: #fff;padding:0 14px;border-bottom:1px solid #e5e5e5;}
+.professional_list .pf_list{border-bottom: 1px solid #e5e5e5;padding:14px 0 14px 0;}
+.professional_list .pf_list:last-child{border-bottom:0px;}
+.professional_list .pf_list .zy{padding-bottom:8px;color:#666;margin:0 5px;}
+.professional_list .pf_list .zyhover a{font-size:14px;color:#000;}
+.professional_list .pf_list .zyhover span{display: inline-block;margin-left: 10px;font-size: 12px;color: #969696;}
+.professional_list .pf_list .zyhover span i{font-style: normal;font-size: 12px;color: #969696;}
+.professional_list .pf_list .zyhover a:hover{color:#3ea436;}
+.professional_list .pf_list .qz_num{color:#999;position: relative;}
+.professional_list .pf_list .qz_num span{font-size: 12px;display: inline-block;width: 400px;white-space: nowrap;text-overflow: ellipsis;word-break: break-all;overflow: hidden;}
+.professional_list .pf_list .qz_num span i{font-size: 12px;font-style: normal;}
+.professional_list .pf_list .qz_num .join{position:absolute;right:0px;top:-20px;width:66px;height:24px;border:1px solid #ff8a21;border-radius:2px;color:#ff8a21;text-align: center;line-height: 24px;}
+.professional_list .pf_list .qz_num .join.off{width:46px;padding-left:20px;color: #5491ea;border:1px solid #5491ea;background: url(/img/zyq_jinru.png) no-repeat 8px center;}
+.professional_list .pf_list .pf_img a{display: block;margin-left: 5px;}
+.professional_list .pf_list .pf_img img{display: inline-block;width:122px;min-height:106px;margin-right: 6px;}
+.professional_list .pf_list .pf_img{height:106px;overflow:hidden;}

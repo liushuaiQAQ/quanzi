@@ -1,0 +1,240 @@
+<!--#include virtual="/html/doctype.html"-->
+<title>陌生人主页-圈子</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/index/index.css" />
+<link rel="stylesheet" type="text/css" href="/css/center/index/triends.css"/>
+<link rel="stylesheet" type="text/css" href="/css/center/personalHomepage/personalHomepage.css"/>
+<link rel="stylesheet" type="text/css" href="/css/center/strangeHomepage/strangeHomepage.css"/>
+<!--<link rel="stylesheet" type="text/css" href="/css/center/myRelease/myRelease.css"/>-->
+<!--<script type="text/javascript" src="/js/center/index/index.js"></script>-->
+<script type="text/javascript" src="/js/center/strangeHomepage/strange_common.js"></script>
+<script src="/js/center/index/shopMIndex.js"></script>
+<script type="text/javascript" src="/js/center/strangeHomepage/release.js"></script>
+<style>
+    .dynamic{height:36px;background: #fff;border:1px solid #e5e5e5;margin-bottom:10px;}
+    .dynamic ul li{line-height: 36px;margin:0 10px;float: left;position: relative;}
+    .dynamic ul li a{color:#bdbdbd;}
+    .dynamic .bg_br{left:35px;display: none;}
+    /*.bg_br{position:absolute;bottom:-1px;left: 30%;border-width:9px;border-top-width:0;display: inline-block;border-style: solid;overflow: hidden;font-size: 0;vertical-align: top;border-color: #fff;border-bottom-color:#afc8e4;display: none;}*/
+    .blockbg{display: block;}
+    .dynamic ul li.list_bg a{color:#3ea436;}
+    .dynamic_list{width:100%;}
+
+
+    .jobSalaryShow {overflow: hidden;
+        width: 100%;}
+    .jobSalaryShow .title{font-size: 16px;}
+    .jobSalaryShow .title a:hover{color:#40a434;}
+    .jobSalaryShow .salary{color: #fb0016;
+        font-size: 18px;
+        margin: 13px 0;}
+    .qz_handleShop{border-top:none;}
+
+    .location{padding-left: 14px;}
+    .qz_handle .qz_row_line li:first-child{padding-left: 0;}
+    .contact_method i{
+        background: url(/img/shangcheng1/liebiao_lianxi.png) center no-repeat;
+    }
+    .fast_contact span{ text-align: center;border: 1px solid #aaabca;color: #aaabca;padding: 2px 6px;}
+
+    .contact_showInfo{display:none;background:#fff;border: 1px solid #ccc;  position: absolute;  padding: 4px 8px;  z-index: 1; min-width: 114px;  top: 38px;  left: -12px;}
+    .contact_showInfo li{line-height: 30px;}
+    .qz_handle .qz_row_line .contact_showInfo li i{margin: 0 5px 0 0;}
+    .contact_showInfo li:first-child i{
+        height: 30px;
+        background: url(/img/shangcheng1/liebiao_lianxi_lianxiren.png) center no-repeat;
+    }
+    .contact_showInfo li:nth-child(2) i{
+        height: 30px;
+        background: url(/img/shangcheng1/liebiao_lianxi.png) center no-repeat;
+    }
+    .contact_showInfo li:nth-child(3) i{
+        height: 30px;
+        background: url(/img/shangcheng1/liebiao_lianxi_qita.png) center no-repeat;
+    }
+
+    /*/新增收藏css/*/
+    .collection_post_shop i {
+        background: url(/img/pc_sp_shoucang.png) center no-repeat;
+    }
+    .collection_shopCancel i{
+        background: url(/img/pc_spxq_shoucang.png) center no-repeat;
+    }
+
+    /*更多*/
+    .content_items .qz_row_line .list_more i {
+        width: 30px;
+        background: url(/shangcheng/img/liebiao_gengduo.png) no-repeat center;
+    }
+    .fl_menu_list{display: none;top: 32px;  left: -8px;width: 85px;}
+    .content_items .qz_handle .fl_menu_list .complaint{width: 85px;
+        padding-left: 35px;
+        text-indent: 0;
+        background: url(/shangcheng/img/liebiao_jubao.png) no-repeat 15px center;
+        color: #666;}
+
+</style>
+</head>
+<body>
+<!--顶部导航容器，区分登录和未登录的头部开始-->
+<div class="headss"></div>
+<!--顶部导航容器，区分登录和未登录的头部end-->
+<div class="homepage_main">
+    <div class="homepage_top">
+        <div class="user_bj" style="width: 100%;height: 100%;">
+
+        </div>
+        <!--#include virtual="/center/u/hisNav.html"-->
+        <div class="personal_info">
+            <a href="javascript:;" class="userImg">
+                <img src="/img/first.png">
+            </a>
+            <dl>
+                <dd class="personal_title">
+                    <span class="personal_nikename"></span>
+                    <i class="sex"></i>
+                    <i class="level"></i>
+                    <i class="viplevel"></i>
+                </dd>
+                <dd>
+                    <span style="float: left;">圈子号:</span>
+                    <span class="personal_code" style="float: left;margin-right: 30px;"></span>
+                    <span class="job" style="float: left;"></span>
+                    <span class="pass"></span>
+                    <span class="identification"></span>
+                    <div class="clear"></div>
+                </dd>
+                <dd class="remark" style="display: none;">
+                    昵称：<span class="remark_nikename"></span>
+                </dd>
+                <dd class="sign"></dd>
+            </dl>
+            <div class="personal_like">
+                <ul>
+                    <li class="like_guanzhu">
+                        <a href="javascript:;" class="concern"><i></i>关注</a>
+                        <p class="personal_cancel">取消关注</p>
+                    </li>
+                    <li class="like_message" data-off="0">
+                        <a href="javascript:;"><i class="personal_message"></i>消息</a>
+                    </li>
+                    <li class="like_addfriend">
+                        <a href="javascript:;" class="friendStatus friendBtn"><i class="personal_jiahaoyou"></i>加为好友</a>
+                        <div class="remove_friend">删除好友</div>
+                        <div class="cancel_more" style="display: none;">
+                            <p class="setting_remark">确认请求</p>
+                            <p class="recommend_friends">删除请求</p>
+                        </div>
+                    </li>
+                    <li class="like_more">
+                        <a href="javascript:;"><i class="personal_sanheng"></i></a>
+                        <div class="cancel_more">
+                            <p class="setting_remark">设置备注名</p>
+                            <p class="recommend_friends">推荐好友给TA</p>
+                            <p class="set_Blacklist">拉黑</p>
+                            <p class="complain">投诉</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="homepage_bottom">
+        <!-- <div id="slider_bar_fixed" style="width: 300px;"></div> -->
+        <div class="homepage_left">
+            <!--<div class="homepage_type">-->
+                <!--<ul>-->
+                    <!--<li>关注<span class="focus_num"></span></li>-->
+                    <!--<li class="small_text">|</li>-->
+                    <!--<li>粉丝<span class="funs_num"></span></li>-->
+                    <!--<li class="small_text">|</li>-->
+                    <!--<li>动态<span class="dynamic_num"></span></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--#include virtual="/center/u/hisFoucsFuns.html"-->
+            <div class="personal_data">
+                <ul>
+                    <li class="lawchat_logo">
+                        <i class="logo"></i>
+                        <span>圈子号</span>
+                        <span class="personal_code" style="float: left;"></span>
+                    </li>
+                    <li class="personal_job">
+                        <i class="logo"></i>
+                        <span>职位</span>
+                        <span class="job" style="float: left;"></span>
+                        <span class="pass" style=""></span>
+                        <span class="identification"></span>
+                    </li>
+                    <li class="personal_pros">
+                        <i class="logo"></i>
+                        <span>职业圈</span>
+                        <span class="myindustry"></span>
+                    </li>
+                    <li class="personal_hometown">
+                        <i class="logo"></i>
+                        <span>地区</span>
+                        <span class="homeTown"></span>
+                    </li>
+                    <li class="personal_tel">
+                        <i class="logo"></i>
+                        <span>手机号</span>
+                        <span class="tel"></span>
+                    </li>
+                </ul>
+                <div class="signature">
+                    <span><i class="logo" style="height: 14px;"></i>签名</span>
+                    <p class="sign"></p>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <!--左侧推荐start-->
+            <div class="recommend">
+                <p><i>可能认识</i><a href="javascript:;">查看更多</a>
+
+                </p>
+                <div class="clear"></div>
+                <ul>
+
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <!--左侧推荐end-->
+
+        </div>
+        <div class="personal_right">
+            <div class="dynamic_list">
+                <div class="jiazai"><i class="loading"></i>正在加载中，请稍后</div>
+                <div class="Collect_list">
+
+                </div>
+                <div class="content_items lists collectionVideo">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="no_publish">
+                <div class="noPublishBox">
+                    <img src="/img/nopublish.png">
+                    <p class="text_show">尚未加入圈子</p>
+                    <a href="/center/zyq.html" class="releaseBtn">立即加入</a>
+                </div>
+            </div>
+        </div>
+        <br class="clear"/>
+    </div>
+</div>
+<!--底部start-->
+<div class="footerss"></div>
+<!--底部end-->
+<!--转发分享圈子朋友圈  圈子好友   圈子群组开始-->
+<!--#include virtual="/html/dynamicSharing.html"-->
+<!--转发分享圈子朋友圈  圈子好友   圈子群组结束-->
+<!-- 通讯录 -->
+<div class="Addressbook_box"></div>
+<div id="mask"></div>
+
+</body>
+</html>

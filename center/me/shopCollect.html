@@ -1,0 +1,226 @@
+<!--#include virtual="/html/doctype.html"-->
+<title>圈子社交-个人主页收藏</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/index/triends.css"/>
+<link rel="stylesheet" type="text/css" href="/css/center/personalHomepage/personalHomepage.css"/>
+<link rel="stylesheet" type="text/css" href="/css/center/myCollection/myCollection.css"/>
+<!--<script type="text/javascript" src="/js/center/index/index.js"></script>-->
+<script type="text/javascript" src="/js/center/personalHomepage/personalHomepage_collect1.js"></script>
+<script src="/js/common/collect_common1.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/center/index/shopMIndex.js"></script>
+<style>
+    .selectPub{cursor: pointer;}
+    .citType{display:none;width: 120px;background: white;border: 1px solid #E1E1E1;position: absolute;z-index: 20;left: -11px;}
+    .dynamic .list_bg .citType a{display: block;  height: 30px;  text-indent: 20px;  line-height: 30px; text-decoration: none;  color: #333;  font-size: 14px;  outline: none; }
+    .personal_right .dynamic  .citType .ctActive{color: #3ea436;background: whitesmoke;}
+    .dynamic .list_bg .citType a:hover{color: #3ea436;background: whitesmoke;}
+    .jobSalaryShow {
+        overflow: hidden;
+        width: 100%;
+    }
+    .jobSalaryShow .title{font-size: 16px;}
+    .jobSalaryShow .title a:hover{color:#40a434;}
+    .jobSalaryShow .salary{color: #fb0016;
+        font-size: 18px;
+        margin: 13px 0;}
+    .qz_handleShop{border-top:none;}
+
+    .location{padding-left: 14px;}
+    .qz_handle .qz_row_line li:first-child{padding-left: 0;}
+    .contact_method i{
+        background: url(/img/shangcheng1/liebiao_lianxi.png) center no-repeat;
+    }
+    .fast_contact span{ text-align: center;border: 1px solid #aaabca;color: #aaabca;padding: 2px 6px;}
+
+    /*联系方式*/
+    .contact_showInfo{display:none;background:#fff;border: 1px solid #ccc;  position: absolute;  padding: 4px 8px;  z-index: 1; min-width: 114px;  top: 33px;  left: -12px;}
+    .contact_showInfo li{line-height: 30px;}
+    .contact_showInfo li:first-child i{
+        height: 30px;
+        background: url(/img/shangcheng1/liebiao_lianxi_lianxiren.png) center no-repeat;
+    }
+    .contact_showInfo li:nth-child(2) i{
+        height: 30px;
+        background: url(/img/shangcheng1/liebiao_lianxi.png) center no-repeat;
+    }
+    .contact_showInfo li:nth-child(3) i{
+        height: 30px;
+        background: url(/img/shangcheng1/liebiao_lianxi_qita.png) center no-repeat;
+    }
+
+    /*/新增收藏css/*/
+    .collection_post_shop i {
+        background: url(/img/pc_sp_shoucang.png) center no-repeat;
+    }
+    .collection_shopCancel i{
+        background: url(/img/pc_spxq_shoucang.png) center no-repeat;
+    }
+
+    /*更多*/
+    .content_items .qz_row_line .list_more i {
+        width: 30px;
+        background: url(/shangcheng/img/liebiao_gengduo.png) no-repeat center;
+    }
+    .fl_menu_list{display: none;top: 32px;  left: -8px;width: 85px;}
+    .content_items .qz_handle .fl_menu_list .complaint{width: 85px;
+        padding-left: 35px;
+        text-indent: 0;
+        background: url(/shangcheng/img/liebiao_jubao.png) no-repeat 15px center;
+        color: #666;}
+</style>
+</head>
+<body>
+<!--头部开始-->
+<!--#include virtual="/html/header.html"-->
+<!--头部end-->
+<div class="homepage_main">
+    <div class="homepage_top">
+        <div class="user_bj" style="width: 100%;height: 100%;">
+        </div>
+        <!--头部开始-->
+        <!--#include virtual="/center/me/myNav.html"-->
+        <!--头部end-->
+        <div class="personal_info">
+            <a href="javascript:;" class="userImg">
+                <img src="/img/first.png">
+            </a>
+            <dl>
+                <dd class="personal_title">
+                    <span class="personal_nikename"></span>
+                    <i class="sex"></i>
+                    <i class="level"></i>
+                    <i class="viplevel"></i>
+                </dd>
+                <dd>
+                    <span style="float: left;">圈子号:</span>
+                    <span class="personal_code" style="float: left;margin-right: 30px;"></span>
+                    <span class="job" style="float: left;"></span>
+                    <span class="pass"></span>
+                    <span class="identification"></span>
+                    <div class="clear"></div>
+                </dd>
+                <dd class="sign"></dd>
+            </dl>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="homepage_bottom">
+        <div class="homepage_left">
+            <!--头部开始-->
+            <!--#include virtual="/center/me/foucsFuns.html"-->
+            <!--头部end-->
+            <div class="personal_data">
+                <ul>
+                    <li class="lawchat_logo">
+                        <i class="logo"></i>
+                        <span>圈子号</span>
+                        <span class="personal_code" style="float: left;"></span>
+                    </li>
+                    <li class="personal_job">
+                        <i class="logo"></i>
+                        <span>职位</span>
+                        <span class="job" style="float: left;"></span>
+                        <span class="pass" style=""></span>
+                        <span class="identification"></span>
+                    </li>
+                    <li class="personal_sex">
+                        <i class="logo"></i>
+                        <span>性别</span>
+                        <span class="data_sex"></span>
+                    </li>
+                    <li class="personal_birth">
+                        <i class="logo"></i>
+                        <span>生日</span>
+                        <span class="birthday"></span>
+                    </li>
+                    <li class="personal_hometown">
+                        <i class="logo"></i>
+                        <span>地区</span>
+                        <span class="homeTown"></span>
+                    </li>
+                    <li class="personal_tel">
+                        <i class="logo"></i>
+                        <span>手机号</span>
+                        <span class="tel"></span>
+                    </li>
+                </ul>
+                <p class="edit_data">
+                    <a href="/center/editbjzl.html">编辑资料<span></span></a>
+                </p>
+            </div>
+            <!--左侧推荐start-->
+            <div class="recommend">
+                <p><i>可能认识</i><a href="javascript:;">查看更多</a>
+
+                </p>
+                <div class="clear"></div>
+                <ul>
+
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <!--左侧推荐end-->
+
+        </div>
+        <div class="personal_right">
+            <div class="dynamic">
+                <ul>
+                    <li class="home">
+                        <a href="javascript:;">动态</a>
+                        <span class="bg_br"></span>
+                    </li>
+                    <li class="professionalCircle">
+                        <a href="javascript:;">视频</a>
+                        <span class="bg_br"></span>
+                    </li>
+                    <li class="inforCenter" >
+                        <a class="alreadyPub" href="javascript:;">同城消息</a>
+                        <span class="bg_br"></span>
+                        <i class="selectPub" style="margin-left: 0px;margin-bottom: 2px;display: inline-block;width: 8px;height: 5px;background: url(/img/qz_shq_xiala.png) no-repeat left center;"></i>
+                        <div class="citType js_cityType" style="display: none;">
+                            <a data-type="" class="ctActive" href="javascript:;">全部</a>
+                            <a data-type="1" href="javascript:;">职业</a>
+                            <a data-type="2" href="javascript:;">租房</a>
+                            <a data-type="4" href="javascript:;">家政</a>
+                            <a data-type="3" href="javascript:;">二手物品</a>
+                            <a data-type="5" href="javascript:;">商务服务</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dynamic_list">
+                <div class="jiazai"><i class="loading"></i>正在加载中，请稍后</div>
+                <div class="Collect_list">
+
+                </div>
+                <div class="content_items lists collectionVideo">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="no_publish">
+            <div class="noPublishBox">
+                <img src="/img/nopublish.png">
+                <p>尚未发布动态</p>
+                <a href="/center/index.html" class="releaseBtn">立即发布</a>
+            </div>
+        </div>
+        <!--返回置顶-->
+        <!--<div class="returnTop"></div>-->
+        <br class="clear"/>
+    </div>
+</div>
+<!--底部start-->
+<!--#include virtual="/html/bottomer.html"-->
+<!--底部end-->
+<!--遮盖弹窗-->
+<!--转发分享圈子朋友圈  圈子好友   圈子群组开始-->
+<!--#include virtual="/html/dynamicSharing.html"-->
+<!--转发分享圈子朋友圈  圈子好友   圈子群组结束-->
+<!-- 通讯录 -->
+<div class="Addressbook_box"></div>
+<div id="mask"></div>
+</body>
+</html>

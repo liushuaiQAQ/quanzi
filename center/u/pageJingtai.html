@@ -1,0 +1,235 @@
+<!--#include virtual="/html/doctype.html"-->
+<title>陌生人主页-圈子</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/index/index.css" />
+<link rel="stylesheet" type="text/css" href="/css/center/index/triends.css"/>
+<link rel="stylesheet" type="text/css" href="/css/center/personalHomepage/personalHomepage.css"/>
+<link rel="stylesheet" type="text/css" href="/css/center/strangeHomepage/strangeHomepage.css"/>
+<script type="text/javascript" src="/js/center/index/index.js"></script>
+<script type="text/javascript" src="/js/center/strangeHomepage/strangeHomepage.js"></script>
+<script type="text/javascript" src="/js/center/strangeHomepage/strange_common.js"></script>
+</head>
+<body>
+	<!--顶部导航容器，区分登录和未登录的头部开始-->
+	<div class="headss"></div>
+	<!--顶部导航容器，区分登录和未登录的头部end-->
+	<div class="homepage_main">
+		<div class="homepage_top">
+			if ("${msg.data.imgforuserbglist}".length == 0) {
+				<div class="user_bj" style="width: 100%;height: 100%;background-size:100%;background: url("/img/strangedefault.png") no-repeat;"></div>
+			} else {
+				<div class="user_bj" style="width: 100%;height: 100%;background-size:100%;background: url("${msg.data.imgforuserbglist[0].imagepath}") no-repeat;"></div>
+			};
+			<div class="nav" id="strangeNav">
+				<ul>
+					<li style=""><a href="javascript:;" class="nav_active">主页</a></li>
+					<li><a href="javascript:;">关注&nbsp;<span class="focus_num"></span></a></li>
+					<li><a href="javascript:;">粉丝&nbsp;<span class="funs_num"></span></a></li>
+				</ul>
+			</div>
+			<div class="personal_info">
+				
+					<!--<img src="/img/first.png">-->
+					if ("${msg.data.imgforheadlist}".length == 0) {
+						<a href="javascript:;" class="userImg">
+						<img src="/img/first.png">
+						</a>
+					}else{
+						<a href="javascript:;" class="userImg">
+						<img src="'${msg.data.imgforuserbglist[0].imagepath}'">
+						</a>
+					}
+				<dl>
+					<dd class="personal_title">
+						<span class="personal_nikename" data-guanzhu="${msg.data.followingcnt}" data-funs="${msg.data.followercnt}">${msg.data.nickname}</span>
+						if ("${msg.data.sex}"== '女') {
+							<i class="sex" style="background:url("/img/women_img.png") center center no-repeat #ff7cb6;"></i>
+							<i class="level" style="background: url("/img/h/sj_gril_${msg.data.level}.png") 0 bottom no-repeat;background-size: 35px 14px"></i>
+						}else{
+							<i class="sex" style="background:url("/img/men_img.png") center center no-repeat #ff7cb6;"></i>
+							<i class="level" style="background: url("/img/h/sj_boy_${msg.data.level}.png") 0 bottom no-repeat;background-size: 35px 14px"></i>
+						}
+						
+						if (${msg.data.viplevel} != 0) {
+							<i class="viplevel" style="background: url("/img/h/sj_VIP_${msg.data.viplevel}.png") center center no-repeat;backgroundSize:35px 14px;"></i>
+						}
+						
+					</dd>
+					<dd>
+						<span style="float: left;">圈子号:</span>
+						<span class="personal_code" style="float: left;margin-right: 30px;">${msg.data.magicno}</span>
+						if("${msg.data.realindustry}"==""){
+							<span class="job" style="float: left;">未设置</span>
+						}else{
+							 <!--下面这个需截取字符串 ，只保留前九位-->
+							<span class="job" style="float: left;">${msg.data.realindustry}</span>    
+						}
+						
+						if (${msg.data.certificateStatus} == 0 || ${msg.data.certificateStatus} == -1) {
+							<span class="pass" style="background: url("/img/zy_renzhengtishi.png") 0 center no-repeat;float: left;margin-right: 5px;></span>
+							<span style="color:#ccc">未认证</span>
+						}else if(${msg.data.certificateStatus} == 1 || ${msg.data.certificateStatus} == 3) {
+							<span class="pass" style="background: url("/img/zy_renzhengtishi.png") 0 center no-repeat;float: left;margin-right: 5px;></span>
+							<span style="color:#ccc">认证中</span>
+						}else{
+							<span class="pass"></span>
+							<span class="identification"></span>
+						}
+						<div class="clear"></div>
+					</dd>
+					<dd class="remark" style="display: none;">
+						昵称：<span class="remark_nikename"></span>
+					</dd>
+					<dd class="sign"></dd>
+				</dl>
+				<div class="personal_like">
+					<ul>
+						<li class="like_guanzhu">
+							if (${msg.data.isfollowing} == 0) {
+								<a href="javascript:;" class="concern" data-status="0"><i></i>关注</a>
+							}else{
+								<a href="javascript:;" class="concern" data-status="1"><i style="background: url("/img/duihao1.png") center center no-repeat"></i>已关注</a>
+							}
+							<p class="personal_cancel">取消关注</p>
+						</li>
+						<li class="like_message" data-off="0">
+							<a href="javascript:;"><i class="personal_message"></i>消息</a>
+						</li>
+						<li class="like_addfriend">
+							if (${msg.data.relation} == 0) {
+								<a href="javascript:;" class="friendStatus friendBtn" data-relation='${msg.data.relation}'>已请求</a>
+							}else if (${msg.data.relation} == 3 || ${msg.data.relation} == 1 || ${msg.data.relation} == 2) {
+								<a href="javascript:;" class="friendStatus friendBtn" data-relation='${msg.data.relation}'><i style="background-image: url("/img/duihao1.png")"></i>好友</a>								
+							} else if (${msg.data.relation} == 4) {
+								<a href="javascript:;" class="friendStatus friendBtn" data-relation='${msg.data.relation}'>对方已拒绝</a>
+							} else {
+								<a href="javascript:;" class="friendStatus friendBtn" data-relation='${msg.data.relation}'><i class="personal_jiahaoyou"></i>加为好友</a>
+							};	
+							<div class="remove_friend">删除好友</div>
+							<div class="cancel_more" style="display: none;">
+								if (${msg.data.relation} == 3 || ${msg.data.relation} == 1 || ${msg.data.relation} == 2) {
+									<p class="setting_remark">确认请求</p><p class="recommend_friends">删除请求</p>
+								}
+							</div>
+						</li>
+						<li class="like_more">
+							<a href="javascript:;"><i class="personal_sanheng"></i></a>
+							<div class="cancel_more">
+								if (${msg.data.relation} == 3 || ${msg.data.relation} == 1 || ${msg.data.relation} == 2) {
+									<p class="setting_remark">设置备注名</p>
+									<p class="recommend_friends">推荐好友给TA</p>
+								}
+								<p class="set_Blacklist">拉黑</p>
+								<p class="complain">投诉</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="homepage_bottom">
+			<!-- <div id="slider_bar_fixed" style="width: 300px;"></div> -->
+			<div class="homepage_left">
+				<div class="homepage_type">
+					<ul>
+						<li>关注<span class="focus_num">${msg.data.followingcnt}</span></li>				
+						<li class="small_text">|</li>
+						<li>粉丝<span class="funs_num">${msg.data.followercnt}</span></li>
+						<li class="small_text">|</li>
+						<li>动态<span class="dynamic_num">${msg.data.topictotal}</span></li>
+					</ul>
+				</div>
+				<div class="personal_data">
+					<ul>
+						<li class="lawchat_logo">
+							<i class="logo"></i>
+							<span>圈子号</span>
+							<span class="personal_code" style="float: left;"></span>
+						</li>
+						<li class="personal_job">
+							<i class="logo"></i>
+							<span>职位</span>
+							if("${msg.data.realindustry}"==""){
+								<span class="job" style="float: left;">未设置</span>
+							}else{
+								<span class="job" style="float: left;">${msg.data.realindustry}</span>        //截取字符串 ，只保留前九位
+							}
+							
+							<span class="pass" style=""></span>
+							<span class="identification"></span>
+						</li>
+						<li class="personal_pros">
+							<i class="logo"></i>
+							<span>职业圈</span>
+							<span class="myindustry">${msg.data.myindustry}</span>
+						</li> 
+						<li class="personal_hometown">
+							<i class="logo"></i>
+							<span>地区</span>
+							if ("${msg.data.hometown}" == '') {
+								<span class="homeTown">未设置</span>
+							}else{
+								<!--if ("${msg.data.hometown}".split("|")[0] == "请选择省" && "${msg.data.hometown}".split("|")[1] == "请选择市" && "${msg.data.hometown}".split("|")[2] == "请选择区") {
+									<span class="homeTown">未设置</span>         
+								} else {
+									<span class="homeTown">${msg.data.hometown}.replace(/\|/g, ' ')</span>
+								}-->
+								<!--按照上面的注释内容截取-->
+								<span class="homeTown">${msg.data.hometown}</span>
+							}
+						</li>
+						<li class="personal_tel">
+							<i class="logo"></i>
+							<span>手机号</span>
+							if (${msg.data.mobiles} == '') {
+								<span class="tel">未设置</span>
+							}else{
+								<span class="tel">${msg.data.mobiles}</span>
+							}
+							
+						</li>
+					</ul>
+					<div class="signature">
+						<span><i class="logo" style="height: 14px;"></i>签名</span>
+						<p class="sign">${msg.data.sign}</p>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<!--左侧推荐start-->
+				<div class="recommend">
+				    <p><i>可能认识</i><a href="javascript:;">查看更多</a>
+				 
+				    </p>
+				    <div class="clear"></div>
+					    <ul>
+					       
+					    </ul>
+				    <div class="clear"></div>
+				</div>
+				<!--左侧推荐end-->
+
+		</div>
+		<div class="personal_right">
+			<div class="jiazai"><i class="loading"></i>正在加载中，请稍后</div>
+			
+			<div class="no_publish" style="height: 598px;box-sizing: border-box;border:1px solid #e5e5e5;background: #ffffff;display: none;">
+				<img src="/img/nopublish.png" style="width: 43px;height: 36px;display: block;margin-top: 81px;margin-left:253px;">
+				<p style="font-size: 12px;line-height: 35px;height: 35px;text-indent: 7px;text-align: center;">此人尚未发布过动态哦</p>
+			</div>
+		</div>
+		<br class="clear"/>
+	</div>
+	</div>
+	<!--底部start-->
+	<div class="footerss"></div>
+	<!--底部end-->
+	<!--遮盖弹窗-->
+	<div id="mask"></div>
+	<!--转发分享圈子朋友圈  圈子好友   圈子群组开始-->
+	<!--#include virtual="/html/dynamicSharing.html"-->
+	<!--转发分享圈子朋友圈  圈子好友   圈子群组结束-->
+	<!-- 通讯录 -->
+	<div class="Addressbook_box"></div>
+</body>
+</html>

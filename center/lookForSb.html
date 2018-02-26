@@ -1,0 +1,137 @@
+<!--#include virtual="/html/doctype.html"-->
+<title>找人</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/index/index.css" />
+<link rel="stylesheet" type="text/css" href="/css/center/index/triends.css"/>
+<link rel="stylesheet" type="text/css" href="/css/common/loginSearch.css"/>
+<link rel="stylesheet" type="text/css" href="/css/center/index/index.css"/>
+<link rel="stylesheet" type="text/css" href="/css/center/lookForSb/lookForSb.css"/>
+<link rel="stylesheet" type="text/css" href="/css/common/range.css"/>
+<!-- <script src="/js/common/vue.min.js" type="text/javascript" charset="utf-8"></script> -->
+<script type="text/javascript" src="/js/center/index/index.js"></script>
+<script src="/js/common/range.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/center/lookForSb/lookForSb.js" type="text/javascript" charset="utf-8"></script>
+</head>
+	<body>
+	<!--顶部导航容器，区分登录和未登录的头部开始-->
+	<div class="headss"></div>
+	<!--顶部导航容器，区分登录和未登录的头部end-->
+		
+		<div class="main clearfix">
+			<!--左侧边栏容器开始-->
+			<div class="left_sideBar clearfix"></div>
+			<!--左侧边栏容器结束-->
+			<!--首页-->
+			<div class="center_box">
+				<!--动态导航栏-->
+				<div class="dynamics classify">
+					<span class="searchPer">找人</span>
+					<span class="bgbtnBox"></span>
+					<span class="batch">换一批</span>
+					<div class="xhnq">
+						<div class="listTy listTy1">
+							<span>性别</span>
+							<ol class="clearfix">
+								<li class="on" dataSex="0">全部</li>
+								<li class="mans" dataSex="1">男</li>
+								<li class="womans" dataSex="2">女</li>
+							</ol>
+						</div>
+						<div class="listTy listTy2">
+							<span>活跃</span>
+							<ol class="clearfix">
+								<li dataTime="0">15分钟</li>
+								<li dataTime="1">60分钟</li>
+								<li dataTime="2">1天</li>
+								<li class="" dataTime="3">3天</li>
+							</ol>
+						</div>
+						<div class="listTy listTy3">
+							<span>年龄<!--<i>全部</i>--></span>
+							<div class="rangbox">
+								<!--<p class="rangle"></p>-->
+								<b class="cic cic1"></b>
+								<!--<b class="cic cic2"></b>-->
+								<div class="container" id="main">
+						            <div class="demo">
+						                <input class="range-slider" type="hidden" value="0,65"/>
+						                <!--<button id="g2">获取值</button>-->
+						            </div>
+						        </div>
+							</div>
+						</div>
+						<div class="listTy listTy4">
+							<span>其他(多选)</span>
+							<ol class="clearfix">
+								<li class="type1">同职业</li>
+								<li class="type2">同兴趣</li>
+								<li class="type3">同城</li>
+							</ol>
+						</div>
+						<div class="concan">
+							<a href="javascript:;" class="conBtn">确定</a><a href="javascript:;" class="cancleBtn">取消</a>
+						</div>
+					</div>
+				</div>
+				<!--动态内容-->
+				<div id="dynamic_list">
+					<div class="jiazai"><i class="loading"></i>正在加载中，请稍后</div>
+					<div class="centerlist">
+						<ul>
+							<!--<li>
+								<a href="javascript:;">
+									<div class="lists">
+										<div class="headI">
+											<img src="/img/require_img.png"/>
+										</div>
+										<div class="msgs">
+											<dl>
+												<dd>张媛媛<span class="grade"><img src="/img/h/sj_gril_0.png" alt="" /></span><span class="sexss"><img src="/img/h/sj_VIP_1.png" alt="" /></span><span class="ages">24</span></dd>
+												<dd class="workPos">百度UI设计师<i></i></dd>
+												<dd>想要拥有从未拥有过的东西，就要去做你从未做过的事情</dd>
+											</dl>
+										</div>
+										<div class="times">10分钟前</div>
+										<br class="clear" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="lists">
+										<div class="headI">
+											<img src="/img/require_img.png"/>
+										</div>
+										<div class="msgs">
+											<dl>
+												<dd>张媛媛<span class="grade"><img src="/img/h/sj_gril_0.png" alt="" /></span><span class="sexss"><img src="/img/h/sj_VIP_1.png" alt="" /></span><span class="ages">24</span></dd>
+												<dd>百度UI设计师<i></i></dd>
+												<dd>想要拥有从未拥有过的东西，就要去做你从未做过的事情</dd>
+											</dl>
+										</div>
+										<div class="times">10分钟前</div>
+										<br class="clear" />
+									</div>
+								</a>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--右侧边栏容器开始-->
+			<div class="right_sideBar"></div>
+			<!--右侧边栏容器结束-->
+			<!--返回置顶-->
+			<!--<div class="returnTop"></div>-->
+			<br class="clear"/>
+		</div>
+		<!--底部导航容器，区分登录和未登录的底部开始-->
+		<div class="footerss"></div>
+		<!--底部导航容器，区分登录和未登录的底部end-->
+		<!--遮盖弹窗-->
+			
+		<!-- 通讯录 -->
+		<div class="Addressbook_box"></div>
+	</body>
+
+</html>

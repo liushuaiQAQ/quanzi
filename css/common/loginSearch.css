@@ -1,0 +1,6 @@
+.down_search .keywordbox ol li{height:25px;cursor: pointer;line-height:25px;padding-left: 14px;}
+.down_search .keywordbox ol li:hover{background: #3ea436;color: #fff;}
+.down_search_content .keywordbox{width:375px;height:250px;overflow-y:scroll;}
+.down_search_content .keywordbox::-webkit-scrollbar{width:5px;}
+.down_search_content .keywordbox::-webkit-scrollbar-track{background-color:#fff;}
+.down_search_content .keywordbox::-webkit-scrollbar-thumb{background-color:#999;}

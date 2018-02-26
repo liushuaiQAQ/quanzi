@@ -1,0 +1,51 @@
+/*全球圈左边内容最小高处理*/
+.globalCirs{height:auto;}
+/*生活圈左边内容最小高处理*/
+.lifeCirs{height:auto;}
+/*职业圈左边内容最小高处理*/
+.proCirs{height:auto;}
+
+.detail_left{width: 690px;float: left;margin-right: 10px;min-height:860px;}
+.detail_left .publish_box{width: 100%;}
+.detail_left .publish_box .center_publisher{height:168px;background: #fff;border:1px solid #e5e5e5;padding:0 14px;font-size:12px;} 
+.detail_left .publish_box .center_publisher h2{color:#7d8abc;font-size:14px;line-height: 36px;float: left;display: inline-block;}
+.detail_left .publish_box .center_publisher .limit{float: right;line-height: 36px;color:#999;font-weight:600;}
+.detail_left .publish_box .center_publisher .limit .limit_num{color:#ff9600;font-size: 13px;}
+.detail_left .publish_box .center_publisher>textarea{border: 1px solid #ccc;padding:6px;line-height:18px;width:645px;height:78px;font-size: 12px;} 
+.detail_left .publish_box .center_publisher .kind{float: left;margin-top: 8px;} 
+.detail_left .publish_box .center_publisher .kind em{width:21px;height:18px;display: inline-block;vertical-align: middle;margin-right: 4px;} 
+.detail_left .publish_box .center_publisher .kind .faceBtn em{background:url(/img/biaoqing.png) no-repeat;} 
+.detail_left .publish_box .center_publisher .kind .fx_photo{position: relative;} 
+.detail_left .publish_box .center_publisher .kind .fx_photo em{background:url(/img/zhaopian.png) no-repeat;} 
+.detail_left .publish_box .center_publisher .kind>a{margin-right:20px;font-size: 12px;} 
+.detail_left .publish_box .center_publisher .func{float: right;margin-top:3px;} 
+.InDynamic label,.publish_video_b label{background:#fff url(/img/check.png) no-repeat left center;position: relative;} 
+.publish_video_b label{margin-top: 5px;}
+.func label { padding-left: 15px;margin-right:5px;}
+.detail_left .publish_box .center_publisher .func label input{opacity: 0;position: absolute;left:0;top:0;}
+.left_nav{height: 38px;padding-left: 18px;background: #fff;margin-top: 10px;}
+.left_nav ul li{font-size: 16px;line-height: 38px;margin-right: 35px;float: left;}
+.left_nav ul li.on{background: url(/img/sanjiao_top.png) no-repeat 10px bottom;}
+.left_nav ul li:nth-child(2).on{background: url(/img/sanjiao_top.png) no-repeat 22px bottom;}
+/*.left_nav ul li .bg_br{bottom: 0;margin-left: -46%;}*/
+.left_nav ul li .left_nav_color{color:#3ea436;}
+.left_nav .change_new{display: block;float: right;height: 38px;line-height: 38px;margin-right: 20px;cursor: pointer;}
+
+.detail_left .qz_handle .p_input textarea{width: 595px;}
+/*图片上传*/
+.detail_left .publish_box .center_publisher .kind .exhibition{position: relative;}
+.detail_left .publish_box .center_publisher .kind .exhibition .del_upload_box{position: absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.4);display: none;}
+.detail_left .publish_box .center_publisher .kind .exhibition:hover .del_upload_box{display: block;}
+.detail_left .publish_box .center_publisher .kind .exhibition .del_upload{position: absolute;top:0;right:0;width:14px;height:14px;display: inline-block;text-align: center;line-height: 14px;color:#fff;font-size: 18px;font-style: normal;}
+.detail_left .publish_box .center_publisher .kind .exhibition .del_upload:hover{background:#333;}
+.detail_right{float: left;width: 300px;/*position:absolute;margin-left: 700px;*/min-height:860px;height:auto;}
+.spaPosition{position: relative;}
+.right_top{background: #fff;}
+.detail_right .right_top .circle_bg{height: 81px;background: url(/img/life_bg.png);margin-bottom: 10px;background-size: 100% 100%;}
+.detail_right .right_top .circle_img{width: 60px;height: 60px;border:2px solid #fff;box-sizing: border-box;position: absolute;top: 30px;left: 120px;z-index: 1;border-radius: 2px;}
+.detail_right .right_top .circle_img img{width: 56px;height: 56px;}
+.detail_right .right_top>.circle_name{height: 32px;font-size: 15px;line-height: 32px;text-align: center;font-weight: bold;}
+.detail_right .right_top>ul{padding:0 22px;border-bottom: 1px solid #e5e5e5;padding-bottom: 12px;}
+.detail_right .right_top>ul>li{float: left;font-size: 15px;height: 33px;line-height: 33px;}
+.detail_right .right_top>ul>li:nth-child(even){margin-left: 12px;margin-right: 16px;}
+.detail_right .right_top .chatroom_bg{width: 11px;background: url(/img/liaotianshi.png) center center no-repeat;margin-right: 9px;display: inline-block;height: 33px;float: left;}

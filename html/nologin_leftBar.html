@@ -1,0 +1,84 @@
+<div class="content_left noLogin" id="noLogin_leftbar">
+	<h2 class="qz_mk">常用</h2>
+	<ul>
+		<li class="item_sy" id="indexHtml">
+			<a href="/index.html"><i></i>圈子</a>
+		</li>
+	</ul>
+	<h2 class="qz_mk qz_discover">发现</h2>
+	<ul>
+		<li class="item_zyq" id="zyqHtml">
+			<a href="/center/zyq.html"><i></i>职业圈</a>
+		</li>
+		<li class="item_shq" id="shqHtml">
+			<a href="/center/shq.html"><i></i>生活圈</a>
+		</li>
+		<li class="item_qq" id="qqqHtml">
+			<a href="/center/qqq.html"><i></i>全球圈</a>
+		</li>
+		<li class="item_cj no login_window" id="cjqzHtml">
+			<a href="javascript:;"><i></i>创建圈子</a>
+		</li>
+	</ul>
+	<h2 class="qz_personage">个人中心</h2>
+	<ul>
+
+		<li class="item_bj no login_window">
+			<a href="javascript:;"><i></i>编辑资料</a>
+		</li>
+		<li class="item_my no login_window">
+			<a href="javascript:;"><i></i>我的圈子</a>
+		</li>
+		<li class="item_vip no login_window">
+			<a href="javascript:;"><i></i>会员中心</a>
+		</li>
+		<li class="item_dt no login_window" id="grdtHtml">
+			<a href="javascript:;"><i></i>动态</a>
+		</li>
+		<li class="item_gz no login_window" id="gzHtml">
+			<a href="javascript:;"><i></i>关注</a>
+		</li>
+		<li class="item_wd no login_window" id="gzHtml">
+			<a href="javascript:;"><i></i>问答</a>
+		</li>
+		<li class="item_fs no login_window" id="gzHtml">
+			<a href="javascript:;"><i></i>粉丝</a>
+		</li>
+		<li class="item_sc no login_window" id="myscHtml">
+			<a href="javascript:;"><i></i>收藏</a>
+		</li>
+		<li>
+			<div class="telphone">
+				<p class="p_fw">24h客户服务电话</p>
+				<p class="number">400-087-3899</p>
+			</div>
+		</li>
+	</ul>
+
+</div>
+
+<script type="text/javascript">
+$(function  () {
+	var hre = window.location.href;
+	var tabId = hre.split("/")[hre.split("/").length - 1].split(".html")[0];
+	$("#" + tabId + "Html").addClass("onbg");
+	if(tabId=="zyfl"){
+		$("#zyqHtml").addClass("onbg");
+	};
+	if(tabId=="qqqlist"){
+		$("#qqqHtml").addClass("onbg");
+	};
+	//朋友圈
+	if(hre.indexOf("index.html?qz=py")>-1){
+//		$(".findThing").css({
+//			"color":"#728bb9",
+//			"background":"#728bb9"
+//		});
+		$("#noLogin_leftbar ul li").removeClass("onbg");
+	}
+//	else{
+//		$(".findThing").css("background","");
+//	}
+})
+	
+</script>

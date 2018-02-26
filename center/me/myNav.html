@@ -1,0 +1,45 @@
+<style>
+    .nav ul {
+        margin-left: 311px;
+        margin-top: 7px;
+        height: 40px;
+        text-align: center;
+    }
+    .nav li {
+        width: 136px;
+        display: inline-block;
+        float: left;
+    }
+    .nav ul li a {
+        padding: 4px 15px;
+        font-size: 14px;
+        color: white;
+        float:none;
+        display: inline-block;
+        margin-right:0;
+    }
+</style>
+<div class="nav">
+    <ul>
+        <li><a href="/center/me/page.html">动态<span class="dynamic_num"></span></a></li>
+        <li><a href="/center/me/circle.html">我的圈子<span class="circle_num"></span></a></li>
+        <li><a href="/center/me/release.html">我的发布<span class="release_num"></span></a></li>
+        <!--<li><a href="/center/me/focus.html" class="collect">关注<span class="focus_num"></span></a></li>-->
+        <!--<li><a href="/center/me/funs.html">粉丝<span class="funs_num"></span></a></li>-->
+        <li><a href="/center/me/collect.html" class="collect">收藏<span class="collect_num"></span></a></li>
+    </ul>
+</div>
+<script>
+    var urlShow=window.location.href;
+    if(urlShow.indexOf("/center/me/page.html")>-1){
+        $(".homepage_main .nav a").eq(0).addClass("nav_active");
+    }else if(urlShow.indexOf("/center/me/circle.html")>-1){
+        $(".homepage_main .nav a").eq(1).addClass("nav_active");
+    }else if(urlShow.indexOf("/center/me/release.html")>-1){
+        $(".homepage_main .nav a").eq(2).addClass("nav_active");
+    }else if(urlShow.indexOf("/center/me/collect.html")>-1){
+        $(".homepage_main .nav a").eq(3).addClass("nav_active");
+    }else if(urlShow.indexOf("/center/me/shopCollect.html")>-1){
+        $(".homepage_main .nav a").eq(3).addClass("nav_active");
+    }
+</script>

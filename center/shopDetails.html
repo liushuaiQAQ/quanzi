@@ -1,0 +1,184 @@
+<!--#include virtual="/html/doctype.html"-->
+<title>详情页</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/index/index.css"/>
+<link rel="stylesheet" type="text/css" href="/css/center/index/triends.css">
+<link rel="stylesheet" type="text/css" href="/css/center/circleDetail/shop_detail.css">
+
+<script src="https://api.map.baidu.com/api?v=2.0&ak=QG92622BdULt3KsqzgpQRHOnWThbWgHN"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/center/nav_videos/video_detail.css"/>
+<link rel="stylesheet" type="text/css" href="/css/common/video-js.min.css"/>
+<script src="/js/common/loadMore.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="/js/common/video.min.js"></script>
+
+<script>
+    videojs.options.flash.swf = "/js/common/video-js.swf";
+</script>
+<!--<script src="/js/center/nav_videos/video_detail.js" type="text/javascript" charset="utf-8"></script>-->
+</head>
+<body>
+<!--顶部导航容器，区分登录和未登录的头部开始-->
+<div class="headss"></div>
+<!--顶部导航容器，区分登录和未登录的头部end-->
+<div class="detail_wrap">
+    <!-- 左侧 -->
+    <div class="detail_left">
+        <div class="dynamic_list">
+            <div class="dynamic_title">
+                <div class="dynamic_title_top">
+                    <h3>-------</h3>
+                    <span>0元/月</span>
+                </div>
+                <div class="dynamic_title_bottom">
+                    <span>更新 : <i>今天</i></span>
+                    <span>浏览 : <i>--</i>人</span>
+                </div>
+            </div>
+            <!--<div class="dynamic_contentTxt" style="display:none;" >-->
+            <!---->
+            <!--</div>-->
+            <div class="dyncon_picture" style="display:none;">
+                <div class="house-basic-pic">
+                    <div id="bigImg" class="basic-top-bigpic pr ">
+                        <img id="smainPic"
+                             src=""
+                             style="display: inline; margin-top: 0px;" alt="1/6">
+                        <span id="sImgNu" class="leftNum pa f12" style="display: block;"><i>0</i>/0</span>
+                        <div class="basic-pic-load" id="loadingSmall" style="display: none;">
+                            <div class="top icon"></div>
+                            <div class="bottom icon"></div>
+                        </div>
+                    </div>
+
+                    <div class="basic-pic-list pr">
+                        <ul id="leftImg" class="pic-list-wrap" style="top: 0px;"></ul>
+                        <a id="slbt" class="basic-pic-left" href="javascript:void(0);"></a>
+                        <a id="srbt" class="basic-pic-right" href="javascript:void(0);"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="dynamic_video" style="display:none;">
+                <div class="video_box">
+                    <video id="example_video1" class="video-js vjs-default-skin vjs-big-play-centered video_act"
+                           controls preload="auto" width="628" height="383" poster="" data-setup="{}">
+                        <source src="/mp4/sea.mp4" type='video/mp4'/>
+                        <!--<source src="" type='video/webm' />
+                        <source src="" type='video/ogg' />-->
+                    </video>
+                </div>
+            </div>
+            <div class="dyncon_word"></div>
+            <div class="pos-area">
+                <span class="pos_address">
+                    <i class="icon_dingwei"></i>
+                    <span class="pos_area_item"></span>
+                </span>
+                <span class="posAddressDetails"></span>
+                <span class="pos_area_map js_pos_area_map">查看地图</span>
+            </div>
+        </div>
+        <div class="chitchatBox">
+
+        </div>
+    </div>
+    <!-- 左侧结束 -->
+    <!-- 右侧开始 -->
+    <div class="detail_right2">
+        <div class="right_top">
+            <div class="circle_bg"></div>
+            <a href="javascript:;" class="circle_img">
+                <img src="/img/first.png">
+            </a>
+            <p class="circle_name"><b>--</b><span class="gradeImg"><img src="/img/h/sj_boy_0.png"></span></p>
+            <div class="company_name"><span>----</span><span>----</span></div>
+            <div class="contract_name"><a href="javascript:;">快速联系</a></div>
+        </div>
+        <div class="cityHot js_hieRelease">
+            <div class="cityHot_head">他发布的
+                <a href="javascript:;">查看更多</a>
+            </div>
+            <div class="cityHotList"></div>
+        </div>
+        <div class="cityHot js_interestedPro">
+            <div class="cityHot_head">猜你感兴趣的
+                <a href="javascript:;">查看更多</a>
+            </div>
+            <div class="cityHotList"></div>
+        </div>
+    </div>
+    <!-- 右侧end -->
+    <div class="clear"></div>
+</div>
+
+<!--图片放大展示-->
+<div class="piclayer" style="display: none;"></div>
+<div class="picmask" style="left: 0px; top: 0px; display: none;">
+    <div class="big-top-bigpic pr">
+        <img id="mainPic" src="" style="display: block; margin-top: 10px;" alt="1/6">
+        <div class="big-pic-load" id="loadingBig" style="display: none;">
+            <div class="top icon"></div>
+            <div class="bottom icon"></div>
+        </div>
+    </div>
+    <div class="big-pic-list pr">
+        <ul id="smallPic" class="bigpic-list-wrap pa" style="left: 0px;">
+
+        </ul>
+    </div>
+    <div id="viewNum" class="big-pic-leftnum pa f12" style="display: block;">--</div>
+    <a id="blbt" class="big-pic-left pa" href="javascript:void(0);">
+        <i class="shopIcon"></i>
+    </a>
+    <a id="brbt" class="big-pic-right pa" href="javascript:void(0);">
+        <i class="shopIcon"></i>
+    </a>
+
+    <div class="picclose shopIcon"></div>
+
+</div>
+<!--图片放大展示-->
+
+
+<!--地图展示-->
+<div id="pop_mask" class="pop_mask"
+     style="display:none;width: 100%;  height: 100%;  position: fixed;  top: 0;  left: 0;  z-index: 9998;  background-color: #000;  opacity: .3;  filter: Alpha(Opacity=30);"></div>
+<div id="pop_container" class="pop_container"
+     style="display:none;position: fixed; left: 50%;margin-left: -370px;z-index: 9999; background: rgb(255, 255, 255) none repeat scroll 0% 0%; overflow: hidden; width: 790px; height: 546px; top: 100px;">
+    <div class="pop_header"
+         style="display: inline-block;width: 100%;height: 36px;text-indent:10px;line-height: 36px;font-size: 14px;font-weight: bold;color:#000;margin: 0;border-bottom:1px solid rgb(199, 199, 199);background:#f5f5f5;color:#000;">
+        <a href="javascript:void(0)" class="close_pop_btn"
+           style="display: block;width: 20px;height: 20px;background: url(//img.58cdn.com.cn/job/pc/full/detail/0.1/img/close.png?v=1);line-height: 100px;overflow: hidden;margin: 8px;float: right;">关闭</a>
+        <p class="pop_title" style="margin:0">工作地址</p></div>
+    <div class="pop_main_con" style="padding: 0 4px;">
+        <div id="detail-bdmap" style="height: 506px;"></div>
+    </div>
+</div>
+<!--地图展示结束-->
+
+
+<!--底部导航容器，区分登录和未登录的底部开始-->
+<div class="footerss"></div>
+<!--底部导航容器，区分登录和未登录的底部end-->
+<div class="bgBOX"></div>
+<div class="ComplaintsBox" id="ComplaintsBox">
+    <h3>投诉<a class="Closecomplaint" href="javascript:;"></a><br class="clear"/></h3>
+    <ul></ul>
+    <div class="parentS">
+        <textarea maxlength="50" placeholder="请在此填写投诉描述，不可超过50字哦~"></textarea>
+        <div class="titRen">请填写投诉原因</div>
+    </div>
+    <div class="Complaints_btn">
+        <a href="javascript:;">提交</a>
+        <br class="clear"/>
+    </div>
+</div>
+<!--转发分享圈子朋友圈  圈子好友   圈子群组开始-->
+<!--#include virtual="/html/dynamicSharing.html"-->
+<!--转发分享圈子朋友圈  圈子好友   圈子群组结束-->
+<!-- 通讯录 -->
+<div class="Addressbook_box"></div>
+<div id="mask"></div>
+<script src="/js/center/circle_details/shop_detail.js" type="text/javascript"></script>
+</body>
+</html>

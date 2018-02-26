@@ -1,0 +1,16 @@
+.center_box{margin: 0 auto;float: none;}
+.dynamic{background: #fff;border:1px solid #e5e5e5;margin-bottom:10px;}
+.dynamic ul{margin:0 14px;border-bottom: 1px solid #e5e5e5;}
+.dynamic ul li{line-height: 36px;float: left;position: relative;}
+.dynamic ul li a{color:#bdbdbd;}
+.dynamic ul li.gotoMedia a{color:#1cbd11;}
+.dynamic ul li.line{color: #999;margin:0px 10px}
+/*视频*/
+.lists_bg .lists{padding:0px 10px 10px;background: #fff;margin-bottom:12px;}
+.lists_bg .lists p{line-height:46px;color: #7f7f7f;font-size: 14px;}
+.lists_bg .lists p span{color: #1493e2;}
+.lists_bg .lists .img-box{width: 100%;position: relative;}
+.lists_bg .lists .img-box img{display: block;}
+.lists_bg .lists .img-box .btngotoMedia{width:100%;height:62px;background:rgba(0,0,0,.4);position: absolute;left: 0;bottom: 0px;}
+.lists_bg .lists .img-box .btngotoMedia a{display: block;width:108px;height: 28px;border: 1px solid #fff;color:#fff;font-size: 14px;text-align: center;line-height: 28px;margin:16px 0px 0px 210px;}
+.lists_bg .list_05{margin-bottom:15px;}

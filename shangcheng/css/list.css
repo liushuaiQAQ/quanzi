@@ -1,0 +1,102 @@
+/*全球圈左边内容最小高处理*/
+.globalCirs{height:auto;}
+/*生活圈左边内容最小高处理*/
+.lifeCirs{height:auto;}
+/*职业圈左边内容最小高处理*/
+.proCirs{height:auto;width:690px;}
+
+.list_left{width: 690px;float: left;margin-right: 10px;min-height:450px;}
+.list_left .left_nav{height: 38px;padding-left: 18px;background: #fff;border:1px solid #dee7f0;border-radius:3px;}
+.list_left .left_nav li{font-size: 16px;line-height: 38px;margin-right: 45px;float: left;}
+.list_left .left_nav li.on{background: url(/img/sanjiao_top.png) no-repeat center bottom;}
+.list_left .left_nav li.on a{color:#339f30;}
+.list_left .left_nav li:last-child{float:right;margin-right:10px;}
+.list_left .left_nav .publish_btn{display:block;width:100px;height:30px;line-height: 30px;text-align: center;margin-top:4px;color:#fff;background:#f79603;}
+.list_left .left_nav .publish_btn:hover{background:#ffac22;}
+
+
+.list_left .list_content{width:690px;}
+.list_left .list_content .content_top{position:relative;padding:10px 20px 0;background:#fff;margin-top:10px;overflow: hidden;}
+.list_left .location_city{position:absolute;top:18px;right:20px;z-index:1;}
+.list_left .location_city .now_location{padding-left:20px;font-size:13px;color:#666;margin-right:10px;background:url(/shangcheng/img/chengshi_dibiao.png) no-repeat 0 center;}
+.list_left .location_city .rent_photo{display:none;color:#666;margin-right:25px;cursor: pointer;}
+.list_left .location_city .rent_photo i{display:inline-block;width:12px;height:12px;margin-right:5px;background:url(/shangcheng/img/rent_check.png) no-repeat 0 center;}
+.list_left .location_city .rent_photo.checked i{background-image:url(/shangcheng/img/liebiao_kantu_kuang1.png);}
+.list_left .location_city .change_btn{color:#f7a010;font-size:12px;}
+
+.content_top .active{color:#333;}
+.list_content .content_top li{float:left;cursor: pointer;}
+.list_content .content_top li:hover{color:#333;}
+.list_content .content_top>div{display: none;clear: both;}
+.list_content .content_top .place{display:block;}
+.list_content .content_top .select_list{line-height: 34px;overflow:hidden;border-bottom:1px solid #e5e5e5;}
+.content_top .select_list li{position:relative;width:100px;height:34px;text-align: center;}
+.content_top .select_list li:first-child{width:80px;}
+.content_top .select_list li.select_active{color:#fff;background: url(/shangcheng/img/shaixuan_beijing1.png) no-repeat 0 0;}
+.content_top .select_list li.active{color:#fff;background: url(/shangcheng/img/list_place_1.png) no-repeat 0 0;}
+.content_top .place,.content_top .sub_way{margin:10px 0;overflow: hidden;}
+.content_top>div ul{color:#999;overflow: hidden;}
+.content_top>div ul.conTrue{padding:10px 15px;}
+.content_top>div .stop_way{padding:10px 15px;}
+.content_top .place li,.content_top .sub_way li{margin-right:15px;line-height:24px;}
+.content_top .city,.content_top .sub_city{position:relative;}
+.content_top .place li.active,.content_top .place li.select{color:#333;}
+.content_top .sub_way li.active,.content_top .sub_way li.select{color:#333;}
+.content_top .county,.content_top .stop_way{display:none;background:#f2f2f2;}
+.content_top .publish_time,.content_top .sort{padding:16px 0;}
+.content_top .publish_time li,.content_top .sort li{margin-right:25px;}
+.content_top .range{padding:16px 0 6px;}
+.content_top .range>*{float:left;}
+.content_top .range li{margin:0 25px 10px 0;font-size:14px;}
+.content_top .range li input{width:70px;height:24px;line-height:24px;border:1px solid #a1a7bd;margin:0 10px;padding-left:10px;}
+.content_top .range li span{color:#5c7ea3;}
+.content_top>a{position:absolute;top:18px;right:20px;}
+.content_top>a:hover{text-decoration: underline;}
+
+.list_content .article{max-height:initial;}
+.list_content .article .article_content{max-height:144px;color:#666;}
+.list_left .content_items .publish_rticle{margin}
+.list_left .content_items .title a{font-size:16px;}
+.list_left .content_items .title a:hover{color:#40a434;}
+.list_left .content_items .salary{color:#fb0016;font-size:18px;margin:10px 0;}
+.content_items .pictureShow{margin-top:10px;}
+.content_items .pictureShow .pictureShow_img{width:218px;height:160px;margin:0 5px 5px 0;}
+.content_items .pictureShow .pictureShow_img:nth-child(3n){margin-right:0;}
+.content_items .pictureShow .pictureShow_img img{width:218px;min-height:160px;height:160px;}
+.content_items .location span{margin-right:15px;}
+.content_items .location span:last-child{margin-left:15px;}
+.list_left .content_items .qz_handle{border-top:0;}
+.list_left .qz_handle .qz_row_line{height:auto;line-height:30px;}
+.qz_handle .qz_row_line>li{position:relative;padding:0 20px 12px 0;}
+.qz_handle .qz_row_line .phone_box:hover .contact_info{display:block;}
+.qz_handle .qz_row_line>li i{height:30px;}
+
+.again_edit span{display: block;  width: 90px;  text-align: center;  background: #41a336;  color: #fff;}
+.commodityFrame span{display: block;  width: 90px;  text-align: center; border:1px solid #fd6767;  color: #fd6767;}
+.againCommodityFrame span{display: block;  width: 90px;  text-align: center;  border:1px solid #7e98c1;  color: #7e98c1;}
+
+
+.list_left .content_items .fast_contact{display:block;width:90px;height:30px;line-height: 30px;text-align: center;border:1px solid #5d75a1;color:#5d75a1;}
+.list_left .content_items .fast_contact:hover{background:#5d75a1;color:#fff;}
+.list_left .content_items .contact_method i{background:url(/shangcheng/img/liebiao_lianxi.png) no-repeat center;}
+.list_left .content_items .contact_info{display:none;position:absolute;left:-22px;top:28px;padding:0 20px; box-shadow: 3px 0 7px rgba(0, 0, 0, 0.5);color:#666;border:1px solid #e5e5e5;background:#fff;z-index:10000;}
+.content_items .contact_info p{padding-left:25px;line-height:26px;color:#666;background-repeat: no-repeat;background-position:0 center ;white-space: nowrap;}
+.content_items .contact_info p:first-child{background-image:url(/shangcheng/img/liebiao_lianxi_lianxiren.png);}
+.content_items .contact_info p:nth-child(2){background-image:url(/shangcheng/img/liebiao_lianxi.png);}
+.content_items .contact_info p:nth-child(3){background-image:url(/shangcheng/img/liebiao_lianxi_qita.png);}
+.list_left .qz_row_line .transpond i{background:url(/img/zhuanfa_11.png) no-repeat center;}
+.list_left .qz_row_line .more_box{padding-right:0;}
+.list_left .qz_row_line .list_more i{width:30px;background:url(/shangcheng/img/liebiao_gengduo.png) no-repeat center;}
+.list_left .retransmission a{line-height: initial;}
+.list_left .fl_menu_list{display:none;top:28px;left:-5px;width:120px;}
+.list_left .fl_menu_list .complaint{width:85px;padding-left:35px;text-indent:0;background:url(/shangcheng/img/liebiao_jubao.png) no-repeat 15px center;color:#666;}
+.list_left .qz_handle .p_input textarea{width:595px;height:20px;overflow: hidden;overflow-wrap:break-word;}
+.list_left .comments-content .reply_text{padding:0 8px;}
+
+.list_left .noContent{background:#fff;padding:10px 0 10px 20px;color:#666;font-weight:bold;text-align: center;}
+.list_left .interest_box{display:none;clear:both;padding-top:10px;}
+.list_left .interest_box h3{background:#fff;padding:10px 0 10px 20px;color:#666;font-size:14px;margin-bottom:10px;}
+.list_left .Isempty{height:350px;}
+
+.list_left.leftFixed{position: fixed;top:130px;}
+.list_left.leftFixedBottom{position: absolute;bottom:0px;}

@@ -1,0 +1,195 @@
+<!--#include virtual="/html/doctype.html"-->
+<title>圈子社交-个人主页发布</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/index/triends.css"/>
+<link rel="stylesheet" type="text/css" href="/css/center/personalHomepage/personalHomepage.css"/>
+<link rel="stylesheet" type="text/css" href="/css/center/myRelease/myRelease.css"/>
+<script type="text/javascript" src="/js/center/personalHomepage/personalRelease.js"></script>
+<script src="/js/common/release_common.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/center/index/shopMIndex.js"></script>
+<style>
+    .selectPub{cursor: pointer;}
+    .citType{display:none;width: 120px;background: white;border: 1px solid #E1E1E1;position: absolute;z-index: 20;left: -11px;}
+    .personal_right .dynamic  .citType a{display: block;  height: 30px;  text-indent: 20px;  line-height: 30px; text-decoration: none;  color: #333;  font-size: 13px;  outline: none; }
+    .dynamic .citTypeShop {left: -35px;}
+    .personal_right .dynamic  .citType .ctActive{color: #3ea436;background: whitesmoke;}
+    .personal_right .dynamic  .citType a:hover{color: #3ea436;background: whitesmoke;}
+    .jobSalaryShow {overflow: hidden;
+        width: 100%;}
+    .jobSalaryShow .title{font-size: 16px;}
+    .jobSalaryShow .title a:hover{color:#40a434;}
+    .jobSalaryShow .salary{color: #fb0016;
+        font-size: 18px;
+        margin: 13px 0;}
+    .qz_handleShop{border-top:none;}
+
+    .location{padding-left: 14px;}
+    .qz_handle .qz_row_line li:first-child{padding-left: 0;}
+    .again_edit i {
+        background: url(/img/shangcheng1/geren_bianji.png) center no-repeat;
+    }
+    .commodityFrame i {
+        background: url(/img/shangcheng1/geren_shangpinxiajia.png) center no-repeat;
+    }
+    .againCommodityFrame i {
+        background: url(/img/shangcheng1/geren_chongxinshangjia.jpg) center no-repeat;
+    }
+    .thoroughDelete i{
+        background: url(/img/shangcheng1/geren_shanchu.jpg) center no-repeat;
+    }
+</style>
+</head>
+<body>
+<!--头部开始-->
+<!--#include virtual="/html/header.html"-->
+<!--头部end-->
+<div class="homepage_main">
+    <div class="homepage_top">
+        <div class="user_bj" style="width: 100%;height: 100%;">
+        </div>
+        <!--头部开始-->
+        <!--#include virtual="/center/me/myNav.html"-->
+        <!--头部end-->
+        <div class="personal_info">
+            <a href="javascript:;" class="userImg">
+                <img src="/img/first.png">
+            </a>
+            <dl>
+                <dd class="personal_title">
+                    <span class="personal_nikename"></span>
+                    <i class="sex"></i>
+                    <i class="level"></i>
+                    <i class="viplevel"></i>
+                </dd>
+                <dd>
+                    <span style="float: left;">圈子号:</span>
+                    <span class="personal_code" style="float: left;margin-right: 30px;"></span>
+                    <span class="job" style="float: left;"></span>
+                    <span class="pass"></span>
+                    <span class="identification"></span>
+                    <div class="clear"></div>
+                </dd>
+                <dd class="sign"></dd>
+            </dl>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="homepage_bottom">
+        <div class="homepage_left">
+            <!--头部开始-->
+            <!--#include virtual="/center/me/foucsFuns.html"-->
+            <!--头部end-->
+            <div class="personal_data">
+                <ul>
+                    <li class="lawchat_logo">
+                        <i class="logo"></i>
+                        <span>圈子号</span>
+                        <span class="personal_code" style="float: left;"></span>
+                    </li>
+                    <li class="personal_job">
+                        <i class="logo"></i>
+                        <span>职位</span>
+                        <span class="job" style="float: left;"></span>
+                        <span class="pass" style=""></span>
+                        <span class="identification"></span>
+                    </li>
+                    <li class="personal_sex">
+                        <i class="logo"></i>
+                        <span>性别</span>
+                        <span class="data_sex"></span>
+                    </li>
+                    <li class="personal_birth">
+                        <i class="logo"></i>
+                        <span>生日</span>
+                        <span class="birthday"></span>
+                    </li>
+                    <li class="personal_hometown">
+                        <i class="logo"></i>
+                        <span>地区</span>
+                        <span class="homeTown"></span>
+                    </li>
+                    <li class="personal_tel">
+                        <i class="logo"></i>
+                        <span>手机号</span>
+                        <span class="tel"></span>
+                    </li>
+                </ul>
+                <p class="edit_data">
+                    <a href="/center/editbjzl.html">编辑资料<span></span></a>
+                </p>
+            </div>
+            <!--左侧推荐start-->
+            <div class="recommend">
+                <p><i>可能认识</i><a href="javascript:;">查看更多</a>
+
+                </p>
+                <div class="clear"></div>
+                <ul>
+
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <!--左侧推荐end-->
+
+        </div>
+        <div class="personal_right">
+            <div class="dynamic">
+                <ul>
+                    <li class="home list_bg">
+                        <a class="alreadyPub" href="javascript:;">已发布</a>
+                        <span class="bg_br blockbg"></span>
+                        <!--<i class="selectPub" style="margin-left: 0px;margin-bottom: 2px;display: none;width: 8px;height: 5px;background: url(/img/qz_shq_xiala.png) no-repeat left center;"></i>-->
+                        <!--<div class="citType js_cityType" style="display: none;">-->
+                            <!--<a data-type="" class="ctActive" href="javascript:;">全部</a>-->
+                            <!--<a data-type="1" href="javascript:;">职业</a>-->
+                            <!--<a data-type="2" href="javascript:;">租房</a>-->
+                            <!--<a data-type="3" href="javascript:;">家政</a>-->
+                            <!--<a data-type="4" href="javascript:;">二手物品</a>-->
+                            <!--<a data-type="5" href="javascript:;">商务服务</a>-->
+                        <!--</div>-->
+                    </li>
+                    <li class="professionalCircle">
+                        <a class="alreadyPro" href="javascript:;">已下架</a>
+                        <span class="bg_br"></span>
+                        <!--<i class="selectPub" style="display:none;margin-left: 0px;margin-bottom: 2px;width: 8px;height: 5px;background: url(/img/qz_shq_xiala.png) no-repeat left center;"></i>-->
+                        <!--<div class="citType citTypeShop js_cityType" style="display: none;">-->
+                            <!--<a data-type="" class="ctActive" href="javascript:;">全部</a>-->
+                            <!--<a data-type="1" href="javascript:;">职业</a>-->
+                            <!--<a data-type="2" href="javascript:;">租房</a>-->
+                            <!--<a data-type="3" href="javascript:;">家政</a>-->
+                            <!--<a data-type="4" href="javascript:;">二手物品</a>-->
+                            <!--<a data-type="5" href="javascript:;">商务服务</a>-->
+                        <!--</div>-->
+                    </li>
+                </ul>
+            </div>
+            <div class="dynamic_list">
+                <div class="jiazai"><i class="loading"></i>正在加载中，请稍后</div>
+                <div class="Collect_list">
+
+                </div>
+            </div>
+        </div>
+        <div class="no_publish">
+            <div class="noPublishBox">
+                <img src="/img/nopublish.png">
+                <p>尚未发布动态</p>
+                <a href="/center/index.html" class="releaseBtn">立即发布</a>
+            </div>
+        </div>
+        <!--返回置顶-->
+        <!--<div class="returnTop"></div>-->
+        <br class="clear"/>
+    </div>
+</div>
+<!--底部start-->
+<!--#include virtual="/html/bottomer.html"-->
+<!--底部end-->
+<!--遮盖弹窗-->
+<!--转发分享圈子朋友圈  圈子好友   圈子群组开始-->
+<!--#include virtual="/html/dynamicSharing.html"-->
+<!--转发分享圈子朋友圈  圈子好友   圈子群组结束-->
+<!-- 通讯录 -->
+<div class="Addressbook_box"></div>
+</body>
+</html>

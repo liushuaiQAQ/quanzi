@@ -1,0 +1,52 @@
+/*全球圈右边分类列表*/
+.center_box{min-height: 1118px;}
+.flBox{margin-left: 10px;}
+.center_right{background: #ffffff;width: 278px;}
+.areaTypeBox{margin:0 10px;border-bottom: 1px solid #e5e5e5;}
+.areaTypeBox a{display: inline-block; margin-right: 22px;height: 34px;line-height: 34px;font-size: 14px;color: #333333;}
+.areaTypeBox a:nth-of-type(1){text-indent: 10px;}
+.areaTypeBox .areaActive{color: #3ea436;font-weight: bold;}
+.areaBox{margin-top: 4px;margin-left: 10px;}
+.areaBox a{display:block;height: 24px;line-height: 24px;margin-right: 10px;font-size: 12px;float: left;color: #4ca3e0;}
+.areaBox .borderActive{border-bottom: 1px solid #4ca3e0;}
+.area{margin: 20px 10px 0;padding-bottom: 10px;}
+.area ul{margin-right: -20px;}
+.area ul li{float: left;font-size: 13px;color: #333333;height: 27px;line-height: 27px;margin-right: 20px;}
+.area ul li a{display: inline-block;cursor: pointer;}
+
+/*城市搜索*/
+.center_right .searchCity{margin: 0px 10px;padding:10px 0px;height:34px;position: relative;}
+.center_right .searchCity .searchbox{width: 258px;height: 34px;}
+.center_right .searchCity .searchbox input{display:block;float:left;width:192px;height:32px;border: 1px solid #e6e6e6;padding: 0px 5px;}
+.center_right .searchCity .searchbox a{display:block;float:left;width: 53px;height: 32px;background:#efefef;font-size:16px;color:#282828;cursor:pointer;text-align:center;line-height:32px;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;border-right:1px solid #e6e6e6;}
+.center_right .searchCity .searchCon{position: absolute;top:44px;z-index: 99;}
+.center_right .searchCity .searchCon{display:none;width: 256px;height:auto;max-height:257px;border: 1px solid #e6e6e6;border-top:0px;background:#fff;overflow: hidden;overflow-y:scroll;}
+.center_right .searchCity .searchCon a{display:block;width:241px;height: 32px;line-height:32px;font-size: 12px;padding-left:10px;}
+.center_right .searchCity .searchCon a:hover{background:#40a336;color: #fff;}
+.center_right .searchCity .searchCon a.on{background:#40a336;}
+.center_right .searchCity .searchCon::-webkit-scrollbar{width:5px;}
+.center_right .searchCity .searchCon::-webkit-scrollbar-track{background-color:#fff;}
+.center_right .searchCity .searchCon::-webkit-scrollbar-thumb{background-color:#999;}
+.center_right .searchCity .searchCon::-webkit-scrollbar-thumb:hover {background-color:#9c3}
+.center_right .searchCity .searchCon::-webkit-scrollbar-thumb:active {background-color:#00aff0}
+/*推荐热门城市*/
+.hotcity{background: #ffffff;width: 278px;margin-bottom: 10px;padding-top:10px;}
+.hotcity h2{font-size:16px;text-indent: 14px;}
+.areaTypeBox1{margin:0 10px;border-bottom: 1px solid #e5e5e5;}
+.areaTypeBox1 a{display: inline-block; margin-right: 22px;height: 34px;line-height: 34px;font-size: 14px;color: #333333;}
+.areaTypeBox1 a:nth-of-type(1){text-indent: 10px;}
+.areaTypeBox1 .areaActive1{color: #3ea436;font-weight: bold;}
+.hotcitylist{margin: 10px 10px 0;height:auto;padding-bottom: 10px;}
+.hotcitylist ul{margin-right: -20px;}
+.hotcitylist ul li{float: left;font-size: 13px;color: #333333;height: 27px;line-height: 27px;margin-right: 20px;}
+.hotcitylist ul li a{display: inline-block;cursor: pointer;}
+
+/*展开收起*/
+/*生活圈分类插入展开更多 收起全部*/
+.center_right .area li.showmore,.center_right .area li.showless{font-size: 14px;color:#47a449;cursor: pointer;text-decoration: underline;}
+.center_right .area li.showless{display: none;}
+.center_right .area li.showmore span,.center_right .area li.showless span{display: inline-block;width: 12px;height: 9px;}
+.center_right .area li.showmore span img,.center_right .area li.showless span img{display: block;width: 12px;height: 9px;}
+
+#sideBar .qrodeLoad{width:276px;}
+

@@ -1,0 +1,140 @@
+<!--登录弹窗-->
+	<div class="masks"></div>
+	<!--登录框-->
+	<div class="viewBox">
+		<span class="errors">×</span>
+		<div class="tit">
+			<span class="telphone on">账号登录</span>
+			<span class="erweima">二维码登录</span>
+		</div>
+		<div class="tit1">
+			<div class="telBox">
+				<div class="phoneLogin">
+					<!--<p class="tit">手机号登录</p>-->
+					<div class="parBox clearfix">
+						<span class="titMsg">短信快捷登录</span>
+					</div>
+					<div class="inputLogin">
+						<ul>
+							<li class="phoneImg">
+								<input type="text" name="loginPhone" id="loginPhone" value="" placeholder="手机号" />
+								<div class="commontit warn1 point1">
+									<i><img src="/img/daosanjiao.png"/></i>
+									<p>请输入账号/密码</p>
+								</div>
+							</li>
+							<li class="passwordImg">
+								<input type="password" name="loginPass" id="loginPass" value="" placeholder="请输入密码" />
+								<!--<div class="commontit warn1 point2">
+									<i><img src="/img/daosanjiao.png"/></i>
+									<p>请输入密码</p>
+								</div>-->
+							</li>
+						</ul>
+						<p class="loginOrpass"><a href="javascript:;">忘记密码?</a><i></i>记住我<br class="clear" /></p>
+						<a class="clickLogin" href="javascript:;">登录</a>
+						<p class="free clearfix"><a href="/center/register.html">免费注册</a></p>
+					</div>
+				</div>
+				<div class="thirdLogin">
+					<ul>
+						<li class="weixin">
+							<a href="javascript:;" class="thirdWX">微信登录</a>
+						</li>
+						<li class="qq">
+							<a href="javascript:;" class="thirdQQ">QQ登录</a>
+						</li>
+						<li class="weibo">
+							<a href="javascript:;" class="thirdWB">微博登录</a>
+						</li>
+						<br class="clear" />
+					</ul>
+				</div>
+			</div>
+			<div class="msgBox">
+				<div class="msgLogin">
+					<!--<p class="tit">手机号登录</p>-->
+					<span class="titMsg">短信登录</span>
+					<div class="telphoneLogin">
+						<p class="titWords">验证即登录，未注册将自动创建圈子账号</p>
+						<ul>
+							<li class="phoneli">
+								<input type="text" name="telPhones" id="telPhones" value="" placeholder="手机号" />
+								<div class="commontit warn1 point9">
+									<!--错误提示-->
+									<i><img src="/img/daosanjiao.png"/></i>
+									<p>请输入手机号/动态密码</p>
+								</div>
+							</li>
+							<li class="dynamicPass">
+								<input type="text" name="dynamicpsd" id="dynamicpsd" value="" placeholder="动态密码" /><button class="identifyingCode2 btn-small2 get-code2">发送动态密码</button><button class="identifyingCode2 btn-small2 reset-code2" id="J_resetCode2" style="display:none;">重新获取<span id="J_second2">60</span>s</button>
+							</li>
+						</ul>
+						<a class="clickLoginbtn" href="javascript:;">登录</a>
+					</div>
+				</div>
+				<div class="thirdLogin accpsdLogin">
+					<div class="clearfix">
+						<span>账号密码登录</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tit2">
+			<div class="qrodeImg">
+				<!--<img src="/img/trans.gif"/>-->
+			</div>
+			<p>使用手机圈子扫码登录</p>
+			<div class="phonebox"></div>
+		</div>
+		
+	</div>
+	<!--找回密码-->
+	<div class="viewpasswordBox">
+		<span class="errors">×</span>
+		<div class="passwordLogin">
+			<p class="tit">找回密码</p>
+			<div class="inputLogin2">
+				<p class="msg">请填写您需要找回的账号信息</p>
+				<ul>
+					<li>
+						<label for="#phone2">手机号</label>
+						<input type="text" name="phone2" id="phone2" value="" placeholder="手机号" />
+						<div class="commontit warn2 point3">
+							<!--错误提示-->
+							<i><img src="/img/daosanjiao.png"/></i>
+							<p>手机号有误</p>
+						</div>
+					</li>
+					<li>
+						<label for="#code2">验证码</label>
+						<input type="text" name="code2" id="code2" value="" placeholder="请输入验证码" /><button class="identifyingCode btn-small get-code">获取验证码</button><button class="identifyingCode btn-small reset-code" id="J_resetCode" style="display:none;">重新获取<span id="J_second">60</span>s</button>
+						<div class="commontit warn2 point4">
+							<!--错误提示-->
+							<i><img src="/img/daosanjiao.png"/></i>
+							<p>验证码有误</p>
+						</div>
+					</li>
+					<li>
+						<label for="#password01">新密码</label>
+						<input type="password" name="password01" id="password01" value="" placeholder="请输入6~20位新密码" />
+						<div class="commontit warn2 point5">
+							<!--错误提示-->
+							<i><img src="/img/daosanjiao.png"/></i>
+							<p>二次密码不一致</p>
+						</div>
+					</li>
+					<li>
+						<label for="#password02">确认密码</label>
+						<input type="password" name="password02" id="password02" value="" placeholder="请再次输入密码" />
+						<div class="commontit warn2 point6">
+							<!--错误提示-->
+							<i><img src="/img/daosanjiao.png"/></i>
+							<p>请输入确认密码</p>
+						</div>
+					</li>
+				</ul>
+				<a class="clickLogin_end" href="javascript:;">完成</a>
+			</div>
+		</div>
+	</div>

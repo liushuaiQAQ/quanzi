@@ -1,0 +1,20 @@
+.center_box .dynamic{font-size:14px;font-weight: 600;}
+/*#dynamic_list .professional.bgPro{background: #fff;padding:0 14px;min-height: 772px;border:1px solid #e5e5e5;}*/
+#dynamic_list .professional .conList{background: #fff;padding:0 14px;border-bottom:1px solid #e5e5e5;}
+.professional_list .pf_list{border-bottom: 1px solid #e5e5e5;padding:14px 0 14px 0;}
+.professional_list .pf_list:last-child{border-bottom:0px;}
+.professional_list .pf_list .zy{padding-bottom:8px;color:#666;margin:0 5px;}
+.professional_list .pf_list .zyhover a{font-size:14px;color:#000;}
+.professional_list .pf_list .zyhover span{display: inline-block;margin-left: 10px;font-size: 12px;color: #969696;}
+.professional_list .pf_list .zyhover span i{font-style: normal;font-size: 12px;color: #969696;}
+.professional_list .pf_list .zyhover a:hover{color:#3ea436;}
+.professional_list .pf_list .qz_num{color:#999;position: relative;}
+.professional_list .pf_list .qz_num span{font-size: 12px;display: inline-block;width: 400px;white-space: nowrap;text-overflow: ellipsis;word-break: break-all;overflow: hidden;}
+.professional_list .pf_list .qz_num span i{font-size: 12px;font-style: normal;}
+.professional_list .pf_list .qz_num .join{position:absolute;right:0px;top:-20px;width:66px;height:24px;border:1px solid #ff8a21;border-radius:2px;color:#ff8a21;text-align: center;line-height: 24px;}
+.professional_list .pf_list .qz_num .join.off{width:46px;padding-left:20px;color: #5491ea;border:1px solid #5491ea;background: url(/img/zyq_jinru.png) no-repeat 8px center;}
+.professional_list .pf_list .pf_img a{display: block;margin-left: 5px;}
+.professional_list .pf_list .pf_img{height:106px;overflow:hidden;}
+.professional_list .pf_list .pf_img dd{display: inline-block;width:122px;height:106px;margin-right: 6px;overflow: hidden;}
+.professional_list .pf_list .pf_img img{display:block;width:100%;height:auto;min-height:106px;}
+

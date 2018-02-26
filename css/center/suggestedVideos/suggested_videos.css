@@ -1,0 +1,20 @@
+.recommon_circle,.recommon_video{padding: 0 14px;background: #ffffff;margin-top: 10px;}
+.recommon_head{height: 36px;line-height: 36px;font-weight:bold;border-bottom: 1px solid #E5E5E5;color:#333;font-size: 14px;}
+.recommon_head a{float:right;font-size:12px;color:#999;font-weight:normal;}
+/*推荐视频*/
+.recommon_video{padding-bottom: 30px;}
+.listVideo .video1{display:inline-block;overflow:hidden;width:100%;height:172px;margin: 10px 0px 0px;position: relative;}
+.listVideo .video1 img{display: block;width:100%;min-height: 172px;}
+.listVideo .video1 .playBtn{display: inline-block;width:40px;height: 40px;background:url(/img/qz_sp_bofang.png) no-repeat center;text-align: center;position: absolute;left:107px;top:66px;}
+.listVideo .video1 .personTime{width: 100%;height:16px;position: absolute;bottom:10px;}
+.listVideo .video1 .personTime span{display: inline-block;height: 16px;padding:0px 5px;background: rgba(0,0,0,.3);font-size: 12px;color: #fff;}
+.listVideo .video1 .personTime span.person{float: left;margin-left: 5px;}
+.listVideo .video1 .personTime span.time{float:right;margin-right: 5px;}
+.suggestedVideoBox{margin-top:10px;margin-right: -10px;}
+.suggestedVideoBox a{display:block;width: 120px;height: 84px;float: left;margin-right:10px;overflow:hidden;}
+.suggestedVideoBox a img{display: block;width:100%;min-height: 84px;}
+/*.videoBox a.video2{margin-right: 10px;}*/
+.suggestedVideoBox .personTime{width: 48%;height:16px;position: absolute;bottom:10px;}
+.suggestedVideoBox .personTime span{display: inline-block;height: 16px;padding:0px 3px;background: rgba(0,0,0,.3);font-size: 12px;color: #fff;}
+.suggestedVideoBox .personTime span.person{float: left;margin-left: 5px;}
+.suggestedVideoBox .personTime span.time{float:right;margin-right: 5px;}

@@ -1,0 +1,105 @@
+<!--首页分享发布动态-->
+<div class="center_publisher" id="Release">
+	<div class="publisher_top">
+		<h2>分享点新鲜事</h2>
+		<div class="limit">还可以输入<span class="limit_num">2000</span>字</div>
+	</div>
+	<textarea name="" placeholder="此时此刻想跟大家说点什么" id="FaceBoxText"></textarea>
+	<div class="kind">
+		<a href="javascript:;" class="faceBtn"><em></em>表情</a>
+		<a href="javascript:;" class="fx_photo"><em></em>照片</a>
+		<a href="javascript:;" class="fx_video"><em></em>视频</a>
+		<div id="FaceBox"></div>
+		<div class="inbox">
+
+			<!--发表图片-->
+			<div class="fx_picture fx_inbox fx_inbox1">
+				<i><img src="/img/shangsanjiao_03.png"/></i>
+				<h3>本地上传<span class="fx_shut"></span></h3>
+				<p>共<span class="altogether">0</span>张,还能上传<span class="gpce">9</span>张哦</p>
+				<ul class="picture_list">
+				</ul>
+				<div class="fx_plus file">
+					<input type="file" name="file" accept="image/jpg,image/png,image/gif" multiple="multiple" id="uploadMass" class="upload" />
+				</div>
+			</div>
+			<!--发表视频-->
+			<div class="videoParent">
+				<i><img src="/img/shangsanjiao_03.png"/></i>
+				<div class="publish_video fx_inbox">
+					<p>支持上传时长在X分钟以内的视频，请勿上传色情、反动等违法视频
+						<a class="fx_shut" href="javascript:;">×</a>
+					</p>
+					<div class="text_part_v">
+						<textarea name="" placeholder="点此输入正文"></textarea>
+						<div class="frame_v">
+							<div class="fileBox">
+								<input type="file" accept=".mp4" name="file" id="uploadVideo" value="" />
+								<a class="click_video" href="javascript:;"></a>
+							</div>
+							<div class="fileNameVideo">这是视频的名字</div>
+						</div>
+					</div>
+					<div class="special publish_video_b func">
+						<label data-id="0"><input type="checkbox">同步到朋友圈</label>
+						<a href="javascript:;" id="videoUpload" class="videoUpload">完成</a>
+					</div>
+				</div>
+				<div class="upStatus">
+					<div class="upload2">
+						<span class="backErr"><img src="/img/cuowu.png"/></span>
+						<div class="progressLine">
+							<div class="uploadGro">
+								<div class="barBg"></div>
+							</div>
+							<span class="NumPro">0</span>
+							<br class="clear"/>
+						</div>
+						<p class="videoUpLoading">视频上传中...</p>
+						<p class="msgWord">上传速度取决于您的网速，请耐心等待。<span>取消上传</span></p>
+					</div>
+					<div class="alertMsgBox"></div>
+					<div class="alertMsg">
+						<p class="endVideo"><span><img src="/img/wenhao2.png"/></span>确定要终止上传视频吗？</p>
+						<p class="btnV"><span class="btnYes">确定</span><span class="btnNo">取消</span></p>
+					</div>
+					<div class="stayLeave">
+						<p class="wordAlert">此页面要求您确认想要离开-您输入的数据可能不会被保存。</p>
+						<p class="wordBtn"><span class="leavePage">离开页面</span><span class="stayPage">留在页面</span></p>
+					</div>
+				</div>
+				<div class="upSuccess">
+					<span class="backErr"><img src="/img/cuowu.png"/></span>
+					<div class="imgIco"></div>
+					<p class="vs">视频上传成功</p>
+					<p class="transcoding">转码完成后，圈子将自动发出</p>
+					<span class="kMsg">知道啦</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="func InDynamic">
+		<label data-id="0"><input type="checkbox">同步到朋友圈</label>
+		<a href="javascript:;" class="func_publish">发布</a>
+	</div>
+	<div class="clear"></div>
+</div>
+
+<!-- 我的圈子 -->
+<div class="ft_my_circle">
+	<div class="ft_c_t">
+		<a href="javascript:;"></a>
+		<h3>我的圈子</h3>
+	</div>
+	<div class="all_my_circle">
+		
+		
+	</div>
+</div>
+
+<script>
+	//发帖限制字数
+	$("#FaceBoxText").on("keyup",function(){
+		checkNum($(this),'2000',".limit_num")
+	})
+</script>

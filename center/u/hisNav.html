@@ -1,0 +1,18 @@
+<div class="nav" id="strangeNav">
+    <ul>
+        <li><a href="javascript:;">动态&nbsp;<span class="dynamic_num"></span></a></li>
+        <li><a href="javascript:;">Ta的圈子&nbsp;<span class="circle_num"></span></a></li>
+        <li><a href="javascript:;" >Ta发布的&nbsp;<span class="release_num"></span></a></li>
+        <!--<li><a href="javascript:;">关注&nbsp;<span class="focus_num"></span></a></li>-->
+        <!--<li><a href="javascript:;">粉丝&nbsp;<span class="funs_num"></span></a></li>-->
+    </ul>
+</div>
+
+<script>
+    var urlShow=window.location.href;
+    if(urlShow.indexOf("/center/u/quanzi.html")>-1){
+        $("#strangeNav a").eq(1).addClass("nav_active");
+    }else if(urlShow.indexOf("/center/u/release.html")>-1){
+        $("#strangeNav a").eq(2).addClass("nav_active");
+    }
+</script>

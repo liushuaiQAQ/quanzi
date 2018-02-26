@@ -1,0 +1,22 @@
+.center_box .dynamic{height: 36px;background:#fff;line-height:36px;margin:0px;text-indent:15px;}
+#dynamic_list{margin: 10px 0px;}
+.lists{padding:0 14px;}
+.lists li{height:70px;border-bottom:1px solid #e5e5e5;position: relative;}
+.lists li.noCircle{border: 0px;text-align: center;font-size: 14px;line-height: 800px;}
+.lists li span.themeImg{display:block;width:50px;height:50px;margin:10px 10px 10px 0px;border-radius:50%;float: left;}
+.lists li span.themeImg img{display:inline-block;width:50px;height:50px;border-radius: 50%;}
+.lists li .themes{height: 50px;float: left;margin: 10px 0px;}
+.lists li p{font-size: 13px;color: #333;}
+.lists li p:hover{color: #fe8b21;}
+.lists li div span{font-size: 12px;color: #999;line-height: 35px;margin-right: 5px;}
+.lists li div span i{font-size: 12px;color: #999;font-style: normal;}
+.lists li div.qq_joins{position:absolute;right:0px;top:21px;width:68px;height: 26px;border: 1px solid #ff8a00;font-size: 14px;color: #ff8a00;text-align: center;line-height: 26px;cursor: pointer;border-radius: 2px;}
+
+/*话题列表*/
+.topicsContent{position:relative;padding:14px 0px 0 0px;margin:0px 14px;border-bottom:1px solid #E5E5E5;background: #fff;text-align: center;min-height: 21px;display: none;}
+.topicsContent a{float:left;color:#1493e2;position: absolute;left: 14px;top:14px;}
+.topicsContent span{line-height: 30px;font-size: 12px;color:#999;padding: 0 4px;}
+.topicsContent div.joins{position:absolute;right:0px;top:19px;width:60px;height: 24px;border: 1px solid #ff8a00;font-size: 14px;color: #ff8a00;text-align: center;line-height: 24px;cursor: pointer;border-radius: 2px;}
+
+.Isempty{height:352px;background:#fff url(/img/qz_shq_logo.png) no-repeat center 120px;text-align: center;}
+.Isempty p{padding-top: 216px;}

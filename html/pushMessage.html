@@ -1,0 +1,157 @@
+
+<!--<div class="toolbar">
+	<ul class="toolbar-tabs">
+		<li class="open_ts trigger_ts"><em>消息</em></li>
+	</ul>
+
+	<div class="pushContent">
+		<div class="quanziContent">
+			<dl class="qz_name_ts">
+				<dt><img src="/img/friendShareDefalt.png"></dt>
+				<dd><h4>圈子</h4><span>官方</span></dd>
+				<dd>我是智勇双全的贴心机器人</dd>
+			</dl>
+			<div class="choseDel">
+				<span class="del"></span>
+			</div>
+			
+		</div>
+		<div class="ChatContent">
+			<div class="ChatTime">
+				<time>09:29</time>
+			</div>
+			<div class="Chat_list">
+				<div class="Chat_headImg">
+					<img src="/img/friendShareDefalt.png">
+				</div>
+				<div class="ChatText">
+					<span class="tag"></span>
+					<p>欢迎您来到“圈子”，圈子在这儿恭候多时啦！“圈子”是以人与人交际圈子为核心的全球社交新平台。在这里，您可以结交好友、加入圈子、发布浏览图文视频、在线聊天。无论你是职场精英或在校学生、热情豪放或文艺内敛、身在国内或旅居海外，“圈子”都能实现你的社交梦想。快来开启您的“圈子”之旅吧——有圈子、有朋友、有生活！</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="Chat_list">
+				<div class="Chat_headImg">
+					<img src="/img/friendShareDefalt.png">
+				</div>
+				<div class="ChatImg" data-img="/img/push/tuisongtu_01.png">
+					<img src="/img/push/tuisongtu01.png">
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="Chat_list">
+				<div class="Chat_headImg">
+					<img src="/img/friendShareDefalt.png">
+				</div>
+				<div class="ChatImg" data-img="/img/push/tuisongtu_02.png">
+					<img src="/img/push/tuisongtu02.png">
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="Chat_list">
+				<div class="Chat_headImg">
+					<img src="/img/friendShareDefalt.png">
+				</div>
+				<div class="ChatImg" data-img="/img/push/tuisongtu_03.png">
+					<img src="/img/push/tuisongtu03.png">
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="Chat_list">
+				<div class="Chat_headImg">
+					<img src="/img/friendShareDefalt.png">
+				</div>
+				<div class="ChatImg" data-img="/img/push/tuisongtu_04.png">
+					<img src="/img/push/tuisongtu04.png">
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="Chat_list">
+				<div class="Chat_headImg">
+					<img src="/img/friendShareDefalt.png">
+				</div>
+				<div class="ChatImg" data-img="/img/push/tuisongtu_05.png">
+					<img src="/img/push/tuisongtu05.png">
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="Chat_list">
+				<div class="Chat_headImg">
+					<img src="/img/friendShareDefalt.png">
+				</div>
+				<div class="ChatImg" data-img="/img/push/tuisongtu_06.png">
+					<img src="/img/push/tuisongtu06.png">
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="Chat_list">
+				<div class="Chat_headImg">
+					<img src="/img/friendShareDefalt.png">
+				</div>
+				<div class="ChatImg" data-img="/img/push/tuisongtu_07.png">
+					<img src="/img/push/tuisongtu07.png">
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="Chat_list">
+				<div class="Chat_headImg">
+					<img src="/img/friendShareDefalt.png">
+				</div>
+				<div class="ChatImg" data-img="/img/push/tuisongtu_08.png">
+					<img src="/img/push/tuisongtu08.png">
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="Chat_list">
+				<div class="Chat_headImg">
+					<img src="/img/friendShareDefalt.png">
+				</div>
+				<div class="ChatImg" data-img="/img/push/tuisongtu_09.png">
+					<img src="/img/push/tuisongtu09.png">
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="showImg">
+	<div class="wrap_img">
+		<img src="" alt="">
+	</div>
+</div>	
+
+
+		<script>
+				/*图片点击的时候*/
+			$(document).on('click','.ChatImg',function(ev){
+				var imgSrc = $(this).attr('data-img');
+				var _index = $(this).parents(".Chat_list").index();
+				if(_index == 2 || _index == 3 || _index == 7){
+					imageWidth = 640;
+					imageHeight = 455;
+				}else{
+					imageWidth = 536;
+					imageHeight = 805;
+				}
+				$(".wrap_img").css({
+					"width":imageWidth,
+					"height":imageHeight,
+					"position":"absolute",
+					"left":"50%",
+					"top":"50%",
+					"margin-top":-(imageHeight/2),
+					"margin-left":-(imageWidth/2)
+				})
+				$('.showImg').show();
+				$('.wrap_img>img').attr('src',imgSrc).css({
+					'width':'100%',
+					'height':'100%',
+					'display':'block'
+				});
+				ev.stopPropagation();
+			})
+
+			$("body").on('click',function(){
+				$('.showImg').hide();
+			})
+		</script>-->

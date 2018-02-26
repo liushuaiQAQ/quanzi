@@ -1,0 +1,262 @@
+<!--#include virtual="/html/doctype.html"-->
+	<title>注册</title>
+	<!--#include virtual="/html/mate.html"-->
+	<link rel="stylesheet" type="text/css" href="/css/register/register.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/common/jquery.Jcrop.min.css"/>
+	<!--<script src="/js/common/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>-->
+	<!--<script src="/js/common/common.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="/js/common/wordCountry.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/common/birthday.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/common/com_ajaxfileupload.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/common/jquery.Jcrop.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/register/register.js" type="text/javascript" charset="utf-8"></script>
+</head>
+	<body>
+		<!--头部信息-->
+		<div class="headerBoxs">
+			<div class="headerCon">
+				<a href="javascript:;" class="logo"><img src="/img/logo_01.png"/></a>
+				<div>已有账号<a href="/index.html">请登录</a></div>
+				<br class="clear"/>
+			</div>
+		</div>
+		<!--主体部分-->
+		<div class="mainBox">
+			<div class="main">
+				<div class="step">
+					<div>
+						<ul>
+							<li class="step1">手机号验证</li>
+							<li class="step2">设置密码</li>
+							<li class="step3">设置基本信息</li>
+							<li class="step4">注册成功</li>
+							<br class="clear"/>
+						</ul>
+						<i></i>
+					</div>
+				</div>
+				<div class="formBox">
+					<!--手机号验证-->
+					<div class="commonD stepCon01 on1">
+						<ul>
+								<li>
+									<label for="#country">国家和地区</label>
+									<!--<input type="text" name="country" id="country" value="" placeholder="中国"/>-->
+									<select name="country" class="chooseBtn">
+			                			<!--<option value="中国">中国</option>-->
+					                </select>
+									<i class="falg"><img src="/img/china.png"/></i>
+									<div class="warn point1">     <!--错误提示-->
+										<p>你还没有选择国家</p>
+										<i><img src="/img/daosanjiao.png"/></i>
+									</div>
+								</li>
+								<li>
+									<label for="#phone">手机号</label>
+									<input type="phone" name="phone" id="phone" value="" placeholder="请输入手机号"/>
+									<i class="phoneimg"><img src="/img/phone.png"/></i>
+									<div class="warn point2">     <!--错误提示-->
+										<i><img src="/img/daosanjiao.png"/></i>
+										<p>手机号有误</p>
+									</div>
+								</li>
+								<li>
+									<label for="#code">验证码</label>
+									<input type="text" name="code" id="code" value="" placeholder="请输入验证码"/><button class="identifyingCode btn-small get-code">获取验证码</button><button class="identifyingCode btn-small reset-code" id="J_resetCode" style="display:none;"><span id="J_second">60</span>秒后重发</button>
+									<i class="passwordimg"><img src="/img/passwordimg.png"/></i>
+									<div class="warn point3">     <!--错误提示-->
+										<i><img src="/img/daosanjiao.png"/></i>
+										<p>验证码有误</p>
+									</div>
+								</li>
+							</ul>
+							<b class="btn"><input type="submit" value="注册"/></b>
+						
+						<p class="protocol"><span></span>同意圈子<a href="/center/yonghuxieyi.html">&lt;&lt;注册协议&gt;&gt;</a></p>
+						<br class="clear"/>
+					</div>
+					<!--设置密码-->
+					<div class="commonD stepCon2">
+							<ul>
+								<li>
+									<label for="#password01">新密码</label>
+									<input type="password" name="password01" id="password01" value="" placeholder="请输入6~20位新密码"/>
+									<i class="lockimg"><img src="/img/lock.png"/></i>
+									<div class="warn point4">     <!--错误提示-->
+										<i><img src="/img/daosanjiao.png"/></i>
+										<p>二次密码不一致</p>
+									</div>
+								</li>
+								<li>
+									<label for="#password02">确认密码</label>
+									<input type="password" name="password02" id="password02" value="" placeholder="请再次输入密码"/>
+									<i class="lockimg"><img src="/img/lock.png"/></i>
+									<div class="warn point4_02">     <!--错误提示-->
+										<i><img src="/img/daosanjiao.png"/></i>
+										<p>二次密码不一致</p>
+									</div>
+								</li>
+							</ul>
+						<a class="passNext" href="javascript:;">下一步</a>
+					</div>
+					<!--设置基本信息-->
+					<div class="commonD stepCon3 spanColor">
+							<ul>
+								<li class="setHeadImg">
+									<label for="#username"><span>*</span>上传头像</label>
+									<div class="headImg" id="imgHead">
+										<!--<img src="/img/first.png"/>-->
+									</div>
+									<div class="fileHeadImg">
+										编辑头像
+									</div>
+									<span class="imgTit">头像不能为空</span>
+								</li>
+								<li>
+									<label for="#username"><span>*</span>昵称</label>
+									<input type="text" name="username"  id="username" value="" placeholder="填写昵称"/>
+									<div class="warn point5">     <!--错误提示-->
+										<i><img src="/img/daosanjiao.png"/></i>
+										<p>请填写昵称</p>
+									</div>
+								</li>
+								<li class="birthLi">
+									<label for="">选择生日</label>
+									<select id="birthYear" name="birthYear" class="birthYearS">
+										<option value="">请选择年</option>
+									</select><b class="dates">年</b>
+									<select id="birthMonth" name="birthMonth" class="birthMonthS">
+										<option value="">请选择月</option>
+									</select><b class="dates">月</b>
+									<select id="birthDay" name="birthDay" class="birthDayS">
+										<option value="">请选择日</option>
+									</select><b class="dates">日</b>
+									<span class="dateT">请完善生日信息</span>
+								</li>
+								<li>
+									<label class="work" for="#work"><span>*</span>选择职业圈</label>
+									<input type="text" name="work" placeholder="请选择职业圈" id="work" data-code="" value=""/>
+									<div class="warn point6">     <!--错误提示-->
+										<i><img src="/img/daosanjiao.png"/></i>
+										<p>请选择职业圈</p>
+									</div>
+								</li>
+								<li>
+									<label class="icInfo" for="#icInfo">选择兴趣分类</label>
+									<input type="text" name="icInfo" placeholder="请选择兴趣分类" id="icInfo" value="" vueid="" vueName=""/>
+								</li>
+								<li class="sexss">
+									<label for="">性别</label>
+									<input id="man" type="radio" value="男" name="1" />男<input id="woman" type="radio" value="女" name="1"/>女
+								</li>
+								<li class="telphone">
+									<label for="">手机号码是否公开</label>
+									<input id="openPhone" type="radio" value="公开" name="2" />公开<input id="closePhone" type="radio" value="不公开" name="2"/>不公开
+								</li>
+							</ul>
+						<p class="confirmSub">确认提交</p>
+					</div>
+					<!--注册成功-->
+					<div class="stepCon4 height300">
+						<p>恭喜你，注册成功</p>
+						<a class="logins" href="/index.html">立即登录</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部start-->
+		<!--#include virtual="/html/nologin_bottomer.html"-->
+		<!--底部end-->
+		<!--弹窗-->
+		<div class="maskFix"></div>
+		<div class="maskCenter">
+			<span class="errors">×</span>
+			<div class="uploads">
+				<div class="leftBar">
+					<h4>上传自定义头像</h4>
+					<div class="startUpload">
+						<p>开始上传</p>
+						<input type="file" name="file" id="headImg" value="" />
+					</div>
+					<div class="upLoadtit">
+						<p class="formatTit">仅支持JPG、GIF、PNG 图片文件，且文件小于5M</p>
+						<div class="upLoading">
+	                    	<span class="name">01-1图片的名字</span>
+	                        <div class="progress"><div class="bar"></div></div>
+	                         <span class="pro">0</span>
+	                        <span class="stopErr"><b>×</b>放弃上传</span>
+	                        <br class="clear"/>
+	                    </div>
+					</div>
+					<div class="headImgBox">
+					</div>
+				</div>
+				<div class="rightBar">
+					<div class="previewImg">
+						
+					</div>
+					<p>保存头像</p>
+				</div>
+				<input type="hidden" name="x1">
+		        <input type="hidden" name="y1">
+		        <input type="hidden" name="x2">
+		        <input type="hidden" name="y2">
+		        <input type="hidden" name="w">
+		        <input type="hidden" name="h"> 
+				<br class="clear"/>
+			</div>
+		</div>
+		<!--添加职业圈盒子-->
+		<div class="workBoxR">
+			<p class="protitR">选择你的职业圈<span>×</span></p>
+			<!--<div class="chooseWork">
+				<ul class="professional">
+					
+				</ul>
+				<div class="child_lists">
+					<ul>
+						
+					</ul>
+				</div>
+			</div>-->
+			<div class="chooseWorkR">
+				<!-- 新版改版职业分类 -->
+				 <div class="autoTypeR">
+					<ul>
+						<!--<li>
+							<div class="wordPosR clearfix">
+								<div>
+									<p>互联网ios开发<span>圈子<i>64449</i>人</span></p>
+									<b>张三丰：律师美女真多，啊哈哈哈哈</b>
+								</div>
+								<a class="on" href="javascript:;">加入</a>
+							</div>
+							<div class="imglisR">
+								<ol>
+									<li><img src="/img/first.png" alt=""></li>
+									<li><img src="/img/first.png" alt=""></li>
+									<li><img src="/img/first.png" alt=""></li>
+									<li><img src="/img/first.png" alt=""></li>
+									<li><img src="/img/first.png" alt=""></li>
+								</ol>
+							</div>
+						</li>-->
+					
+					</ul> 
+				</div>
+			</div>
+		</div>
+		<!--选择兴趣分类-->
+		<div class="MoreLivings">
+			<div class="MoreLivings_01">
+				<div class="Mores_p_t">
+					<a class="Mores_l_del" href="javascript:;"></a>
+					<h3 class="clearfix">选择兴趣分类<a class="keepss" href="javascript:;">保存</a></h3>
+				</div>
+				<ul class="Livings_list">
+					
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

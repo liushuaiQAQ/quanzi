@@ -1,0 +1,181 @@
+<div class="headerBox notLogged">
+	<div class="headTit">
+		<div class="titAuto clearfix">
+			<a class="logos" href="/index.html"><img class="log" src="/shangcheng/img/logo.png" alt="圈子" title="圈子" /></a>
+			<!--<div class="advertImg">
+				<img src="/img/qz_PC_banner.png"/>
+			</div>-->
+			<div class="picScroll-left">
+				<div class="bd">
+					<ul class="picList">
+						<li>
+							<div class="pic"><a><img src="/shangcheng/img/qz_PC_banner0_xinnian.png" /></a></div>
+						</li>
+						<!--<li>
+							<div class="pic"><a><img src="/shangcheng/img/qz_PC_banner1.jpg" /></a></div>
+						</li>-->
+						<li>
+							<div class="pic"><a><img src="/shangcheng/img/qz_PC_banner2.jpg" /></a></div>
+						</li>
+						<li>
+							<div class="pic"><a><img src="/shangcheng/img/qz_PC_banner3.jpg" /></a></div>
+						</li>
+						<li>
+							<div class="pic"><a><img src="/shangcheng/img/qz_PC_banner4.jpg" /></a></div>
+						</li>
+						<li>
+							<div class="pic"><a><img src="/shangcheng/img/qz_PC_banner5.jpg" /></a></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<ul class="header_right_box rigisterLogin">
+				<li class="login_top">
+					<a href="/center/register.html">注册</a>
+				</li>
+				<li>|</li>
+				<li class="userLogin">
+					<a href="javascript:;">登录</a>
+				</li>
+				<br class="clear" />
+			</ul>
+			<div class="service_qz">
+				<span class="phoneNum">
+					欢迎使用<br /><span class="service">在线客服</span>
+				</span>
+			</div>	
+		</div>
+	</div>
+	<div class="headNav">
+		<div class="navAuto clearfix">
+			<div class="navList">
+				<div class="header_right_box clearfix">
+					<a class="header_home qz_index" href="/index.html">
+						<i>首页</i>|
+					</a>
+					<a class="findThing qz_lookForSb" href="/center/lookForSb.html">
+						<i>找人</i>|
+					</a>
+					<a class="sl qz_flashchat" href="/center/flashchat.html">
+						<i>闪聊</i>|
+					</a>
+					<a class="header_video qz_videoLists" href="/center/videoLists.html">
+						<i>视频</i>|
+					</a>
+					<a class="header_pyq" href="/index.html?qz=py">
+						<i>朋友圈</i>|
+					</a>
+					<a  class="header_prd" href="/shangcheng/prd/hot.html">
+						<i>同城服务</i>
+					</a>
+				</div>
+			</div>
+			<div class="navRight clearfix">
+				<div class="search_box clearfix">
+					<input type="text" id="TextID" placeholder="搜索" />
+					<a href="javascript:;" class="search"></a> 
+					<!--搜索下拉-->
+					<!-- <div class="down_search">
+						<div class="down_search_t">
+							<a class="keyword color_label" href="javascript:;">关键字</a>
+							<a class="professional" href="javascript:;">按职业</a>
+						</div>
+						<div class="down_search_content">
+							<div class="keywordbox">
+								<ol>
+									
+								</ol>
+							</div>
+							
+							<div class="professionalbox" style="display: none;">
+								<ul class="professional_t">
+	
+								</ul>
+							</div>
+						</div>
+					</div> -->
+				</div>
+				<!--<div class="operation operation_wdl">
+					<span class="messageContent">
+						<a class="operation_hy item_o spaciBG" href="javascript:;">
+							<span class="messageCount" style="">10</span>
+						</a>
+						<div class="Message_box cssMessage item_in" style="display: none;">
+							<h3>消息</h3>
+							<ul>
+								<li class="RequestList" data-name="9a6c1774f4ad4ae1b9eea3afa17d1521">
+									<dl>
+										<dt style="position:relative;">
+											<img src="/img/friendShareDefalt.png">
+											<i class="top_count">10</i>
+										</dt>
+										<dd class="topMsg_name">
+											<span>圈子</span>
+											<span class="Color_red">官方</span>
+											<i class="topMsg_time">15:59</i>
+										</dd>
+										<dd>
+											<span class="topMsg_data">欢迎您来到"圈子"，圈子在这儿</span>
+											<a class="Message_del del" href="javascript:;"></a>
+											<span class="Message_state"></span>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<div class="Message_zk" style="display: none;">
+								<a href="javascript:;">展开</a>
+							</div>
+						</div>
+					</span>
+				</div>-->
+			</div>
+		</div>
+	</div>
+</div>
+<!--登录 弹窗                 忘记密码弹窗-->
+<!--#include virtual="/html/nologin_alertWindow.html"-->
+<script src="/js/common/nologin_header.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	if(getURIArgs("qz")){
+		$(".header_pyq").css({
+			"color":"#728bb9",
+			"background":"#728bb9"
+		});
+		
+	}else if(location.href.indexOf("/prd/")>0){
+		$(".header_prd").css({
+			"color":"#728bb9",
+			"background":"#728bb9"
+		});
+	}else{
+		var hre = window.location.href;
+		var tabId = hre.split("/")[hre.split("/").length - 1].split(".html")[0];
+		$(".qz_" + tabId).css({
+			"color":"#728bb9",
+			"background":"#728bb9"
+		});
+	}
+	$("#TextID").val(getURIArgs("word"));
+	
+	//头部大图轮播
+//	var iTimer = null,
+//	num = 0,
+//	headImg = ['qz_PC_banner.png', 'qz_PC_banner2.png', 'qz_PC_banner3.png'];
+//
+//	time();
+//
+//	function time() {
+//		num++;
+//		num %= headImg.length;
+//		$('.advertImg img').attr('src', '/img/' + headImg[num])
+//		setTimeout(time, 1500);
+//	}
+	//头部轮播
+	jQuery(".picScroll-left").slide({
+			mainCell:".bd ul",
+			autoPage:true,
+			effect:"leftLoop",
+			autoPlay:true,
+			vis:1
+		});	
+</script>

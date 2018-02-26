@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>页面不存在</title>
+		<link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+		<style type="text/css">
+			*{margin: 0px;padding: 0px;}
+			.clearfix:after{visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0;}
+			.clearfix{zoom:1;}
+			a{ text-decoration:none; outline:none;}
+			body{background:#fff;}
+			.bgBox{width: 100%;height: 100%;}
+			.bgBox .conBox{width:890px;margin:250px auto 0px;}
+			.bgBox .conBox .leftBar{width: 358px;height: 408px;background: url(img/404.png) no-repeat center;float: left;}
+			.bgBox .conBox .rightBar{float: left;margin-left: 40px;}
+			.bgBox .conBox .rightBar h2{font-size:24px;margin:100px 0px 10px 0px;}
+			.bgBox .conBox .rightBar span{display:inline-block;font-size: 16px;color:#7d7d7d;}
+			.bgBox .conBox .rightBar .list{margin-top:45px;}
+			.bgBox .conBox .rightBar .list a{float:left;display:block;height:40px;padding-left:56px;line-height:40px;border: 1px solid #3da534;font-size: 16px;color:#3da534;margin-right: 24px;}
+			.bgBox .conBox .rightBar .list a.backIndex{width:94px;background:url(img/home.png) no-repeat 18px center;}
+			.bgBox .conBox .rightBar .list a.loadIng{width:58px;background:url(img/shuaxin.png) no-repeat 18px center;}
+			.bgBox .conBox .rightBar .list a.contactUs{width:92px;background:url(img/call.png) no-repeat 18px center;}
+		</style>
+		<script src="/js/common/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="bgBox">
+			<div class="conBox clearfix">
+				<div class="leftBar"></div>
+				<div class="rightBar">
+					<h2>你访问的页面不存在...</h2>
+					<span>你可以通过以下方式继续访问......</span>
+					<div class="list clearfix">
+							<a class="backIndex" href="/center/index.html">返回首页</a>
+							<a class="loadIng" href="javascript:;">刷新</a>
+							<a class="contactUs" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=800186957&aty=0&a=0&curl=&ty=1">联系我们</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(".loadIng").on("click",function(){
+				window.location.reload();
+			})
+		</script>
+	</body>
+</html>

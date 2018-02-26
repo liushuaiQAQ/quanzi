@@ -1,0 +1,83 @@
+/*问题详情*/
+.problem{border:1px solid #E5E5E5;background: #fff;padding:30px 14px 14px 14px;}
+.problem h2{font-size:20px;}
+.problem .wt_f{padding:16px 0 27px 0;color:#999;font-size: 13px;}
+.problem .problem_txt{font-size: 16px;line-height: 22px;}
+.problem .problem_b{padding-top: 40px;color:#666;margin-bottom: 24px;position: relative;}
+.problem .problem_b .forwarding{color:#666;margin-left: 20px;padding-left:18px;background:url(/img/zhuanfa_11.png) left no-repeat;}
+.problem .problem_b .del_wt{color:#666;margin-left: 20px;}
+.problem .problem_b .in_formation{display: inline-block;width:22px;height:19px;background: url(/img/qz_qzxq_dian.png) 2px 11px no-repeat;margin-left: 20px;position: relative;}
+.problem .problem_b .wt_complaints{width:88px;height:35px;border:1px solid #E5E5E5;text-indent: 19px;line-height:35px;position: absolute;top: 22px;left:-32px;background-color: #fff;z-index: 10;display: none;}
+.problem .problem_b .wt_complaints:hover{background:#f5f5f5;color:#3ea436;}
+.problem .problem_b .join_wt_x{width:72px;height:26px;display: inline-block;float: right;color:#fff;border-radius:2px;background: #3ea436;text-align: center;line-height: 26px;}
+.problem .problem_content{margin:0 6px;}
+.wt_publish{display: none;}
+.wt_publish .qz_face{position:absolute;left: 0;top: 0;}
+.wt_publish .qz_face img{width:30px;height:30px;border-radius:3px;}
+.wt_publish .p_input{position: relative;width:468px;margin-left: 40px;top:1px;min-height:10px;}
+.wt_publish .p_input textarea{overflow:hidden;width:594px;height:16px;padding:5px 12px 2px 12px;border:1px solid #ccc;max-height: 73px;font-size: 12px;vertical-align:middle;display:table-cell;line-height: 19px;resize: none;}
+/*评论*/
+.chitchatBox{font-size:12px;}
+.chitchatBox a{font-size: 12px;}
+.comments-item{line-height:20px;}
+.stairComment>.comments-item{line-height:20px;background:#fff;margin-top: 10px;padding:30px 14px 0 14px;}
+.comments-item-bd{padding: 0 0 0 40px; position: relative;}
+.ui-avatar{position: absolute;left: 0;top: 0;}
+.ui-avatar{width:30px;height:30px;float:left;cursor: pointer;}
+.ui-avatar img{width:30px;height:30px;border-radius: 3px;}
+.comments-content{position:relative;line-height:1.5;top: -3px;}
+.comments-content .qz_name{color:#3fa435;}
+.comments-content span{word-wrap:break-word;word-break:break-all; }
+.reply_content{padding-right:5px;}
+.comments-op {line-height: 18px; position: relative;}
+.comments-content .conmments_d_y {line-height: 18px; position: relative;padding: 14px 0 18px 0;}
+.act-reply{background: url(/img/qz_sp_pinglun.png) left 2px no-repeat;}
+.oneselfdel{margin-left:10px;display: inline-block;width:13px;height:13px;font-size: 16px;text-align: center;background:url(/img/close.png) no-repeat center;background-size:8px;position: absolute;top: 2px;}
+.conmments_d_y a{margin-left: 20px;display: inline-block;padding-left: 22px; height:18px;position: relative;}
+.conmments_d_y a.oneselfdel{top:4px;margin-left:6px;}
+.wt_pl_z{background:url(/img/qz_zyq_zhichi_1.png) left no-repeat;}
+.wt_pl_c{background: url(/img/qz_zyq_fandui.png) left 1px no-repeat;}
+.problem_list a.wtp_yz{background: url(/img/qz_zyq_zhichi.png) left 1px no-repeat;}
+.problem_list a.wtp_yc{background: url(/img/qz_zyq_fandui_1.png) left 1px no-repeat;}
+
+/*回复*/
+.comments-list .comments-item{width:446px;position: relative;margin-bottom: 5px;}
+.comments-list .revert_click{width:446px;margin-left:-36px;position: relative;}
+.mod-comments-sub{padding:16px 0 20px 0;border-top:1px solid #E5E5E5;display: none;}
+.mod-comments-sub .comments-item-bd{padding-left: 36px;}
+.mod-comments-sub .revert_box{margin-left: -36px;}
+.comments-list .ui-avatar{width:26px;height:26px;position: absolute;left: 0;top: 0;}
+.comments-list .ui-avatar img{width:26px;height:26px;}
+.comments-list .comments-content{top:-3px;word-wrap: break-word;word-break: normal;}
+.comments-list .comments-content>span{color:#999;padding:0 8px;}
+
+/*发表*/
+.qz_publish{clear:both;width:100%;position: relative;}
+.qz_face{position:absolute;left: 0;top: 0;}
+.qz_face img{width:30px;height:30px;border-radius:3px;}
+.p_input{position: relative;width:468px;margin-left: 40px;top:1px;min-height:10px;}
+.p_input textarea{overflow:hidden;width:555px;height:16px;padding:4px 12px 4px 12px;border:1px solid #ccc;max-height: 73px;font-size: 12px;vertical-align:middle;display:table-cell;line-height: 19px;resize: none;}
+.review_1{line-height: 24px;margin-top:4px;padding-left: 40px;}
+.review_1 .emotion{display: inline-block;width:17px;height:17px;vertical-align:middle;background:url(/img/bq_02.png) no-repeat;}
+.review_1 .publish{width:66px;height:24px;display: inline-block;background:#3FA435;color:#fff;font-size: 12px;text-align: center;float:right;border-radius: 2px;}
+.hotQuestion .recommend{border:0;padding:0;background: #fff;margin:0px;max-height:330px;height:330px;overflow:hidden;}
+.commonNotice p.noticeArtic{text-align: center;margin:0 44px 18px 44px;font-size: 13px;}
+.commonNotice div.friendNotice{height: 85px;width:100%;background:url(/img/wen_03_03.png) no-repeat center;margin-top: 20px;}
+
+/*转发*/
+.sharelink{padding:15px 20px;border: 1px solid #d3d3d3;position: absolute;background: #fff;left:36px;top:66px;z-index: 99;display: none;}
+.sharelink .qrodeBox{display:none;width:120px;height: 150px;padding:10px;background:#fff;border:1px solid #E5E5E5;position:absolute;top:74px;right:-163px;}
+.sharelink .qrodeBox p{font-size: 12px;color: #323232;margin-bottom: 10px;}
+.sharelink .qrodeBox div{width: 120px;height: 120px;}
+.sharelink a{display: block;padding-right:36px;font-size: 12px;color: #323232;margin-bottom:15px;height: 20px;line-height: 20px;}
+.sharelink a.share1{background: #fff url(/img/qz_sp_quanzipengyouquan.png) no-repeat right center;}
+.sharelink a.share2{background: #fff url(/img/qz_sp_quanzihaoyou.png) no-repeat right center;}
+.sharelink a.share3{background: #fff url(/img/qz_sp_quanziqunzu.png) no-repeat right center;}
+.sharelink a.share4{background: #fff url(/img/qz_sp_weixinhaoyou.png) no-repeat right center;}
+.sharelink a.share5{background: #fff url(/img/qz_sp_weixinpengyouquan.png) no-repeat right center;}
+.sharelink a.share6{background: #fff url(/img/qz_sp_QQkongjian.png) no-repeat right center;}
+.sharelink a.share7{background: #fff url(/img/qz_sp_QQhaoyou.png) no-repeat right center;}
+.sharelink a.share8{background: #fff url(/img/qz_sp_xinlangweibo.png) no-repeat right center;margin-bottom:0px;}
+.sharelink a.share9{background: #fff url(/img/indexhot.png) no-repeat right center;}
+.sharelink a:hover{color: #008000;}
+.sharelink a.share5:hover .qrodeBox{display:block;}

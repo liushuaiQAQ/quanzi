@@ -1,0 +1,74 @@
+<!--#include virtual="/html/doctype.html"-->
+<title>朋友圈</title>
+<!--#include virtual="/html/mate.html"-->
+<script type="text/javascript" src="/js/common/publishIndex.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/center/index/triends.css" />
+<link rel="stylesheet" type="text/css" href="/css/center/index/index.css" />
+<link rel="stylesheet" type="text/css" href="/css/center/friendsCircle/friendsCircle.css" />
+<script type="text/javascript" src="/js/center/index/index.js"></script>
+<script src="/js/common/com_ajaxfileupload.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="/js/center/friendsCircle/friendsCircle.js"></script>
+</head>
+<body>
+	<!--头部开始-->
+	<!--#include virtual="/html/header.html"-->
+	<!--头部end-->
+	<div class="main">
+		<!--左侧边栏start-->
+		<!--#include virtual="/html/center_left.html"-->
+		<!--左侧边栏end-->
+		<!--首页-->
+		<div class="center_box">
+			<!--分享点新鲜事 首页动态start-->
+			<!--首页分享发布动态-->
+			<!--#include virtual="/html/index_shareThing.html"-->
+			<!--分享点新鲜事 首页动态end-->
+			<!--可能认识-->
+			<!--分享点新鲜事下面 可能认识的人start-->
+			<!--#include virtual="/html/possiblePeople.html"-->
+			<!--分享点新鲜事可能认识的人end-->
+			<!--动态导航栏-->
+			<div class="dynamic nav_c d_title">
+				<ul>
+					<li class="home">
+						<a href="/center/index.html">热门</a>
+						<em></em>
+						<!--#include virtual="/html/dynamicNav.html"-->
+					</li>
+					<li class="friendsCircle">
+						<a class="list_bg" href="/center/pyq.html">朋友圈</a>
+						<span class="bg_br"></span>
+					</li>
+				</ul>
+			</div>
+
+			<!--动态内容-->
+			<div id="dynamic_list">
+				<div class="jiazai"><i class="loading"></i>正在加载中，请稍后</div>
+			</div>
+		</div>
+		<!--右边个人start-->
+		<div class="right_sideBar"></div>
+		<!--右边个人start-->
+		<!--返回置顶-->
+		<!--<div class="returnTop"></div>-->
+		<br class="clear" />
+	</div>
+	<!--底部start-->
+	<!--#include virtual="/html/bottomer.html"-->
+	<!--底部end-->
+	<!-- 部分好友可见 -->
+	<!--#include virtual="/center/components/pyqVisible.html"-->
+	
+
+
+	
+
+	<script src="/js/common/index_shareThing.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/common/possiblePeople.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="/js/center/friendsCircle/pyqPosting.js"></script>
+	<!-- 通讯录 -->
+	<div class="Addressbook_box"></div>
+</body>
+
+</html>

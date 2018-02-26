@@ -1,0 +1,275 @@
+
+<!-- 外侧通讯录展示 -->
+<div class="toolbar">
+	<ul class="toolbar-tabs">
+		<li class="open_ad trigger"><em>通讯录</em></li>
+		<li class="toolbar_group trigger">
+			<span>群聊</span>
+		</li>
+		<li class="toolbar_groupChat trigger">
+			<span>聊天室</span>
+		</li>
+		<li class="toolbar_friends trigger">
+			<span>我的好友</span>
+		</li>
+		<li class="toolbar_appdownload">
+			<span><img src="/img/quanzi_appdownload_qrcode.png" alt="APP下载"></span>
+		</li>
+		<li class="toolbar_weibo">
+			<span><a href="https://weibo.com/u/5935541953?refer_flag=1001030102_&is_all=1#_rnd1516787968232" target="_blank">官方微博</a></span>
+		</li>
+		<li class="toolbar_qq">
+			<span><a href="http://crm2.qq.com/page/portalpage/wpa.php?uin=800186957&amp;aty=0&amp;a=0&amp;curl=&amp;ty=1" target="_blank">QQ客服</a></span>
+		</li>
+		<li class="toolbar_hotline">
+			<span><img src="/img/quanzi_hotline.png" alt="热线电话"></span>
+		</li>
+		<li class="toolbar_backtop">
+			
+		</li>
+	</ul>
+	<div class="AddressBook">
+		<div class="addressContent">
+			<!-- 搜索 -->
+			<div class="CommunicationsSearch">
+				<div class="Search_box">
+					<a class="searchOn" href="javascript:;"></a>
+					<input type="text" id="Communications" placeholder="搜索">
+				</div>
+			</div>
+			<div class="CommunicationsGroup">		
+			<!-- 屏蔽群组和群聊 -->
+				<div class="Groupchat Group_list">
+					<div class="theme"><i class="triangle"></i>群聊（<span>0</span>）</div>
+					<ul>		
+
+					</ul>
+				</div>
+				<div class="group Group_list">
+					<div class="theme"><i class="triangle"></i>聊天室（<span>0</span>）</div><ul></ul>
+				</div>
+				<div class="friends Group_list">
+					<div class="theme"><i class="triangle"></i>我的好友（<span>0</span>）</div>
+					<ul>
+						<!-- <li class="robot" data-off="0" >
+						    <dl><dt class="_userImg"><img src="/img/friendShareDefalt.png"></dt>
+						        <dd class="user"><span>圈子</span><span class="official">机器人</span>
+						        </dd>
+						        <dd class="userInfo">我是一个机器人，特别喜欢和你们...</dd>
+						        <div class="clear"></div>
+						    </dl>
+						</li> -->
+						<li class="serverOnline" data-off="0" >
+						    <dl><dt class="_userImg"><img src="/img/xs_zaixiankefu.png"></dt>
+						        <dd class="user"><span>在线客服</span><span class="official">官方</span>
+						        </dd>
+						        <dd class="userInfo"></dd>
+						        <div class="clear"></div>
+						    </dl>
+						</li>
+						<!-- <li class="Chat_list">
+							<div class="userInformation">
+								<i></i>
+								<h3>刘易阳</h3>
+								<p>职业&nbsp;:&nbsp;律师</p>
+								<p>地区&nbsp;:&nbsp;北京朝阳</p>
+							</div>
+							<dl>
+								<dt><img src="/img/nv.png"></dt>
+								<dd>刘易阳</dd>
+							</dl>
+							<div class="time"><em class="remind">3</em></div>
+						</li>
+						<li class="Chat_list">
+							<dl>
+								<dt><img src="/img/nv.png"></dt>
+								<dd>刘易阳</dd>
+							</dl>
+							<div class="time">10分钟前</div>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+
+			<!-- 搜索结果 -->
+			<div class="SearchResults">
+				<h4>搜索结果</h4>
+				<ul>
+					
+				</ul>
+			</div>
+
+			
+		</div>	
+	</div>
+</div>
+
+
+
+
+<!-- 聊天框开始 -->
+<div class="chatWrap" data-off="0">
+	<div class="qzChatBox">
+		<div class="chatMain">
+			<div class="dialogs">
+				<div class="dialogs_in">
+					<ul></ul>
+					<i class="x_triangle"></i>
+				</div>
+			</div>
+			<div class="chatFrameList"></div>
+		</div>
+		
+	</div>
+</div>
+
+
+
+
+<div class="rightRecommondFriends">
+	<div class="recmdHead">
+		<a class="recmdCloseBtn" href="javascript:;"><span class="recmdBtn">关闭</span></a>
+		<div class="recmdSearch">
+			<div class="recmdSearchBox">
+				<a class="searchOn" href="javascript:;"></a>
+				<input type="text" name="" id="searching" placeholder="搜索" autocomplete="off">
+				<i style="display: none;"></i>
+			</div>
+		</div>
+	</div>
+	<!-- 搜索结果 -->
+	<div class="SearchResults" style="background:#ffffff;">
+		<h4>搜索结果</h4>
+		<ul>
+			
+		</ul>
+	</div>
+	<div class="recmdList">
+		<div class="CommunicationsGroup" style="display: block;">
+			<div class="friends Group_list">
+		        <div class="theme"><i class="triangle perform"></i>好友</div>
+		        <ul>
+		            <!-- <li class="Chat_list" data-off="0" data-magicno="10419" data-name="f0424e90d50e6b40e01f15029d79c46e" data-myindustry="">
+		                <dl><dt><img class="img" src="/img/first.png"></dt>
+		                    <dd class="nickname">王晶</dd>
+		                </dl>
+		                <div class="recmdCircle"></div>
+		            </li> -->
+		        </ul>
+		    </div>
+		    <!-- <div class="Groupchat Group_list">
+		        <div class="theme"><i class="triangle"></i>群聊/群组</div>
+		        <ul style="display: none;"></ul>
+		    </div> -->
+		    <div class="recentChat Group_list">
+		        <div class="theme"><i class="triangle"></i>最近联系人</div>
+		        <ul style="display: none;"></ul>
+		    </div>
+		</div>
+	</div>
+</div>
+<!-- 聊天框结束 -->
+<!-- 图片展示 -->
+<div class="showImg">
+	<div class="wrap_img">
+		<img src="" alt="">
+	</div>
+</div>
+<!-- 视频展示 -->
+<div class="showVideo">
+	<div class="videWrap">
+		<video poster="" id="msgVideoShow" style="background:#000;" controls="controls" height="600" width="100%" src=""></video>
+		<div class="video_close"></div>
+	</div>
+</div>
+<div class="serverBox">
+	<div class="serverMask"></div>
+	<div class="serverOffline">
+		<div class="serverWrap">
+			<h3>提示</h3>
+			<p>
+			当前客服繁忙，请继续等待。
+			<br>
+			如有问题请发送至 客服邮箱：
+			<br>	
+			kefu@quanzinet.com
+			</p>
+			<div class="knowClose">
+				<button>知道了</button>
+			</div>
+		</div>
+			
+	</div>
+</div>
+<!-- <script type="text/javascript">
+window.onload = function(){
+    var oDiv = document.getElementById('textBox');
+	oDiv.ondragover = function( ev ){
+	    ev.preventDefault();
+	}
+	oDiv.ondrop = function( ev ){
+		console.log(ev)
+        ev.preventDefault();
+        var fs = ev.dataTransfer.files;
+        for(var i=0; i<fs.length; i++){
+            if( fs[i].type.indexOf('image') != -1){   //利用返回的type属性值字符串包含image来判断文件类型
+                var fd = new FileReader();   //读取文件信息
+                fd.readAsDataURL( fs[i] );    //参数为读取的文件对象，将文件读取为DataURL
+                fd.onload = function(){     //当读取文件成功完成的时候触onload事件
+					sendDrgImg(this.result);
+                }
+            }else{
+                alert('请上传图片类型！');
+            }
+        }
+    }
+}
+</script> -->
+<script type="text/javascript">
+	$(function(){
+		var get_chat_box = store('chat_status') || [];
+		var _groupChat = store('groupmsg');   //聊天室
+		var _group = store('groupchatmsg');   //群聊
+
+		var group_qz = function(n){
+			for(var g in _group){
+				if(_group[g].name == n.split("@")[0]){
+					return true;
+				}
+			}
+		} 
+		
+		var groupchat_qz = function(n){
+			for(var g in _groupChat){
+				if(_groupChat[g].name == n.split("@")[0]){
+					return true;
+				}
+			}
+		} 
+
+		// 加载所有的会话
+		for (var i in get_chat_box) {
+			var chatTag = true;
+			var c = get_chat_box[i];
+			if(c.type == "group") {
+				chatTag = false;
+				if(group_qz(c.name)){
+					chatTag = true;
+				}
+			}else if (c.type == "groupchat") {
+				chatTag = false;
+				if(groupchat_qz(c.name)){
+					chatTag = true;
+				}
+			}
+			
+			if(chatTag) createChatWindow(c.name, c.industry, c.nick, c.src,c.is_open,c.type);
+			
+		}
+		getFocusBox();
+	})
+	$(".toolbar_weibo").click(function(event) {
+		window.open("https://weibo.com/u/5935541953?refer_flag=1001030102_&is_all=1#_rnd1516787968232")
+		// window.location.href = "https://weibo.com/u/5935541953?refer_flag=1001030102_&is_all=1#_rnd1516787968232"
+	});
+</script>

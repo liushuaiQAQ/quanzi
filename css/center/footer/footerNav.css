@@ -1,0 +1,26 @@
+.wrapBox{width: 100%;position: relative;margin-top: 130px;}
+.bannerBg{position: relative;height:302px;width: 100%;overflow: hidden;}
+.bannerBg img{display:block;width: 1920px;height:302px;position: absolute;left: 50%;margin:0 0 0 -960px;}
+.contentBox{position: relative;width: 100%;max-width: 970px;margin:-90px auto 0px;min-height:800px;}
+.contentBox .mainBox{position: absolute;width: 970px;left: 0px;}
+.contentBox .mainBox .leftBox{width:810px;float: left;min-height:800px;height: auto;background: #fff;}
+.contentBox .mainBox .leftBox h4{height:64px;line-height:64px;text-indent:25px;background:#f6f6f6;font-size: 14px;color:#52ab4a;font-weight: normal;}
+.contentBox .mainBox .leftBox .main1{text-align: justify;padding:0px 25px;margin-top: 30px;}
+.contentBox .mainBox .leftBox .main1 p{font-size:12px;color:#333;line-height:30px;}
+
+
+.contentBox .mainBox .rightBox{float: left;width:150px;min-height:780px;height: auto;background: #fff;padding-top: 20px;margin-right: 10px;}
+.contentBox .mainBox .rightBox li{margin-bottom:24px;padding-left: 30px;}
+.contentBox .mainBox .rightBox li a{font-size:12px;}
+.contentBox .mainBox .rightBox li.gywm{background: #fff url(/img/xiaodian.png) no-repeat 15px center;}
+.contentBox .mainBox .rightBox li.gywm a{font-size:14px;color:#3d9d31;}
+#lineH p{line-height:38px;}
+.contentBox2{min-height:800px;height: auto;}
+.contentBox2 .mainBox2{min-height:800px;height: auto;}
+
+.footerss{position: relative;}
+/*合作联系我们*/
+.contentBox3{min-height:800px;height: auto;}
+.contentBox3 .mainBox3{min-height:800px;height: auto;}
+#lineH2 p{line-height:20px;margin-bottom:15px;}
+#lineH2 p span{font-size: 12px;font-weight: bold;}

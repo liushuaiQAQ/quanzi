@@ -1,0 +1,130 @@
+<!--#include virtual="/html/doctype.html"-->
+<title>圈子搜索</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/detail/circle_detail.css" />
+<link rel="stylesheet" type="text/css" href="/css/center/index/triends.css" />
+<link rel="stylesheet" type="text/css" href="/css/center/index/index.css" />
+<link rel="stylesheet" type="text/css" href="/css/center/searchHomepage/searchHomepage.css" />
+<link rel="stylesheet" type="text/css" href="/css/center/detail/detail_new.css" />
+<link rel="stylesheet" type="text/css" href="/css/center/flashchat/flashchat.css"/>
+<script type="text/javascript" src="/js/center/index/index.js"></script>
+<script src="/js/common/com_ajaxfileupload.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/common/message1.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/center/searchHomepage/searchHomepage.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+	<!--头部开始-->
+	<div class="headss"></div>
+	<!--头部end-->
+	
+	<div class="main">
+
+		<!--首页-->
+		<div class="detail_left">
+			
+
+			<div class="searchBox">
+				<div class="search_nav">
+					<ul class="search_navwrap">
+						<li class="dynamic_text">
+							<a href="javascript:;" class="active">动态</a>
+							<i class="search_active"></i>
+							<span></span>
+							<div class="drop_menu">
+								<ul>
+									<li class="menu_active" data-id="1">
+										<a href="javascript:;" class="menu_text">动态</a>
+									</li>
+									<li data-id="2">
+										<a href="javascript:;">职业圈</a>
+									</li>
+									<li data-id="3">
+										<a href="javascript:;">生活圈</a>
+									</li>
+									<li data-id="4">
+										<a href="javascript:;">全球圈</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="FriendsSearch">
+							<a href="javascript:;">用户</a>
+							<span></span>
+						</li>
+						<li class="VideoSearch">
+							<a href="javascript:;">视频</a>
+							<span></span>
+						</li>
+						<li class="flashChatSearch">
+							<a href="javascript:;">闪聊</a>
+							<span></span>
+						</li>
+						<li class="navSearchcircle">
+							<a href="javascript:;">圈子</a>
+							<span></span>
+						</li>
+						<li class="urbanServerSearch">
+							<a href="javascript:;">同城服务</a>
+							<span></span>
+						</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<!--动态内容-->
+				<div class="ineffectiveness">
+					
+				</div>
+				<div id="dynamic_list">
+					<div class="jiazai"><i class="loading"></i>正在加载中，请稍后</div>
+					<div class="lists"><ul></ul></div>
+					<ul class="hy_search"></ul>
+					<div class="professional bgColor">
+
+
+					</div>
+				</div>
+				<div class="rightOnLogin">
+					<span class="span_01 login_window">立即登录</span>&nbsp;&nbsp;查看更多结果&nbsp;&nbsp;&nbsp;还没账号？ 立即&nbsp;&nbsp;&nbsp;
+					<a href="/center/register.html" class="span_02">注册圈子</a>
+				</div>
+			</div>
+			
+
+		</div>
+
+		<div class="detail_right search_tj_right">
+			<div class="recommend">
+				<p><i>可能认识</i><a href="javascript:;" class="more_s_t">查看更多</a></p>
+				<ul class="myCircle_t">
+					
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="boxlist">
+				<!--#include virtual="/html/recommoned.html"-->
+			</div>
+			
+		</div>
+		<!--返回置顶-->
+		<!--<div class="returnTop"></div>-->
+		<br class="clear">
+	</div>
+	<!--底部start-->
+	<!--#include virtual="/html/bottomer.html"-->
+	<!--底部end-->
+	<!--修改加入职业圈-->
+	<!--#include virtual="/html/changeorjoincarCir.html"--> 
+
+	<!--转发分享圈子朋友圈  圈子好友   圈子群组开始-->
+	<!--#include virtual="/html/dynamicSharing.html"-->
+	<!--转发分享圈子朋友圈  圈子好友   圈子群组结束-->
+	<!-- 通讯录 -->
+	<div class="Addressbook_box"></div>
+	<script src="/js/common/index_shareThing.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/common/possiblePeople.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="/js/center/detail/life/common.js"></script>
+	<script src="/js/center/flashchat/flashchat.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

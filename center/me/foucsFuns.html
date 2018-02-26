@@ -1,0 +1,26 @@
+
+<style>
+    .homepage_type{padding:0 24px;width: 100%;box-sizing: border-box;border:1px solid #e5e5e5;height: 40px;background: #ffffff;margin-bottom: 10px;}
+    .homepage_type ul li{font-size: 12px;line-height: 38px;display: inline-block;text-align: center;}
+    .homepage_type ul li span{margin-left: 8px;font-weight: 600;color:#666;}
+    .small_text{margin-left: 20px;margin-right: 12px;}
+    .conFunsFocus{width:100px;}
+    .homepage_type .activesF{color:#80bd7b;}
+    .homepage_type .activesF span{color:#80bd7b;}
+
+</style>
+<div class="homepage_type">
+    <ul>
+        <li class="conFunsFocus"><a href="/center/me/focus.html" >关注<span class="focus_num"></span></a></li>
+        <li class="small_text">|</li>
+        <li class="conFunsFocus"><a href="/center/me/funs.html">粉丝<span class="funs_num"></span></a></li>
+    </ul>
+</div>
+<script>
+    var urlShowF=window.location.href;
+    if(urlShowF.indexOf("/center/me/focus.html")>-1){
+        $(".conFunsFocus a").eq(0).addClass("activesF");
+    }else if(urlShowF.indexOf("/center/me/funs.html")>-1){
+        $(".conFunsFocus a").eq(1).addClass("activesF");
+    }
+</script>

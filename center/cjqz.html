@@ -1,0 +1,204 @@
+<!--#include virtual="/html/doctype.html"-->
+<title>创建圈子</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/cjqz/cjqz.css">
+<link rel="stylesheet" type="text/css" href="/css/center/index/index.css" />
+<link rel="stylesheet" type="text/css" href="/css/common/jquery.Jcrop.min.css"/>
+<script src="/js/common/com_ajaxfileupload.js" type="text/javascript" charset="utf-8"></script>
+</head>
+	<body>
+		<!--header-->
+		<!--#include virtual="/html/header.html"-->
+		<div class="main">
+			<!--left start-->
+			<!--#include virtual="/html/center_left.html"-->
+			<!--left end-->
+			<!--首页-->
+			<div class="center_box">
+				<div class="dynamic">创建圈子</div>
+				<div class="create">
+					<div class="create_img">
+					</div>
+					<div class="qz_name_cj cj">
+						<span>圈子名称</span><i>*</i>
+						<div class="cj_r cj_r_name">
+							<input type="text" maxlength="10" placeholder="未填写">
+							<span class="quan_name">圈</span>
+						</div>
+					</div>
+					<div class="qz_choose cj">
+						<span>选择圈子</span><i>*</i>
+						<div class="cj_r"  data-id="2">
+							<label><span></span>生活圈</label>
+							<label><span class="checked"></span>全球圈</label>
+						</div>
+					</div>
+					<div class="qz_place cj">
+						<div class="qz_sh" data-id="1">
+							<span>选择圈子</span><i>*</i>
+							<div class="cj_r">
+								<a href="javascript:;">生活</a>
+							</div>
+						</div>
+						<div class="qz_qq">
+							<span>圈子地点</span><i>*</i>
+							<div class="cj_r">
+								<a class="choseBtn" href="javascript:;">选择</a>
+							</div>
+						</div>
+					</div>
+					<div class="qz_introduce cj">
+						<span>圈子介绍</span>
+						<div class="txt_box">
+							<textarea class="Introduces"></textarea>
+							<p class="number">还可以输入<em id="cj_num">140</em>字</p>
+						</div>
+					</div>
+					<div class="qz_chatroom" data-id="1">
+						<span>开通聊天室</span>
+						<div class="cj_r">
+							<label data-id="1"><span class="checked"></span>开通</label>
+							<label data-id="2"><span></span>不开通</label>
+						</div>
+					</div>
+					<div class="create_btn">
+						<button>创建</button>
+					</div>
+				</div>
+
+
+
+			</div>
+			<!--右边个人start-->
+			<div class="right_sideBar"></div>
+			<!--右边个人start-->
+			<!--返回置顶-->
+		<!--	<div class="returnTop"></div>-->
+			<br class="clear"/>
+		</div>
+
+
+		<!-- 上传图标 -->
+		<div class="maskFix"></div>
+		<div class="maskCenter">
+			<span class="errors">×</span>
+			<div class="icon_txt">
+				<span class="zdy on">上传自定义图标</span>
+				<span class="tj">推荐图标</span>
+			</div>
+			<div class="uploads">
+				<div class="leftBar">
+					<div class="startUpload">
+						<p>开始上传</p>
+						<input type="file" name="file" id="headImg" class="headImg" value="">
+					</div>
+					<div class="upLoadtit">
+						<p class="formatTit">仅支持JPG、GIF、PNG 图片文件，且文件小于5M</p>
+						<div class="upLoading">
+	                    	<span class="name">01-1图片的名字</span>
+	                        <div class="progress"><div class="bar"></div></div>
+	                         <span class="pro">0</span>
+	                        <span class="stopErr"><b>×</b>放弃上传</span>
+	                        <br class="clear">
+	                    </div>
+					</div>
+					<div class="headImgBox">
+					</div>
+				</div>
+				<div class="rightBar">
+					<div class="previewImg">
+						
+					</div>
+					<p>保存头像</p>
+				</div>
+				<input type="hidden" name="x1">
+		        <input type="hidden" name="y1">
+		        <input type="hidden" name="x2">
+		        <input type="hidden" name="y2">
+		        <input type="hidden" name="w">
+		        <input type="hidden" name="h"> 
+				<br class="clear">
+			</div>
+
+
+			<div class="custom">
+				<ul>
+					<li data-img="PGRXC-f65f9b9f-ab73-43cf-8c91-d805906fca49">
+						<img src="/img/qz_shq_morentouxiang01.png">
+						<i class="wx_icon xz_icon"></i>
+					</li>
+					<li data-img="PGRXC-ef71b2fa-24dd-460a-8240-1f5e13827c5e">
+						<img src="/img/qz_shq_morentouxiang02.png">
+						<i class="wx_icon"></i>
+					</li>
+					<li data-img="PGRXC-a91fb865-7c9d-4faf-9e7b-6e3201d1540d">
+						<img src="/img/qz_shq_morentouxiang03.png">
+						<i class="wx_icon"></i>
+					</li>
+					<li data-img="PGRXC-938c1e95-a91c-426e-84e2-d4baeab1268f">
+						<img src="/img/qz_shq_morentouxiang04.png">
+						<i class="wx_icon"></i>
+					</li>
+					<li data-img="PGRXC-2f80f38f-06f4-428d-b243-3beb0c0eb7cd">
+						<img src="/img/qz_shq_morentouxiang05.png">
+						<i class="wx_icon"></i>
+					</li>
+					<li data-img="TXLC-2b3a1a55-d1fe-4fe4-9081-77c3a92b40b4">
+						<img src="/img/qz_shq_morentouxiang06.png">
+						<i class="wx_icon"></i>
+					</li>
+					<li data-img="TXLC-f382bc53-ac72-40b1-a096-925245e554c0">
+						<img src="/img/qz_shq_morentouxiang07.png">
+						<i class="wx_icon"></i>
+					</li>
+					<li data-img="TXLC-6bb1ddbc-44a7-4f71-9ea4-e7facfb4b48e">
+						<img src="/img/qz_shq_morentouxiang08.png">
+						<i class="wx_icon"></i>
+					</li>
+					
+				</ul>
+				<div class="determine">
+					<button>确定</button>
+				</div>
+			</div>
+		</div>
+		<!--底部start-->
+		<!--#include virtual="/html/bottomer.html"-->
+
+
+		<!-- 选择生活圈 -->
+		<div class="MoreLiving">
+			<div class="MoreLiving_01">
+				<div class="More_p_t">
+					<a class="More_l_del" href="javascript:;"></a>
+					<h3>更多生活圈</h3>
+				</div>
+				<ul class="Living_list">
+					
+				</ul>
+			</div>
+		</div>
+
+		<!-- 选择地区 -->
+		<div class="choseArea">
+			<h2>选择地区</h2>
+			<i class="areaBtn"></i>
+			<div class="areaBottom">
+				<ul class="areaCountry">
+				</ul>
+				<ul class="areaProvince">
+				</ul>
+				<ul class="areaCity">
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!-- 通讯录 -->
+		<!--#include virtual="/html/AddressBook.html"-->
+
+		<script type="text/javascript" src="/js/center/createCircle/cjqz.js"></script>
+		<script type="text/javascript" src="/js/center/index/index.js"></script>
+		<script src="/js/common/globalcity_noall.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/js/common/jquery.Jcrop.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

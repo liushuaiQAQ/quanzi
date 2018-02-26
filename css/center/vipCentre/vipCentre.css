@@ -1,0 +1,82 @@
+.border{margin-top:10px;border:1px solid #e5e5e5;background: #fff;}
+.top_message{padding:22px 24px;}
+.top_message dl dt{width:60px;height:60px;margin-right: 10px;float: left;}
+.top_message dl dt img{width:60px;height:60px;border-radius: 2px;}
+.top_message dl dd img{width:27px;height: 13px;margin:2px;}
+.top_message dl dd.yh_profession span{display:inline-block;margin:5px 0;color:#999;font-size:12px; }
+.top_message dl dd.yh_profession .amember{float: right;}
+.top_message dl dd.yh_profession .ktVip{display: inline-block;width:72px;height:26px;background: #1cbd11;color:#fff;border-radius: 2px;text-align: center;line-height: 26px;margin-right:4px; }
+.top_message dl dd.yellow{color:#ffd600;font-size: 12px;}
+
+.domesticConsumer{display: none;}
+.presentPrivilege{display: none;}
+.vipPrerogative{padding:20px 24px 50px 24px;}
+.x_title{font-size: 16px;color:#ffa200;}
+.vipPrerogative ul{display: inline-block;margin-top: 20px;}
+.vipPrerogative ul li{float: left;}
+.vipPrerogative ul li span{display: inherit;width:52px;text-align: center;font-size: 13px;}
+.vipPrerogative ul li:nth-child(2) span{width:65px;}
+.vipPrerogative ul li:nth-child(2) img{margin:0 38px 20px 2px;}
+.vipPrerogative ul li img{width:54px;height:54px;border-radius:27px;margin:0 34px 20px 0;}
+.vipPrerogative ul li:last-child img{margin:0 0 20px 0;}
+
+.vipDetails{padding:20px 24px 30px 24px;}
+.vipDetails .jieshao{margin:24px 0 16px 0;font-size: 14px;color:#666;}
+.vipDetails .a-ca-table{margin-bottom: 24px;}
+.vipDetails .a-ca-table,.a-ca-table th,.a-ca-table td{border:1px solid #f1f1f1;border-collapse: collapse;text-align: center;padding:0 8px;}
+.vipDetails .a-ca-head-title{width:138px;height:42px;padding:0;}
+.vipDetails .a-ca-ht-div{background: url("/img/xiexian01.png") no-repeat center;}
+.vipDetails .a-ca-ht-div th{border:none;color:#666;font-size: 14px;font-weight: 500;padding-left:18px;}
+.vipDetails tbody th{width:138px;height:50px;color:#666;font-size: 14px;font-weight: 500;}
+.vipDetails td{width:108px;color:#333;}
+.vipDetails .cls-c1{background: #e4e4e4;}
+.vipDetails .a-ca-t-worker td{color:#ffa00a;}
+.vipDetails .a-cat-td-name{background: #f4f4f4;}
+.vipDetails .img_zs{float:left;margin-left: 10px;}
+.vipDetails .explain p{color:#666;font-size: 14px;line-height: 20px;}
+
+.qzSystem{padding:20px 24px;}
+.qzSystem .b-ca-table{margin: 24px 0 10px 0;}
+.qzSystem .b-ca-table,.b-ca-table th,.b-ca-table td{border:1px solid #e5e5e5;border-collapse: collapse;text-align: center;}
+.qzSystem .b-ca-ht-div th{border:none;color:#999;font-size: 14px;font-weight: 500;padding-left: 10px;}
+.qzSystem .b-ca-ht-div{height:49px;background:url("/img/xiexian02.png") no-repeat center;background-size:86px 49px;}
+.qzSystem tbody th{color:#ffa00a;width:88px;height:34px;}
+.qzSystem td{width:100px;height:34px;background: #f5f5f5;padding:0 20px;}
+.qzSystem td.td-wzs{width:90px;padding:0 25px;}
+.qzSystem p{line-height: 24px;}
+.presentPrivilege .a-ca-table{margin: 20px 0 0 0;}
+
+
+/*购买会员*/
+.buy_center{padding:20px 15px;background: #fff;height:700px;}
+.buy_center h3{font-size: 16px;color:#38adff;}
+.buy_center dl{margin-top: 30px;display: inline-block;}
+.buy_center dl dt,.buy_center dl dd{float: left;}
+.buy_center dl dt{width:95px;text-align: right;margin:5px 14px 0 0;}
+.buy_center dl dd{width:64px;height:28px;border:1px solid #a9a9a9;margin-right:10px;line-height: 28px;text-align: center;cursor: pointer;position: relative;}
+.buy_center dl dd span{position: absolute;top: 26px;left: 10px;font-size: 12px;}
+.buy_center .designate{background:url("/img/qz_xuanzhong.png") no-repeat top right;border:1px solid #ffa00a;color: #ffa00a;}
+.buy_center .buyManner dd{width:76px;}
+.buy_b{margin-left:28px;color:#999;margin-top: 38px;}
+.buy_b p{line-height: 30px;}
+.buy_b .yf_je{color:#666;}
+.buy_b .yf_je .money{color:#ff3131;margin-left: 14px;font-weight: 600;}
+.buy_b .yf_je em{font-style: normal;color: #333;}
+.buy_b .buy_b_xy{color:#38adff;cursor: pointer;}
+.buy_b .btn_primary{margin: 55px 43px 0 0;height:40px;display: inline-grid;width: 464px;}
+.buy_b .btn_buy{display:block;width:200px;height:40px;background: #cccccc;border-radius:3px;border:none;color:#fff;margin:0 auto;cursor: pointer;}
+.buy_b .buy_confirm{background:#3ea435;}
+
+
+/*会员协议*/
+.main_vip{font-size:14px;line-height: 24px;margin:0 7px;padding: 26px 0 0 18px;width:532px;height:542px;overflow:hidden;background:#fff;position: fixed;top:60%;left: 50%;margin-top:-284px;margin-left: -350px;border:1px solid #e5e5e5;box-shadow: -1px -3px 6px #888888;display: none;z-index: 10000;}
+.agreement_box{height:500px;overflow-y: scroll;line-height:36px;}
+.main_vip h1{text-align: center;font-size:20px;color:#333;margin-bottom: 19px;font-weight: 500;}
+.main_vip h2{font-size:14px;font-weight: 500;}
+.main_vip span{font-weight:bold;}
+.main_vip dt{float:left;}
+.main_vip dd{padding-bottom:5px;}
+.main_vip dt>dl{margin:0;}
+.main_vip .del{width:20px;height:20px;display: inline-block;background: url("/img/choseDel.png") no-repeat center;position: absolute;top:10px;right: 18px;}
+.employ{margin-left:30px;}
+.clear{clear: both;}

@@ -1,0 +1,55 @@
+.center_box .dynamics{height: 36px;background:#fff;margin:0px;position: relative;}
+.center_box .dynamics .searchPer{height: 36px;display: inline-block;line-height:36px;text-indent:15px;}
+#dynamic_list{margin-top: 10px;}
+/*找人筛选*/
+.dynamics .batch{float:right;cursor:pointer;color:#5D78A9;display: inline-block;margin:9px 15px 0px 0px;}
+.dynamics .bgbtnBox{float:right;cursor:pointer;display: inline-block;width:23px;height:19px;background: url(/img/qz_zr_shaixuan.png) no-repeat center;margin:9px 15px 0px 0px;}
+.dynamics .xhnq{display:none;position:absolute;top:38px;right:0px;z-index:22;width:276px;background:#fff;padding:20px 16px 14px;border-radius:2px;border:1px solid #f1f1f1;box-shadow:2px 2px 2px #c2c2c2;}
+.dynamics .xhnq .listTy span{font-size: 12px;color:#000;margin:5px 0px 12px;display:inline-block;}
+/*.dynamic .xhnq .listTy ol{margin-left:18px;}*/
+.dynamics .xhnq .listTy1 ol{padding-bottom: 12px;border-bottom:1px solid #f8f8f8;}
+.dynamics .xhnq .listTy1 span{margin-top: 0px;}
+.dynamics .xhnq .listTy ol li{float:left;font-size:12px;padding: 8px 16px;margin-left: 5px;cursor: pointer;}
+.dynamics .xhnq .listTy ol li.on{border:1px solid #42a539;color:#42a539;}
+.dynamics .xhnq .listTy ol li.mans{padding:8px 16px 8px 30px;background:url(/img/qz_zr_nan.png) no-repeat 14px center;background-size:14px 14px;}
+.dynamics .xhnq .listTy ol li.womans{padding:8px 16px 8px 30px;background:url(/img/qz_zr_nv.png) no-repeat 14px center;background-size:14px 14px;}
+.dynamics .xhnq .listTy3 span i{font-style: normal;margin-left: 5px;}
+.dynamics .xhnq .listTy3 span i.on{color:#42a539;}
+.dynamics .xhnq .listTy3 .rangbox{position: relative;margin: 20px 0px 30px 5px;}
+/*.dynamics .xhnq .listTy3 .rangbox .rangle{position:absolute;width:276px;height:1px;border-top:1px solid #2d9c23;margin:16px 0px 11px;margin-top: 12px;}
+.dynamics .xhnq .listTy3 .rangbox .cic{display: inline-block;width: 24px;height: 24px;background:url(/img/qz_zr_yuan.png) no-repeat center;background-size:24px 24px;position:absolute;}
+.dynamics .xhnq .listTy3 .rangbox .cic1{left:-3px;}
+.dynamics .xhnq .listTy3 .rangbox .cic2{right:-3px;}*/
+.dynamics .xhnq .listTy3 .rangbox .cic{display: inline-block;width:6px;height:6px;background:url(/img/jiahao02.png) no-repeat center;position:absolute;right:2px;top:17px;}
+.dynamics .xhnq .concan{margin-top: 20px;text-align: right;}
+.dynamics .xhnq .concan a{display: inline-block;margin-left: 15px;cursor: pointer;}
+.dynamics .xhnq .concan a.conBtn{color:#63b560;}
+
+/*.centerlist{background: #fff;}
+.centerlist ul{min-height:774px;height: auto;}*/
+.centerlist ul li{height:50px;padding:20px 0px;border-bottom: 1px solid #e5e5e5;}
+.centerlist ul li.nonConformity{border: 0px;text-align: center;line-height: 400px;}
+.centerlist .lists{height:50px;position: absolute;width: 520px;}
+.centerlist .headI{float: left;display:block;width: 50px;height: 50px;}
+.centerlist .headI img{display: block;width: 50px;height: 50px;border-radius: 2px;}
+.centerlist .msgs{float:left;width: 310px;margin-left: 10px;}
+/*男的都加on*/
+.centerlist .msgs dl dd:first-child{font-size: 14px;color: #333;position: relative;}
+.centerlist .msgs dl dd:first-child.on{color: #fa533d;}
+.centerlist .msgs dl dd:first-child .grade,.centerlist .msgs dl dd:first-child .sexss{display:inline-block;width:38px;height:14px;border-radius:2px;}
+.centerlist .msgs dl dd:first-child .grade img,.centerlist .msgs dl dd:first-child .sexss img{display:block;width:38px;height:14px;border-radius:2px;}
+.centerlist .msgs dl dd:first-child .ages{position: absolute;top:3px;display:inline-block;line-height:14px;padding-right:5px;height:14px;color:#fff;font-size:10px;text-indent:13px;border-radius:2px;background:#fda0ba url(/img/nv02.png) no-repeat 2px center;}
+.centerlist .msgs dl dd:first-child .ages.on{background:#9dcaf7 url(/img/nan02.png) no-repeat 2px center;}
+.centerlist .msgs dl dd:first-child span{margin-left: 5px;margin-bottom: -2px;}
+.centerlist .msgs dl dd:nth-child(2){color: #999;font-size: 12px;height: 16px;}
+.centerlist .msgs dl dd:nth-child(2) i{display: inline-block;width: 12px;height: 12px;background: url(/img/zy_V.png) no-repeat center;margin-left:5px;}
+.centerlist .msgs dl dd:nth-child(3){color:666;font-size:12px;white-space: nowrap;text-overflow:ellipsis;overflow: hidden;}
+.centerlist .msgs dl dd.fromCircle a{display:inline-block;font-size: 12px;color: #676767;}
+.centerlist .msgs dl dd.fromCircle a:first-child{margin-right: 5px;}
+.centerlist .msgs dl dd.fromCircle a:last-child{margin-left: 5px;}
+.centerlist .times{float: right;line-height:50px;color: #999;}
+
+/*让导航上面的发现变色*/
+.findThing a{color:#3da431;}
+.header_right .findThing a i{background:url(/img/sy_faxian_xuanzhong.png) no-repeat;}
+

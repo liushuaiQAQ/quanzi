@@ -1,0 +1,26 @@
+.urban_title{width: 650px;height: 30px;line-height: 30px;font-size: 16px;color: #333;margin-top: 7px;clear: both;}
+.urban_price{width: 650px;height: 30px;line-height: 30px;color: #fb0202;font-size: 18px;margin-bottom: 3px;}
+.qz_handle .qz_row_line .urban_rapidContact{width: 90px;height: 30px;line-height: 30px;text-align: center; border:1px solid #5d78a9;color: #5d78a9;padding:0;margin-top: 4px}
+.urban_contact i{background: url(/img/quanzi_lianxifangshi_06.png) center no-repeat;}
+.qz_handle .qz_row_line .urban_more .fl_menu i{background: url(/img/quanzi_gengduo_03.png) center no-repeat;width: 20px;height: 8px; display: inline-block;}
+.qz_handle .qz_row_line .urban_more .complaint i{background: url(/img/liebiao_jubao.png) center no-repeat;width: 20px;height: 30px; display: inline-block;}
+.qz_handle{border:none;}
+.qz_handle .qz_row_line{margin-bottom: 10px;}
+.retransmission{font-size: 12px;}
+.urban_contact:hover .urban_contact_list{display: block;}
+.urban_contact_list{display: none; text-indent: 20px;border:1px solid #e5e5e5;position: absolute;top: 40px;left: -3px; background: #fff;padding: 0 12px;line-height: 26px;box-shadow: 3px 0 7px rgba(0,0,0,0.5);z-index: 1;}
+.urban_contact_list li{width: 97px;}
+.urban_contact_list li:nth-child(1){background: url(/img/liebiao_lianxi_lianxiren.png) 3px center no-repeat;}
+.urban_contact_list li:nth-child(2){background: url(/img/quanzi_lianxifangshi_06.png) 5px center no-repeat;}
+.urban_contact_list li:nth-child(3){background: url(/img/liebiao_lianxi_qita.png) 4px center no-repeat;overflow: hidden;text-overflow: ellipsis;height: 30px;white-space: nowrap;width: 100px;}
+.fl_menu_list{top: 40px;}
+.urban_rapidContact:hover .fast_contact {color: #fff;}
+.urban_rapidContact:hover{background: #5d75a1;}
+
+
+
+/*common*/
+.clearfix:before, .clearfix:after { content: ""; display: table;visibility: hidden;}
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+

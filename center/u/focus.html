@@ -1,0 +1,140 @@
+<!--#include virtual="/html/doctype.html"-->
+<title>陌生人-关注-圈子</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/index/triends.css"/>
+<link rel="stylesheet" type="text/css" href="/css/center/personalHomepage/personalHomepage.css"/>
+<link rel="stylesheet" type="text/css" href="/css/center/strangeHomepage/strangeHomepage.css"/>
+<script type="text/javascript" src="/js/center/index/index.js"></script>
+<script type="text/javascript" src="/js/center/strangeHomepage/strangeHomepage_guanzhu.js"></script>
+<script type="text/javascript" src="/js/center/strangeHomepage/strange_common.js"></script>
+</head>
+<body>
+	<!--头部开始-->
+	<!--#include virtual="/html/header.html"-->
+	<!--头部end-->
+	<div class="homepage_main">
+		<div class="homepage_top">
+			<div class="user_bj" style="width: 100%;height: 100%;">
+			</div>
+			<!--<div class="nav" id="strangeNav">-->
+				<!--<ul>-->
+					<!--<li><a href="javascript:;">动态&nbsp;<span class="dynamic_num"></span></a></li>-->
+					<!--<li><a href="javascript:;">他的圈子&nbsp;<span class="circle_num"></span></a></li>-->
+					<!--<li><a href="javascript:;" >他发布的&nbsp;<span class="release_num"></span></a></li>-->
+					<!--&lt;!&ndash;<li><a href="javascript:;" class="nav_active">关注&nbsp;<span class="focus_num"></span></a></li>&ndash;&gt;-->
+					<!--&lt;!&ndash;<li><a href="javascript:;">粉丝&nbsp;<span class="funs_num"></span></a></li>&ndash;&gt;-->
+				<!--</ul>-->
+			<!--</div>-->
+			<!--#include virtual="/center/u/hisNav.html"-->
+			<div class="personal_info">
+				<a href="javascript:;" class="userImg">
+					<img src="/img/first.png">
+				</a>
+				<dl>
+					<dd class="personal_title">
+						<span class="personal_nikename"></span>
+						<i class="sex"></i>
+						<i class="level"></i>
+						<i class="viplevel"></i>
+					</dd>
+					<dd>
+						<span style="float: left;">圈子号:</span>
+						<span class="personal_code" style="float: left;margin-right: 30px;"></span>
+						<span class="job" style="float: left;"></span>
+						<span class="pass"></span>
+						<span class="identification"></span>
+						<div class="clear"></div>
+					</dd>
+					<dd class="remark" style="display: none;">
+						昵称：<span class="remark_nikename"></span>
+					</dd>
+					<dd class="sign"></dd>
+				</dl>
+				<div class="personal_like">
+					<ul>
+						<li class="like_guanzhu"><a href="javascript:;" class="concern"><i></i>关注</a><p class="personal_cancel">取消关注</p></li><li class="like_message" data-off="0"><a href="javascript:;"><i class="personal_message"></i>消息</a></li><li class="like_addfriend"><a href="javascript:;" class="friendStatus friendBtn"><i class="personal_jiahaoyou"></i>加为好友</a><div class="remove_friend">删除好友</div><div class="cancel_more" style="display: none;"><p class="setting_remark">确认请求</p><p class="recommend_friends">删除请求</p></div></li><li class="like_more"><a href="javascript:;"><i class="personal_sanheng"></i></a><div class="cancel_more"><p class="setting_remark">设置备注名</p><p class="recommend_friends">推荐好友给TA</p><p class="set_Blacklist">拉黑</p><p class="complain">投诉</p></div></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="homepage_bottom">
+			<div class="homepage_left">
+				<!--#include virtual="/center/u/hisFoucsFuns.html"-->
+				<div class="personal_data">
+					<ul>
+						<li class="lawchat_logo">
+							<i class="logo"></i>
+							<span>圈子号</span>
+							<span class="personal_code" style="float: left;"></span>
+						</li>
+						<li class="personal_job">
+							<i class="logo"></i>
+							<span>职位</span>
+							<span class="job" style="float: left;"></span>
+							<span class="pass" style=""></span>
+							<span class="identification"></span>
+						</li>
+						<li class="personal_pros">
+							<i class="logo"></i>
+							<span>职业圈</span>
+							<span class="myindustry"></span>
+						</li> 
+						<li class="personal_hometown">
+							<i class="logo"></i>
+							<span>地区</span>
+							<span class="homeTown"></span>
+						</li>
+						<li class="personal_tel">
+							<i class="logo"></i>
+							<span>手机号</span>
+							<span class="tel"></span>
+						</li>
+					</ul>
+					<div class="signature">
+						<span><i class="logo" style="height: 14px;"></i>签名</span>
+						<p class="sign"></p>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<!--左侧推荐start-->
+				<div class="recommend">
+				    <p><i>可能认识</i><a href="javascript:;">查看更多</a>
+				 
+				    </p>
+				    <div class="clear"></div>
+					    <ul>
+					    </ul>
+				    <div class="clear"></div>
+				</div>
+				<!--左侧推荐end-->
+
+			</div>
+			<div class="personal_right">
+				<div class="jiazai"><i class="loading" ></i>正在加载中，请稍后</div>
+				<div class="personal_funs personal_guanzhu">
+					<ul>
+					
+					</ul>
+				</div>
+				<div class="page">
+					
+				</div>
+				<div class="no_publish" >
+					<div class="noPublishBox">
+						<img src="/img/nopublish.png">
+						<p>尚未关注他人哦</p>
+					</div>			
+				</div>
+			</div>
+			<br class="clear"/>
+		</div>
+	</div>
+	<div id="mask"></div>
+		<!--底部start-->
+		<!--#include virtual="/html/bottomer.html"-->
+		<!--底部end-->
+	<!-- 通讯录 -->
+	<!--#include virtual="/html/AddressBook.html"-->
+</body>
+</html>

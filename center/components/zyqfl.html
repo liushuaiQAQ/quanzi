@@ -1,0 +1,92 @@
+<div class="shqfl">
+	<div class="boxlist">
+		<p>猜你喜欢</p>
+		<div>
+			<ul>
+				
+			</ul>
+		</div>
+	</div>
+	<div class="recommend">
+		<p><i>可能认识</i><a class="more_s_t" href="javascript:;">查看更多</a></p>
+		<ul>
+			
+		</ul>
+		<div class="clear"></div>
+	</div>
+	<!--用二维码下载  -->
+	<!--#include virtual="/html/qrodeload.html"-->
+	<div class="nologin_footer">
+		<a href="/center/guanyuwomen.html">关于圈子</a>
+		<a href="/center/lianxiwomen.html">联系我们</a>
+		<a href="/center/quanziApp.html">圈子APP</a>
+	</div>
+</div>
+<script src="/js/common/center_rightPerson.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+	//查找一级行业
+	function findFirstLevel() { 
+		$.ajax({
+			type: "post",
+			url: serviceHOST() + "/jobstree/findFirstLevelIndustry.do",
+			dataType: "json",
+			headers: {
+				"token": qz_token()
+			},
+			data: {
+				pageNum: "1"
+			},
+			success: function(mssg) {
+				var msg = mssg.data;
+				var mores='<li class="showmore">展开更多<span><img src="/img/zyq_zhankuaigengduo.png" alt=""></span></li>';
+				var lesss='<li class="showless">收起全部<span><img src="/img/zyq_shouqiquanbu.png" alt=""></span></li>';
+				var str = "<li><a href='/center/zyq.html'>推荐</a></li>";
+				if(mssg.status == 0) {
+					for(var i = 0; i < 53; i++) {           //53种职业 ，多添加一个li为展开
+						var msgname = msg[i].name;
+						if(msg[i].name.indexOf("\/") > -1) { 
+							msgname = msg[i].name.replace(/\//g, "_");
+						} 
+						str += '<li><a href="/center/zhiye/mydynamic.html?code='+msg[i].code+'">' + msg[i].name + '</a></li>';	
+					}
+					str+=lesss;
+					$(".shqfl .boxlist ul").html(str); 
+					 $(".shqfl .boxlist ul li").eq(18).after(mores);       //插入展开更多   收起全部
+					 $(".shqfl .boxlist ul").find(".showmore").nextAll().hide();
+					if(getURIArgs("n")!=""){
+						$(".boxlist div ul li").eq(Number(getURIArgs("n"))+1).find("a").css("color","#ff8a00");
+						$(".boxlist div ul li").eq(Number(getURIArgs("n"))+1).siblings("li").find("a").css("color","#333");
+					}else{
+						$(".boxlist div ul li").eq(0).find("a").css("color","#ff8a00");
+					}
+				}else if(mssg.status==-3){
+					getToken();
+				};
+			},
+			error: function() {
+				console.log("error")
+			}
+
+		});
+	};
+	findFirstLevel();
+
+	//点击展开更多
+	$(document).on("click",".showmore",function(){
+		$(this).hide();
+	 	$(".shqfl .boxlist ul").find(".showmore").nextAll().show();
+	 	$(".showless").show();
+	});
+
+
+	//点击收起全部
+	$(document).on("click",".showless",function(){
+	 	$(".shqfl .boxlist ul").find(".showmore").nextAll().hide();
+	 	$(".showmore").show();
+	})
+	//置顶效果
+	$(document).on("click",".returnTop",function(){
+		$(document).scrollTop(0);
+	});
+</script>

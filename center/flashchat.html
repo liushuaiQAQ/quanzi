@@ -1,0 +1,88 @@
+<!--#include virtual="/html/doctype.html"-->
+<title>闪聊</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/index/index.css"/>
+<link rel="stylesheet" type="text/css" href="/css/center/flashchat/flashchat.css"/>
+</head>
+	<body>
+		<!-- header -->
+		<div class="headss"></div>
+		
+		<div class="main clearfix">
+			<!--left start-->
+			<div class="left_sideBar fl clearfix"></div>
+			<!--left end-->
+			<!--首页-->
+			<div class="center_box fl">
+				<!--动态导航栏-->
+				<div class="dynamic">闪聊</div>
+				<!--动态内容-->
+				<div id="dynamic_list">
+					<div class="centerlist">
+						<ul class="f_c_select">
+							<li class="pitch_s" data-type="3">人气<i class="on"></i></li>
+							<li data-type="4">活跃<i></i></li>
+							<li data-type="2">最新</li>
+							<li data-type="1">综合</li>
+							
+						</ul>
+						<div class="jiazai"><i class="loading"></i>正在加载中，请稍后</div>
+							<div class="classify">
+								<div class="lists">
+									<ul>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					
+				</div>
+			</div>
+			<!--right start-->
+			<div class="right_sideBar"></div>
+
+			<!--<div class="returnTop"></div>-->
+			<br class="clear"/>
+		</div>
+		<!--底部导航容器，区分登录和未登录的底部开始-->
+		<div class="footerss"></div>
+		<!--底部导航容器，区分登录和未登录的底部end-->
+		<!-- 通讯录 -->
+		<div class="Addressbook_box"></div>
+		<!--修改加入职业圈-->
+		<!--#include virtual="/html/changeorjoincarCir.html"--> 
+		<script src="/js/center/index/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/js/center/flashchat/flashchat.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function () {
+				// body...
+				getHotChat(3);
+				$(".f_c_select li").on("click",function(){
+					$(".lists ul").empty();
+					$(".jiazai").show();
+					var type = $(this).attr("data-type");
+					$(".f_c_select li").removeClass("pitch_s");
+					$(this).addClass("pitch_s");
+					
+					var _on = $(this).find("i").hasClass("on");
+					var _on2 = $(this).find("i").hasClass("on2");
+					var _this = $(this).find("i");
+
+					if($(this).hasClass("pitch_s") && !_on && !_on2){
+						getHotChat(type);
+						$(".f_c_select li i").removeClass("on").removeClass("on2");
+						_this.addClass("on");
+					}else if(_this.hasClass("on")){
+						_this.addClass("on2").removeClass("on");
+						getHotChat(6);
+					}else if(_this.hasClass("on2")){
+							_this.addClass("on").removeClass("on2");
+						getHotChat(3);
+					}
+				})
+			})
+		</script>
+	</body>
+
+</html>
+

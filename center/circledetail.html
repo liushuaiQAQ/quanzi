@@ -1,0 +1,64 @@
+<!--#include virtual="/html/doctype.html"-->
+	<title>详情页</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/index/index.css" />
+<link rel="stylesheet" type="text/css" href="/css/center/index/triends.css">
+<link rel="stylesheet" type="text/css" href="/css/center/circleDetail/circle_detail.css">
+<script src="/js/common/loadMore.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<!--顶部导航容器，区分登录和未登录的头部开始-->
+	<div class="headss"></div>
+	<!--顶部导航容器，区分登录和未登录的头部end-->
+	<div class="detail_wrap">
+		<!-- 左侧 -->
+		<div class="detail_left">
+			<div class="dynamic_list">
+				
+			</div>
+			<div class="chitchatBox">
+				
+			</div>
+		</div>
+		<!-- 左侧结束 -->
+		<!-- 右侧开始 -->
+		<div class="detail_right2">
+			<div class="detail_header">
+				<h3>相关推荐</h3>
+				<a href="javascript:;">
+					<span class="TheRefresh"><i class="Refresh"></i>刷新</span>
+				</a>
+				<div class="clear"></div>
+			</div>
+			<div class="recommend_wrap">
+				
+			</div>
+		</div>
+		<!-- 右侧end -->
+		<div class="clear"></div>
+	</div>
+	<!--底部导航容器，区分登录和未登录的底部开始-->
+	<div class="footerss"></div>
+	<!--底部导航容器，区分登录和未登录的底部end-->
+	<div class="bgBOX"></div>
+	<div class="ComplaintsBox" id="ComplaintsBox">
+		<h3>投诉<a class="Closecomplaint" href="javascript:;"></a><br class="clear"/></h3>
+		<ul></ul>
+		<div class="parentS">
+			<textarea maxlength="50" placeholder="请在此填写投诉描述，不可超过50字哦~"></textarea>
+			<div class="titRen">请填写投诉原因</div>
+		</div>
+		<div class="Complaints_btn">
+			<a href="javascript:;">提交</a>
+			<br class="clear" />
+		</div>
+	</div>
+	<!--转发分享圈子朋友圈  圈子好友   圈子群组开始-->
+	<!--#include virtual="/html/dynamicSharing.html"-->
+	<!--转发分享圈子朋友圈  圈子好友   圈子群组结束-->
+	<!-- 通讯录 -->
+	<div class="Addressbook_box"></div>
+	<script src="/js/center/circle_details/circle_detail.js" type="text/javascript"></script>
+</body>
+
+</html>

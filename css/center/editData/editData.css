@@ -1,0 +1,63 @@
+/*解除头部定位*/
+/*.headerBox{position:static;}
+.AddressBook{position: absolute;}*/
+.main{margin: 0 auto;width: 1000px;max-width: 1000px;margin-top:140px;}
+.main_left ul li.accoutNum a{background: #fff url(/img/01_2zhanghao.png) no-repeat 10px center;font-weight: bold;color: #42a236;}
+.main_left ul li.headpic a{background: #fff url(/img/02_1touxiang.png) no-repeat 10px center;}
+.main_left ul li.editDatas a{background: #fff url(/img/03_1bianji.png) no-repeat 10px center;}
+.main_left ul li.editpbsz a{background: #fff url(/img/pingbishezhi1.png) no-repeat 10px center;}
+.main_left ul li.Feedback a{background: #fff url(/img/04_1yijian.png) no-repeat 10px center;}
+.main_left ul li.edithmd a{background: #fff url(/img/sz_heimingdan.png) no-repeat 10px center;}
+.modify_password{margin: 20px 0 22px 19px;font-size: 16px;}
+.current_password{margin-left: 20px;position: relative;}
+.current_password input{margin-left: 20px;width: 178px;height:20px;border:1px solid #e5e5e5;padding:5px 10px;margin-bottom: 14px;color:#666;}
+.current_password a{margin-left: 10px;color: #b7b7b7;}
+.current_password a:hover{color: #3ea436;}
+/*第三方登录账号验证*/
+.third_login{margin-left: 20px;position: relative;margin-bottom: 36px;display: none;}
+.third_login .headI{width: 40px;height: 40px;float: left;}
+.third_login .headI img{display:block;width:100%;height:100%;border-radius:2px;}
+.third_login .msgs{float: left;margin:0px 0px 0px 14px;}
+.third_login .msgs span{font-size: 14px;color:#484848;display: inline-block;}
+.third_login .msgs span.nicksN{margin-right: 26px;}
+.third_login .msgs dd.wordT{font-size: 14px;color: #999;}
+.third_login .testBtn{float:left;width:70px;height: 28px;margin-left: 30px;border: 1px solid #3fa533;color:#3fa533;font-size: 14px;border-radius:2px;line-height: 28px;text-align:center;cursor: pointer;}
+.main_right label{color:#949494;}
+.new_password{margin-left: 34px;margin-bottom: 14px;position: relative;}
+.new_password input{margin-left: 20px;width: 178px;height:20px;border:1px solid #e5e5e5;padding:5px 10px;color:#666;}
+.confirm_password{margin-left: 20px;margin-bottom: 10px;}
+.confirm_password input{margin-left: 20px;width: 178px;height:20px;border:1px solid #e5e5e5;padding:5px 10px;position: relative;color:#666;}
+.save{margin-left: 100px;}
+.save button{width: 80px;height: 32px;background: #40a336;font-size: 14px;text-align: center;line-height: 32px;border-style: none;color: #fff;display: block;border-radius:4px;cursor: pointer;}
+.save button:hover{background: #358f2f;}
+.pointWord{position: absolute;background: #282828;border-radius:4px;color: #fff;font-size: 12px;padding:5px 12px;top:-28px;left: 120px;display: none;}
+
+/*找回密码弹窗*/
+.masks{width: 100%;height: 100%;position:fixed;left: 0;top: 0;background:#333333;opacity: 0.4;filter:alpha(opacity=40);z-index: 19;display:none;}
+.viewpasswordBox{width:596px;height:474px;border: 1px solid #a8a8a8;background: #fff;position: fixed;z-index:20;left: 50%;top: 50%;margin:-237px 0 0 -298px;border-radius: 4px;display:none;}
+.errors{display: block;font-size:20px;font-weight:bold;color: #555659;text-align: right;margin:0px 10px 10px 0;cursor: pointer;}
+.passwordLogin{width: 356px;margin:10px auto 0px;}
+.passwordLogin p.tit{width: 64px;height: 30px;line-height:30px;border-bottom: 2px solid #008000;font-size:16px;color: #333;}
+.inputLogin2 p.msg{font-size: 12px;color: #333333;margin: 20px 0px 30px;}
+.inputLogin2 li{margin-bottom:14px;position:relative;}
+.inputLogin2 li label{display: inline-block;width:54px;text-align: right;font-size: 12px;margin-right:12px;}
+.inputLogin2 li input{display: inline-block;width: 247px;height:36px;border: 1px solid #a8a8a8;padding: 0 4px 0 32px;}
+/*验证码开始*/
+.inputLogin2 li input#code2{width:140px;margin-right:8px;}
+.inputLogin2 ul li button.identifyingCode{display: inline-block;width:97px;height:38px;text-align: center;line-height:38px;background:#40a336;color: #fff;border-radius:4px;border: 0px;}
+.inputLogin2 ul li .btn-small{ line-height:25px; height:25px; margin-top:2px; width:80px; font-size:12px;}
+.inputLogin2 ul li button.get-code{background:#40a336; color:#fff; display:inline;}
+.inputLogin2 ul li button.reset-code{color:#fff;background: #999;}
+/*验证码end*/
+.inputLogin2 li input[name="phone2"]{background: #fff url(/img/phone.png) no-repeat 10px center;}
+.inputLogin2 li input[name="code2"]{background: #fff url(/img/passwordimg.png) no-repeat 10px center;}
+.inputLogin2 li input[name="password01"]{background: #fff url(/img/lock.png) no-repeat 10px center;}
+.inputLogin2 li input[name="password02"]{background: #fff url(/img/lock.png) no-repeat 10px center;}
+.clickLogin_end{width:285px;height:40px;display: block;text-align: center;line-height: 40px;background: #3fa435;color: #fff;border-radius: 5px;margin:0 0 0 70px;font-size: 14px;margin-top: 30px;}
+/*输入信息错误提示*/
+.warn2{position: absolute;top:-38px;left:150px;background: #fff url(/img/gantanhao.png) no-repeat 15px center;border: 1px solid #ccc;padding-left: 15px;display:none;}
+.warn2 p{font-size:12px;color: #333;text-align: center;padding:8px 15px;}
+.warn2 i{position: absolute;display: block;left:40%;top:31px;}
+
+
+

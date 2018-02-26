@@ -1,0 +1,66 @@
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />         
+<meta name="renderer" content="webkit" /> 
+<meta name="description" content="“圈子”英文名“Facechat”，被称为中国版“脸书”“facebook”，中国首个面向全球的共享社交网络平台！随时随地发现新鲜事！随时随地进圈子交朋友，为用户提供社交共享生活；目前用户突破5000万以上，圈子社交实现了：随时随地交朋友 共享社交共享生活；2015年10月圈子社交APP安卓版、IOS版、“圈子”PC端正式上线。" />
+<meta name="Keywords" content="圈子,圈子社交,社交媒体,交朋友,职业圈子,生活圈子,全球圈子,找美女,找帅哥,找对象,圈子登录,圈子朋友,圈子视频,圈子聊天,圈子生意">
+<link rel="shortcut icon" type="image/ico" href="/img/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/css/common/common.css"/>
+<link rel="stylesheet" type="text/css" href="/css/common/smohan.face.css">
+<link rel="stylesheet" type="text/css" href="/css/common/AddressBook.css">
+<!--<link rel="stylesheet" type="text/css" href="/css/common/dynamicSharing.css"/>-->
+<script type="text/javascript" src="/js/common/jquery-1.8.3.min.js"></script>
+<script src="/js/common/com_ajaxfileupload.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/common/jquery.nicescroll.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/common/store.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/common/jquery.qrcode.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="/js/common/common.js"></script>
+<script type="text/javascript" src="/js/common/face_json.js"></script>
+<script type="text/javascript" src="/js/common/smohan.face.js"></script>
+<script src="/js/common/down_navBottomer.js" type="text/javascript"></script>
+<script src="/js/common/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+<!-- 环信所需文件 -->
+<script src="/js/common/md5.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/common/stophe.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/common/message.js" type="text/javascript" charset="utf-8"></script>
+<script type='text/javascript' src='/js/common/huanxin.js'></script> 
+<script src="/js/common/AddressBook.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/common/message1.js" type="text/javascript" charset="utf-8"></script>
+<script type='text/javascript' src='/js/common/drag.js'></script> 
+<script type="text/javascript">                //某个页面不加载某个js和css的函数
+	$.extend({
+		includePath: '', 
+		include: function(file) { 
+			var files = typeof file == "string" ? [file] : file; 
+			for (var i = 0; i < files.length; i++) { 
+				var name = files[i].replace(/^\s|\s$/g, ""); 
+				var att = name.split('.'); 
+				var ext = att[att.length - 1].toLowerCase(); 
+				var isCSS = ext == "css"; 
+				var tag = isCSS ? "link" : "script"; 
+				var attr = isCSS ? " type='text/css' rel='stylesheet' " : " type='text/javascript' "; 
+				var link = (isCSS ? "href" : "src") + "='" + $.includePath + name + "'"; 
+				if ($(tag + "[" + link + "]").length == 0) $("head").append("<" + tag + attr + link + "></" + tag + ">"); 
+			}
+		} 
+	}); 
+	var herfsUrl = window.location.href;
+	var loginsearch = herfsUrl.indexOf("searchresult.html")>-1 && getURIArgs("form") == 2;
+	var noLoginserch = herfsUrl.indexOf("search.html") > -1 && getURIArgs("form") == 2;
+	var noLoginVideo=herfsUrl.indexOf("videoLists.html") > -1 && getURIArgs("category") =="videoLists";
+	var collect = herfsUrl.indexOf("myCollection.html") > -1 && getURIArgs("type") == 1;
+	var collects = herfsUrl.indexOf("mysc.html") > -1 && getURIArgs("type") == 1;   //现在没啦
+	var Vdetails = herfsUrl.indexOf("videodetail.html") > -1;
+	var personPageColl=herfsUrl.indexOf("collect.html") > -1 && getURIArgs("type") == 1; 
+    if(herfsUrl.indexOf("pyq.html") > -1){
+    	
+    }else{
+    	$.include("/css/common/dynamicSharing.css");
+		if(herfsUrl.indexOf("videoLists.html") > -1 || loginsearch || noLoginserch || collect || collects || Vdetails||personPageColl||noLoginVideo){
+			$.include("/js/common/shareVideo.js");
+    	}else if(herfsUrl.indexOf("searchUrbanResult.html") > -1){
+    		$.include("/js/common/share_urban.js");
+    	}else{
+    		$.include("/js/common/share.js");
+    	}
+		
+   };
+</script>

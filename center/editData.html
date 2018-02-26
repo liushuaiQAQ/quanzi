@@ -1,0 +1,144 @@
+<!--#include virtual="/html/doctype.html"-->
+	<title>账号安全</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/editData/editData.css">
+</head>
+<body>
+	<!--头部开始-->
+	<!--#include virtual="/html/header.html"-->
+	<!--头部end-->
+	<div class="main clear">
+		<div class="main_left">
+			<ul>
+				<li class="accoutNum">
+					<a  href="/center/editData.html">
+						账号安全
+					</a>
+				</li>
+				<li class="headpic">
+					<a  href="/center/edittx.html">
+						头像
+					</a>
+				</li>
+				<li class="editDatas">
+					<a href="/center/editbjzl.html">
+						编辑资料
+					</a>
+				</li>
+				<li class="edithmd">
+					<a href="/center/edithmd.html">
+						黑名单
+					</a>
+				</li>
+				<li class="editpbsz">
+					<a href="/center/editpbsz.html">
+						屏蔽设置
+					</a>
+				</li>
+				<li class="Feedback">
+					<a href="/center/edityjfk.html">
+						意见反馈
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="main_right">
+			<div class="modify_password">修改密码</div>
+			<div class="commonDiv current_password">
+				<label for="current_password">当前密码</label>
+				<input id="current_password" type="password" name="" placeholder="请输入当前密码">
+				<a href="javascript:;">忘记密码？</a>
+				<div class="pointWord pointW1">
+					请输入当前密码
+				</div>
+			</div>
+			<!--第三方登录账号验证-->
+			<div class="third_login clearfix">
+				<div class="headI">
+					<img src="/img/require_img.png"/>
+				</div>
+				<div class="msgs">
+					<dl>
+						<dd><span class="nicksN">张媛媛</span><span class="accNum">61148</span></dd>
+						<dd class="wordT">请验证第三方账号</dd>
+					</dl>
+				</div>
+				<div class="testBtn">验证</div>
+			</div>
+			<div class="commonDiv new_password">
+				<label for="new_password">新密码</label>
+				<input id="new_password" type="password" name="" placeholder="密码不少于6位">
+				<div class="pointWord pointW2">
+					请输入新密码
+				</div>
+			</div>
+			<div class="commonDiv confirm_password">
+				<label for="confirm_password">确认密码</label>
+				<input id="confirm_password" type="password" name="" placeholder="再次输入当前新密码">
+				<div class="pointWord pointW3">
+					请再次输入新密码
+				</div>
+			</div>
+			<div class="save">
+				<button>保存</button>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!--底部start-->
+		<!--#include virtual="/html/bottomer.html"-->
+		<!--底部end-->
+		<!--找回密码-->
+		<!--遮盖弹窗-->
+		<div class="masks"></div>
+		<div class="viewpasswordBox">
+			<span class="errors">×</span>
+			<div class="passwordLogin">
+				<p class="tit">找回密码</p>
+				<div class="inputLogin2">
+					<p class="msg">请填写您需要找回的账号信息</p>
+						<ul>
+							<li>
+								<label for="#phone2">手机号</label>
+								<input type="text" name="phone2" id="phone2" value="" placeholder="手机号"/>
+								<div class="commontit warn2 point3">     <!--错误提示-->
+									<i><img src="/img/daosanjiao.png"/></i>
+									<p>手机号有误</p>
+								</div>
+							</li>
+							<li>
+								<label for="#code2">验证码</label>
+								<input type="text" name="code2" id="code2" value="" placeholder="请输入验证码"/><button class="identifyingCode btn-small get-code">获取验证码</button><button class="identifyingCode btn-small reset-code" id="J_resetCode" style="display:none;"><span id="J_second">60</span>秒后重发</button>
+								<div class="commontit warn2 point4">     <!--错误提示-->
+									<i><img src="/img/daosanjiao.png"/></i>
+									<p>验证码有误</p>
+								</div>
+							</li>
+							<li>
+								<label for="#password01">新密码</label>
+								<input type="password" name="password01" id="password01" value="" placeholder="请输入6~20位新密码"/>
+								<div class="commontit warn2 point5">     <!--错误提示-->
+									<i><img src="/img/daosanjiao.png"/></i>
+									<p>二次密码不一致</p>
+								</div>
+							</li>
+							<li>
+								<label for="#password02">确认密码</label>
+								<input type="password" name="password02" id="password02" value="" placeholder="请再次输入密码"/>
+								<div class="commontit warn2 point6">     <!--错误提示-->
+									<i><img src="/img/daosanjiao.png"/></i>
+									<p>请输入确认密码</p>
+								</div>
+							</li>
+						</ul>
+					<a class="clickLogin_end" href="javascript:;">完成</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="/js/center/editData/editData.js" type="text/javascript" charset="utf-8"></script>
+			<!-- 通讯录 -->
+	<!--#include virtual="/html/AddressBook.html"-->
+</body>
+
+</html>

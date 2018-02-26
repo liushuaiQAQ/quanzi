@@ -1,0 +1,39 @@
+/*.centerlist .classify{margin-bottom: 10px;background: #fff;padding:0 14px;}
+.titles{font-size:14px;padding:14px 0px 10px;border-bottom:1px solid #e5e5e5;color: #666;margin-bottom: 24px;}
+.titles a{float:right;}
+.titles a:hover{color: #ff8921;}
+.lists ul{margin-right:-18px;}
+.lists li{width:72px;float: left;margin: 0px 18px 24px 0px;}
+.lists li span{display:block;width: 72px;height: 72px;border-radius: 6px;}
+.lists li span img{display: block;width: 72px;height: 72px;border-radius:6px;}
+.lists li p{text-align: center;font-size: 14px;color: #333;margin:8px 0px 0px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap}
+.lists li p:hover{color: #fe8b21;}
+.lists li i{display:inline-block;width:72px;font-size: 12px;color: #999;font-style: normal;text-align:center;}*/
+
+
+/*职业圈推荐*/
+.centerlist{padding-bottom: 10px;display: none;}
+.centerlist h2{font-weight: 500;font-size: 15px;color: #333;height:36px;line-height: 36px;border-bottom: 1px solid #e6e6e6;margin-bottom: 10px;}
+.centerlist li{padding: 10px 0px;border-bottom:1px solid #e6e6e6;}
+/*.centerlist .words{height: ;}*/
+.centerlist .words a.addre{display: block;width: 390px;float: left;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.centerlist .words a.joinCir{display: block;float:right;width: 66px;height: 24px;border: 1px solid #ffa84e;border-radius:2px;font-size:14px;text-align: center;line-height: 24px;color: #ffa84e;margin-top: 10px;} 
+.centerlist .words a.joinCir.off{width:46px;padding-left:20px;color: #5491ea;border:1px solid #5491ea;background: url(/img/zyq_jinru.png) no-repeat 8px center;}
+.centerlist .words a p{font-size:15px;color: #333;}
+.centerlist .words a p span{font-size: 12px;color: #b4b4b4;display: inline-block;margin-left: 10px;}
+.centerlist .words a p span i{font-style: normal;}
+.centerlist  .circleNames{display: inline-block;font-size: 12px;color: #686868;margin-top: 10px;}
+.centerlist  .circleNames b{font-size: 12px;color: #686868;font-weight: normal;}
+.centerlist .imglis{height: 106px;margin:10px -10px 5px 0px;}
+.centerlist .imglis a{display: block;width: 122px;height: 106px;overflow:hidden;margin-right: 10px;float: left;}
+.centerlist .imglis a img{display: block;width:100%;height:auto;min-height: 106px;}
+.centerlist li p.circleAddress{font-size: 12px;color: #686868;margin-top: 10px;}
+/*点击某个地区下的圈子为空时*/
+.datanull{height:266px;background: #fff;padding-top: 70px;}
+.datanull span{display: block;width: 137px;height: 79px;margin:0px auto;line-height:100px;}
+.datanull span img{display: block;}
+.datanull i{display: block;font-size: 15px;color: #9d9d9d;text-align: center;font-style: normal;margin: 20px 0px 36px;}
+.datanull .btns{text-align: center;}
+.datanull .btns a{display:inline-block;width:86px;height: 26px;font-size: 14px;color: #fff;text-align: center;border-radius:2px;}
+.datanull .btns a.creatcir{background: #3ea436;line-height: 26px;margin-right: 15px;}
+.datanull .btns a.tjcir{width: 84px;height: 24px;border: 1px solid #e5e5e5;color:#959595;line-height: 24px;background: #fff;margin-left: 15px;}

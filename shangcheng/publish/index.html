@@ -1,0 +1,364 @@
+<!--#include virtual="/html/doctype.html"-->
+<title>同城发布-圈子</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/index/index.css" />
+<link rel="stylesheet" type="text/css" href="/shangcheng/css/publish.css" />
+<script src="https://api.map.baidu.com/api?v=2.0&ak=QG92622BdULt3KsqzgpQRHOnWThbWgHN"></script>
+<script src="/shangcheng/js/area_pub.js"></script>
+<script src="/js/common/nologin_header.js" type="text/javascript" charset="utf-8"></script>
+<script src="/shangcheng/js/sc_publish.js"></script>
+</head>
+<body>
+	<!--头部开始-->
+	<!--#include virtual="/html/header.html"-->
+	<!--头部end-->
+<div class="main">
+	<!--左侧-->
+	<div class="col_L">
+		<div class="left_nav">
+			<ul>
+				<li>
+					<a href="/shangcheng/prd/hot.html">热门推荐</a>
+				</li>
+				<li>
+					<a href="/shangcheng/prd/occupation.html">职业</a>
+				</li>
+				<li>
+					<a href="/shangcheng/prd/rent.html">租房</a>
+				</li>
+				<li>
+					<a href="/shangcheng/prd/housekeep.html">家政</a>
+				</li>
+				<li>
+					<a href="/shangcheng/prd/secondPrd.html">二手物品</a>
+				</li>
+				<li>
+					<a href="/shangcheng/prd/businessService.html">商务服务</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="publish_btn">发布信息</a>
+				</li>
+			</ul>
+		</div>
+		<div class="content_l">
+			<h4>基础信息</h4>
+			<dl class="pb_tip clearfix">
+				<dt>注：</dt>
+				<dd>
+					<p>1、您所发布的信息，免费保留30天后，将会被自动下架；</p>
+					<p>2、您可自行从 " 个人资料 > 我发布的 “里面设置，重新上架；</p>
+				</dd>
+			</dl>
+			<div class="pb_need">
+				<dl class="warp_text mb15">
+					<dt><span>*</span>分类</dt>
+					<dd>
+						<div class="classify"></div>
+						<input class="classify_val" type="hidden" name="" data-id="" value="" />
+					</dd>
+					<a class="change_class" href="javascript:;">修改</a>
+				</dl>
+				<dl class="warp_text mb15">
+					<dt><span>*</span>标题</dt>
+					<dd>
+						<input class="wrap_title1 JS_title" type="text" placeholder="有趣的标题更有吸引力哦~" maxlength="20" value="" />
+						<span class="wrap_num JS_titleNum"><i>0</i>/20</span>
+					</dd>
+					<span class="Err_Tip setclass1">标题不足8个字</span>
+				</dl>
+				<dl class="warp_text mb15">
+					<dt><span>*</span>描述</dt>
+					<dd>
+						<div class="wrap_textarea">
+							<textarea class="JS_desi" placeholder="对您发布的信息进行详细描述吧" maxlength="500"></textarea>
+							<span class="wrap_textarea_num JS_desiNum"><i>0</i>/500</span>
+						</div>
+					</dd>
+					<span class="Err_Tip setclass1">描述不足10个字</span>
+				</dl>
+				<dl class="warp_text mb15">
+					<dt><span>*</span>价格</dt>
+					<dd>
+						<div class="JS_price_up"><input class="wrap_title mr JS_price" type="text" placeholder="请填写价格，只能写正整数 / 面议"  value="" /><span>元</span></div>
+						<div class="JS_price_down">
+							<select class="wrap_down mr" name="" style="display: non1e;">
+							<option value="">请选择</option>
+							<option value="1">1000元以下</option>
+							<option value="2">1000-2000元</option>
+							<option value="3">2000-3000元</option>
+							<option value="4">3000-5000元</option>
+							<option value="5">5000-8000元</option>
+							<option value="6">8000-12000元</option>
+							<option value="7">12000-20000元</option>
+							<option value="8">20000-25000元</option>
+							<option value="9">25000元以上</option>
+							<option value="0">面议</option>
+						</select><span>元</span>
+						</div>
+					</dd>
+					<span class="Err_Tip setclass2">价格不能为空</span>
+				</dl>
+				<!--上传图片-->
+				<dl class="warp_text mb15">
+					<dt><span class="JS_isMust">*</span>上传图片</dt>
+					<dd class="clearfix">
+						<ul class="update_con clearfix" style="display: block;">
+							<!--<li>
+								<img src="/shangcheng/img/list_hotPrd.png"/>
+								<p class="bottom">
+									<span class="changeEedit">编辑</span>
+									<span class="changDel">删除</span>
+								</p>
+								<span class="play_btn"></span>
+								<p class="fileName">哈哈哈哈</p>
+							</li>-->
+						</ul>
+						<div class="wrap_localUpload">
+							<div class="localTitle">可上传图片或视频</div>
+					
+							<div class="localUpload">
+								<div class="imgUpload">
+									<div class="html5">
+										<input type="file" name="file" id="uploadMass" class="upload">
+									</div>
+								</div>
+								<p class="update_tip">选择本地上传</p>
+								<!--<div class="maxlength_cover">10</div>-->
+							</div>
+						</div>
+						<div class="update_care">
+							<p class="update_care_l">注：</p>
+							<div class="update_care_r">
+								<p>1. 图片最多上传9张，支持GIF 、JPG、PNG类型的文件；</p>
+								<p>2. 视频支持MP4类型的文件；</p>
+								<p>3.图片和视频不能同时上传；</p>
+							</div>
+						</div>
+					</dd>
+					
+					<!--视频-->
+					<div class="update_finish">
+						<div class="upStatus">
+							<div class="upload2">
+								<span class="backErr"><img src="/img/cuowu.png"/></span>
+								<div class="progressLine">
+									<div class="uploadGro">
+										<div class="barBg"></div>
+									</div>
+									<span class="NumPro">0</span>
+									<br class="clear"/>
+								</div>
+								<p class="videoUpLoading">视频上传中...</p>
+								<p class="msgWord">上传速度取决于您的网速，请耐心等待。<span>取消上传</span></p>
+							</div>
+							<div class="alertMsgBox"></div>
+							<div class="alertMsg">
+								<p class="endVideo"><span><img src="/img/wenhao2.png"/></span>确定要终止上传视频吗？</p>
+								<p class="btnV"><span class="btnYes">确定</span><span class="btnNo">取消</span></p>
+							</div>
+						</div>
+						<div class="upSuccess">
+							<!--<span class="backErr"><img src="/img/cuowu.png"/></span>-->
+							<div class="imgIco"></div>
+							<p class="vs">视频上传成功</p>
+							<!--<p class="transcoding">转码完成后，圈子将自动发出</p>
+							<span class="kMsg">知道啦</span>-->
+						</div>
+					</div>					
+					<span class="Err_Tip setclass5">图片不能为空</span>
+				</dl>
+				<!--地址-->
+				<dl class="warp_text mb15">
+					<dt><span>*</span>地点</dt>
+					<dd class="warp_address">
+						<select name="" class="z_Country">
+							<option value="">中国</option>
+						</select>
+						<select name="province" class="provinces z_provinces">
+		                    <!--<option value="">请选择省</option>-->
+		                </select>
+		                <select name="city" class="cities z_cities">
+                            <!--<option value="">请选择市</option>-->
+                        </select>
+                        <select name="district" class="districts z_districts">
+                            <!--<option value="">请选择区/县</option>-->
+                        </select>
+					</dd>
+					<dd class="warp_address mt10">
+						<select name="" class="z_Street">
+							<option value="">请选择街道</option>
+							<input class="wrap_title2 z_ad_info" type="text" placeholder=""  value="" />
+						</select>
+					</dd>
+					<span class="Err_Tip setclass4">地点不能为空</span>
+				</dl>
+				<!--联系方式-->
+				<dl class="warp_text mb15">
+					<dt>联系方式</dt>
+					<dd class="clearfix"></dd>
+				</dl>
+				<dl class="warp_text mb15">
+					<dt><span>*</span>联系人</dt>
+					<dd>
+						<input class="wrap_title JS_linkUser" maxlength="6" type="text" placeholder=""  value="" />
+					</dd>
+					<span class="Err_Tip setclass3">联系人不能为空</span>
+				</dl>
+				<dl class="warp_text mb15">
+					<dt><span>*</span>联系电话</dt>
+					<dd>
+						<input class="wrap_title JS_linkPhone" type="tel" maxlength="11" placeholder=""  value="" />
+					</dd>
+					<span class="Err_Tip setclass3">联系电话不能为空</span>
+				</dl>
+				<dl class="warp_text other_class mb15">
+					<dt>其他联系<span>方式</span><i>（选填）</i></dt>
+					<dd>
+						<input class="wrap_title JS_other" type="text" maxlength="33" placeholder=""  value="" />
+					</dd>
+				</dl>
+			</div>
+			<a class="Btn_class JS_btn" href="javascript:;">发布</a>
+			
+		</div>
+		
+	</div>
+	<!--右侧-->
+	<div class="col_R">
+	<!--随便逛逛-->
+	<div class="cityHot">
+		<div class="cityHot_head">随便逛逛
+	        <a href="/shangcheng/prd/hot.html">查看更多</a>
+	    </div>
+	    <div class="cityHotList">
+	    	
+		    <!--<div class="cityHot_container">
+		        <h3>急招淘宝客服</h3>
+		        <ul>
+		        	<li><img src="/img/globalCircle.png" alt="同城热点" /></li>
+		        	<li><img src="/img/globalCircle.png" alt="同城热点" /></li>
+		        </ul>
+		        <div class="cityHot_price"><span>5000-8000/月</span></div>
+		        <div class="cityHot_address"><span>北京|顺义</span></div>
+		        <p>急招北京山姆导购员，负责山姆会员店产品周末双休+30以下女孩。五官端...</p>
+		        <div class="cityHot_person">
+		        	<img src="/img/bgHead.png" alt="头像" />
+		        	<span>月光宝盒</span>
+		        	<span>软件/硬件/互联网开发</span>
+		        </div>
+		    </div>
+		    <div class="cityHot_container">
+		        <h3>急招淘宝客服</h3>
+		        <ul>
+		        	<li><img src="/img/globalCircle.png" alt="同城热点" /></li>
+		        	<li><img src="/img/globalCircle.png" alt="同城热点" /></li>
+		        </ul>
+		        <div class="cityHot_price"><span>5000-8000/月</span></div>
+		        <div class="cityHot_address"><span>北京|顺义</span></div>
+		        <p>急招北京山姆导购员，负责山姆会员店产品周末双休+30以下女孩。五官端...</p>
+		        <div class="cityHot_person">
+		        	<img src="/img/bgHead.png" alt="头像" />
+		        	<span>月光宝盒</span>
+		        	<span>软件/硬件/互联网开发</span>
+		        </div>
+		    </div>
+		    <div class="cityHot_container">
+		        <h3>急招淘宝客服</h3>
+		        <ul>
+		        	<li><img src="/img/globalCircle.png" alt="同城热点" /></li>
+		        	<li><img src="/img/globalCircle.png" alt="同城热点" /></li>
+		        </ul>
+		        <div class="cityHot_price"><span>5000-8000/月</span></div>
+		        <div class="cityHot_address"><span>北京|顺义</span></div>
+		        <p>急招北京山姆导购员，负责山姆会员店产品周末双休+30以下女孩。五官端...</p>
+		        <div class="cityHot_person">
+		        	<img src="/img/bgHead.png" alt="头像" />
+		        	<span>月光宝盒</span>
+		        	<span>软件/硬件/互联网开发</span>
+		        </div>
+		    </div>	-->	   
+		   
+		   
+	    </div>
+	</div>	
+    <!--热门-->
+	<div class="hot_prd">
+		<p class="title">热门商品</p>
+		<div class="hot_prd_list">
+			<ul>
+				<!--<li>
+					<a href="">
+						<div class="img_box">
+							<img src="/shangcheng/img/list_hotPrd.png" alt="圈子商城" />
+						</div>
+						<p>oppor11 9层新包邮只要2999元</p>
+					</a>
+				</li>-->
+
+			</ul>
+		</div>
+
+		<a class="next" title="下一个"><img src="/shangcheng/img/shangpin_you.png" alt="圈子商城" /></a>
+		<a class="prev" title="上一个"><img src="/shangcheng/img/shangpin_zuo.png" alt="圈子商城" /></a>
+	</div>
+	<div class="recommend" style="display: none;">
+		<p><i>可能认识</i><a href="javascript:;" class="more_s_t">查看更多</a></p>
+		<ul class="myCircle_t">
+			
+		</ul>
+		<div class="clear"></div>
+	</div>
+		
+	</div><!--右侧end-->
+	<br class="clear">
+	</div><!--main-->
+	
+	<!--弹出层  分类信息-->
+	<div class="postCategory">
+		<div class="contain">
+			<div class="header">
+				<h4>选择分类</h4>
+				<a class="z_close" href="javascript:;">×</a>
+			</div>
+			<p class="z_tip">选择您所发布信息的分类：</p>
+			<div class="cate_mainmenu">
+				<ul class="cate_mainmenu_l">
+					<!--<li class="active">职位<i></i></li>-->
+				</ul>
+				<div class="cate_mainmenu_r">
+					<ul>
+						<!--<li><a href="javascript:;">女装</a></li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--弹出层  发布-->
+	<div class="postAchieve">
+		<div class="top">
+			<img src="/shangcheng/img/pb1801_finish.png"/>
+			<span>发布成功</span>
+		</div>
+		<p class="center">该信息已发布，需要审核后才能展示，请在个人中心关注信息状态。</p>
+		<div class="bottom">
+			<a class="pub_info" href="javascript:;">查看信息</a>
+			<a class="pub_admin" href="javascript:;">管理信息</a>
+			<a class="pub_add" href="javascript:;">再发一条</a>
+		</div>
+	</div>
+	
+	
+
+
+	<div id="mask"></div><!--遮罩-->
+	
+	<div id="Bmap_main"></div>	<!--百度地图空间-->
+	
+	<!--登录 弹窗                 忘记密码弹窗-->
+	<!--#include virtual="/html/nologin_alertWindow.html"-->	
+	
+	<!--底部导航容器，区分登录和未登录的底部开始-->
+		<div class="footerss"></div>
+	<!--底部导航容器，区分登录和未登录的底部end-->
+</body>
+</html>

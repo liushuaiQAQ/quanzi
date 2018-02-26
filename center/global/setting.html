@@ -1,0 +1,204 @@
+<!--#include virtual="/html/doctype.html"-->
+<title>圈子社交-全球圈设置</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/detail/circle_detail.css">
+<link rel="stylesheet" type="text/css" href="/css/center/detail/detail_new.css">
+<link rel="stylesheet" type="text/css" href="/css/center/index/triends.css"/>
+<link rel="stylesheet" type="text/css" href="/css/center/index/index.css"/>
+<link rel="stylesheet" type="text/css" href="/css/common/jquery.Jcrop.min.css"/>
+<script src="/js/common/globalcity_noall.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/common/com_ajaxfileupload.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/common/jquery.Jcrop.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="/js/center/index/index.js"></script>
+<script type="text/javascript" src="/js/center/detail/global/common.js"></script>
+<script src="/js/center/detail/imgUpload.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="/js/common/publishIndex.js"></script>
+<script type="text/javascript" src="/js/common/index_shareThing.js"></script>
+<script type="text/javascript" src="/js/center/detail/global/set.js"></script>
+<script type="text/javascript" src="/js/center/createCircle/cjqz.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="headss"></div>
+<!--内容-->
+<div class="circleDetail_main lift_dt">
+    <div class="detail_left">
+        <div class="publish_box">
+            <!--#include virtual="/html/index_shareThing.html"-->
+        </div>
+        <div class="left_nav">
+            <ul>
+                <li>
+                     <a href="javascript:;">动态(<span class="dayNum"></span>)</a>
+                </li>
+               <!--  <li>
+                     <a href="javascript:;">百问百答(<span class="ansNum"></span>)</a>
+                </li> -->
+                <li>
+                    <a href="javascript:;">成员 (<span class="join_num"></span> )</a>
+                </li>
+            </ul>
+        </div>  
+        <div class="bottom_left fl globalCirs">
+            <div class="main_setting">
+                    <p class="setting_title">圈子设置</p>
+                    <div class="settingBox">
+                        <span>圈子名称</span>
+                        <input class="circle_name" type="text" name="">
+                        <b class="titWord">名称不能大于20个字符</b>
+                    </div>
+                    <div class="settingBox">
+                        <span>圈子地点</span>
+                        <!--<input type="text" class="circle_site" name="" placeholder="未填写">-->
+                        <span class="addresss"></span>
+                        <span class="setAdd">修改</span>
+                    </div>
+                    <div class="settingBox">
+                        <span>创建人</span>
+                        <span class="creatname"></span>
+                    </div>
+                    <div class="settingBox">
+                        <span>创建时间</span>
+                        <span class="creatntime">2016-5-5</span>
+                    </div>
+                    <div class="settingBox">
+                        <span>聊天室</span>
+                        <input type="radio" name="name" id="chatOn" checked="checked">
+                        <label for="chatOn">开通</label>
+                        <input type="radio" name="name" id="chatOff">
+                        <label for="chatOff">关闭</label>
+                    </div>
+                    <div class="settingBox">
+                        <span class="introTitle">圈子介绍</span>
+                        <div class="txt_box">
+                            <textarea class="introduce" maxlength="30" onkeyup="checkLength(this,'30','cj_num')"></textarea>
+                            <p class="number"><em id="cj_num">0</em>/30</p>
+                        </div>
+                    </div>
+                    <div class="sub">
+                        <button class="save sub_active">保存</button>
+                        <button class="cancel">取消</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="detail_right">  
+        <div class="right_top">
+            <div class="circle_bg"></div>
+            <a href="javascript:;" class="circle_img">
+                <img src="/img/first.png">
+            </a>
+            <p class="circle_name"></p>
+            <ul>
+                <li class="joinUs"><a href="javascript:;">加入圈子</a></li>
+                <li class="no_class">|</li>
+                <li class="chatRoom"><a href="javascript:;"><span class="chatroom_bg"></span>聊天室</a></li>
+                <li>|</li>
+                <li class="recommend_friends"><a href="javascript:;">推荐给好友</a></li>
+                <br class="clear">
+            </ul>
+        </div>
+        <div class="bottom_type">
+            <ul>
+                <li>加入<span class="join_num"></span>
+                </li>
+                <li>|</li>
+                <li>动态&nbsp;<span class="dynamic_num"></span>
+                </li>
+                <br class="clear">
+            </ul>
+        </div>
+        <div class="bottom_detail">
+            <ul>
+                <li class="circle_name">
+                    <i></i>
+                    <span>名&nbsp;称</span>
+                    <span class="specific_name"></span>
+                </li>
+                <li class="circle_area">
+                    <i></i>
+                    <span>圈&nbsp;子</span>
+                    <span class="specific_area"></span>
+                </li>
+                <li class="circle_item">
+                    <i></i>
+                    <span>分&nbsp;类</span>
+                    <span class="specific_item"></span>
+                </li>
+            </ul>
+            <div class="circle_intro">
+                <span><i></i>简&nbsp;介</span>
+                <p class="specific_intro"></p>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="circle_setting">
+            <a href="/center/global/set.html">圈子设置
+                <i></i>
+            </a>
+        </div>
+        <!-- 推荐 -->
+        <!--#include virtual="/html/recommoned.html"-->
+    </div>  
+    <div class="clear"></div>  
+</div>
+<!--底部start-->
+<div class="footerss"></div>
+<!--底部end-->
+
+<!--遮盖弹窗-->
+<div id="mask"></div>
+
+<!--转发分享圈子朋友圈  圈子好友   圈子群组开始-->
+<!--#include virtual="/html/dynamicSharing.html"-->
+<!--转发分享圈子朋友圈  圈子好友   圈子群组结束-->
+<!-- 通讯录 -->
+<div class="Addressbook_box"></div>
+<!-- 上传 图片 -->
+<!--#include virtual="/html/uploadImg.html"-->
+
+
+<!-- 分享点新鲜事 -->
+
+<!-- 选择地区 -->
+    <div class="choseArea">
+        <h2>选择地区</h2>
+        <i class="areaBtn"></i>
+        <div class="areaBottom">
+            <ul class="areaCountry">
+            </ul>
+            <ul class="areaProvince">
+            </ul>
+            <ul class="areaCity">
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+        <!-- 选择地区开始 -->
+        <div class="choseArea spaci">
+            <h2>选择地区</h2>
+            <i class="areaBtn"></i>
+            <div class="areaBottom">
+                <ul class="areaCountry">
+                    <!-- <li>中国</li>
+                    <li>中国</li> -->
+                </ul>
+                <ul class="areaProvince">
+                    <!-- <li>中国</li>
+                    <li>中国</li>
+                    <li>中国</li> -->
+                </ul>
+                <ul class="areaCity">
+                    <!-- <li>中国</li>
+                    <li>中国</li>
+                    <li>中国</li> -->
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- 选择地区结束 --> 
+        <div class="fixedMask"></div>
+</body>
+
+</html>

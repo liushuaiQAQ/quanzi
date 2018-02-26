@@ -1,0 +1,136 @@
+<!--账号密码登录右侧-->
+<div class="login_r_t">
+	<div class="loginbigBox">
+		<div class="login_topBox">
+			<div class="login_top_d clearfix">
+				<p class="accNum on">账号登录</p>
+				<p class="erCode">二维码登录</p>
+			</div>
+		</div>
+		<div class="rightImg on"></div>
+		<div class="loginBox">
+			<ul class="login_right">
+				<li class="login_input">
+					<div class="parBox clearfix">
+						<span class="quickLogin">短信快捷登录</span>
+					</div>		
+					<div class="login_phone">
+						<input type="text" placeholder="手机号" />
+						<div class="commontit warn point1">
+							<!--错误提示-->
+							<i><img src="/img/daosanjiao.png"/></i>
+							<p>请输入账号/密码</p>
+						</div>
+					</div>
+					<div class="login_password">
+						<input type="password" placeholder="请输入密码" />
+						<div class="commontit warn point2">
+							<!--错误提示-->
+							<i><img src="/img/daosanjiao.png"/></i>
+							<p>请输入密码</p>
+						</div>
+					</div>
+				</li>
+				<li class="login_z_w">
+					<label><span>记住我</span></label>
+					<a href="javascript:;">忘记密码</a>
+				</li>
+				<li class="login_dl">
+					<a class="right_login" href="javascript:;">登录</a>
+				</li>
+				<li class="login_zc">
+					<p>还没有圈子&nbsp;?
+						<a href="/center/register.html">免费注册</a>
+					</p>
+				</li>
+				<li class="third_party_t">
+					<p>第三方账号登录</p>
+				</li>
+				<li class="third_party">
+					<a href="javascript:;" class="login_qq thirdQQ"></a>
+					<a href="javascript:;" class="login_wb thirdWB"></a>
+					<a href="javascript:;" class="login_wx thirdWX"></a>
+				</li>
+			</ul>
+
+
+			<!-- 短信登录 -->
+			<div class="msgBox" style="padding:0 14px;background: #fff;">
+				<div class="msgLogin">
+					<!--<p class="tit">手机号登录</p>-->
+					<span class="titMsg" style="padding: 16px 0px;margin: 0px;">短信登录</span>
+					<div class="telphoneLogin">
+						<p class="titWords">验证即登录，未注册将自动创建圈子账号</p>
+						<ul>
+							<li class="phoneli">
+								<input style="width: 220px;" type="text" name="telPhones2" id="telPhones2" value="" placeholder="手机号" />
+								<div class="commontit warn1 point9">
+									<!--错误提示-->
+									<i><img src="/img/daosanjiao.png"/></i>
+									<p>请输入手机号/动态密码</p>
+								</div>
+							</li>
+							<li class="dynamicPass">
+								<input type="text" style="width: 138px;" name="dynamicpsd" id="dynamicpsd2" value="" placeholder="动态密码" /><button style="width: 90px;" class="identifyingCode2 btn-small2 get-code2">发送动态密码</button><button class="identifyingCode2 btn-small2 reset-code2" id="J_resetCode4" style="display:none;width: 90px;">重新获取<span id="J_second4">60</span>s</button>
+							</li>
+						</ul>
+						<a class="clickLoginbtn" href="javascript:;" style="width: 252px;">登录</a>
+					</div>
+				</div>
+				<div class="thirdLogin accpsdLogin" style="background: #fff;">
+					<div class="clearfix" style="width: 252px;">
+						<span>账号密码登录</span>
+					</div>
+				</div>
+			</div>
+			<!-- 短信登录 end-->
+			<div class="tit3">
+				<div class="qrodeImg">
+					<!--<img src="/img/trans.gif"/>-->
+				</div>
+				<p>使用手机圈子扫码登录</p>
+				<div class="phonebox"></div>
+			</div>	
+		</div>	
+		
+	</div>
+
+	<!-- 推荐圈子 -->
+	<div class="centerlist_tj">
+		<p class="referrer">推荐圈子
+			<a href="/center/shq.html">查看更多</a>
+		</p>
+		<ul class="myCircle_t"></ul>
+		<div class="topicsContent"></div>
+		<div class="living_Content"></div>
+		
+	</div>
+	<!--同城热点-->
+	<!--#include virtual="/html/city_hot.html"-->
+	<!--推荐视频-->
+	<!--#include virtual="/html/suggested_videos.html"-->
+	<!--用二维码下载  -->
+	<!--#include virtual="/html/qrodeload.html"-->
+	
+	<div class="followUs">
+	    <div class="followUs_head">关注我们</div>
+	    <ul class="followUs_container">
+	       <li>客服QQ : 800186957</li>
+	       <li><a href="https://weibo.com/u/5935541953?refer_flag=1001030102_&is_all=1" target="_blank">圈子_facechat 微博</a></li>
+	    </ul>
+	</div>
+	
+	<div class="hotline">
+	    <div class="hotline_head">服务热线</div>
+	    <ul class="hotline_container">
+	       <li>400-087-3899</li>
+	       <li>周一至周五 9:00-17:30</li>
+	    </ul>
+	</div>
+	<div class="nologin_footer">
+		<a href="/center/guanyuwomen.html">关于圈子</a>
+		<a href="/center/lianxiwomen.html">联系我们</a>
+		<a href="/center/quanziApp.html">圈子APP</a>
+	</div>
+</div>
+<script src="/js/common/index_rightLogin.js" type="text/javascript" charset="utf-8"></script>

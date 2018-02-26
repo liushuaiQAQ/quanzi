@@ -1,0 +1,127 @@
+<!--#include virtual="/html/doctype.html"-->
+<title>租房_同城服务_圈子</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/detail/circle_detail.css">
+<link rel="stylesheet" type="text/css" href="/css/center/index/triends.css" />
+<link rel="stylesheet" type="text/css" href="/css/center/index/index.css" />
+<link rel="stylesheet" type="text/css" href="/shangcheng/css/list.css" />
+<script src="/js/common/com_ajaxfileupload.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/common/jquery.Jcrop.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="/shangcheng/js/common.js"></script>
+<script type="text/javascript" src="/js/common/publishIndex.js"></script>
+<script type="text/javascript" src="/js/common/index_shareThing.js"></script>
+<script type="text/javascript" src="/shangcheng/js/area_pc.js"></script>
+<script type="text/javascript" src="/shangcheng/js/sub_pc.js"></script>
+</head>
+
+<body>
+	<!--头部-->
+	<div class="headss"></div>
+	<!--内容-->
+	<div class="circleDetail_main">
+		<div class="list_left">
+			<div class="left_nav">
+				<ul>
+					<li>
+						<a href="/shangcheng/prd/hot.html">热门推荐</a>
+					</li>
+					<li>
+						<a href="/shangcheng/prd/occupation.html">职业</a>
+					</li>
+					<li class="on">
+						<a href="/shangcheng/prd/rent.html">租房</a>
+					</li>
+					<li>
+						<a href="/shangcheng/prd/housekeep.html">家政</a>
+					</li>
+					<li>
+						<a href="/shangcheng/prd/secondPrd.html">二手物品</a>
+					</li>
+					<li>
+						<a href="/shangcheng/prd/businessService.html">商务服务</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="publish_btn">发布信息</a>
+					</li>
+				</ul>
+			</div>
+			<div class="list_content">
+				<div class="location_city">
+					<span class="rent_photo"><i></i>只看有图</span><span class="now_location"></span><a href="javascript:;" class="change_btn">[切换城市]</a>
+				</div>
+				<div class="content_top">
+					<ul class="select_list">
+						<li class="select_active select_area">
+							<span>地区</span>
+						</li>
+						<li class="sub_line">
+							<span>地铁路线</span>
+						</li>
+						<li>
+							<span>租金</span>
+						</li>
+					</ul>
+					<div class="place">
+						<ul class="city"></ul>
+					</div>
+					<div class="sub_way">
+						<ul class="sub_city"></ul>
+					</div>
+					<div class="price_range rent range">
+						<ul>
+							<li data-price="0">不限</li>
+							<li data-price="1">600元以下</li>
+							<li data-price="2">600-1000元</li>
+							<li data-price="3">1000-1500元</li>
+							<li data-price="4">1500-2000元</li>
+							<li data-price="5">2000-3000元</li>
+							<li data-price="6">3000-5000元</li>
+							<li data-price="7">5000-8000元</li>
+							<li data-price="8">8000元以上</li>
+							<li>
+								<input type="number" class="start" / >-<input type="number" class="end"/><span>筛选</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="bottom_left fl proCirs">
+					<div class="jiazai"><i class="loading"></i>正在加载中，请稍后</div>
+				</div>
+				<div class="interest_box">
+					<div class="interest_top">
+						<h3>同城推荐</h3>
+					</div>
+					<div class="interest_list">
+						<div class="jiazai"><i class="loading"></i>正在加载中，请稍后</div>
+					</div>
+					
+				</div>
+		    </div>
+	    </div>
+		<!--列表右侧-->
+		<!--#include virtual="/shangcheng/html/list_right.html"-->
+		<!--列表右侧-->	
+		<!--返回置顶-->
+		<!--<div class="returnTop"></div>-->
+		<div class="clear"></div>
+	</div>
+	<!--底部start-->
+	<div class="footerss"></div>
+	<!--底部end-->
+    <!--城市切换-->
+	<!--#include virtual="/shangcheng/html/city_change.html"-->
+	<!--城市切换-->
+    <!--商品分类-->
+	<!--#include virtual="/shangcheng/html/prd_type.html"-->
+	<!--商品分类结束-->
+	<!--转发分享圈子朋友圈  圈子好友   圈子群组开始-->
+	<!--#include virtual="/html/dynamicSharing.html"-->
+	<!--转发分享圈子朋友圈  圈子好友   圈子群组结束-->
+	<!-- 通讯录 -->
+	<div class="Addressbook_box"></div>
+
+	<!--修改加入职业圈-->
+	<!--#include virtual="/html/changeorjoincarCir.html"-->
+</body>
+<script type="text/javascript" src="/shangcheng/js/list.js"></script>
+</html>

@@ -1,0 +1,144 @@
+<!--#include virtual="/html/doctype.html"-->
+	<title>编辑资料</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/editData/editData_touxiang.css">
+<link rel="stylesheet" type="text/css" href="/css/common/jquery.Jcrop.min.css"/>
+<script src="/js/common/com_ajaxfileupload.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/common/jquery.Jcrop.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<!--头部开始-->
+	<!--#include virtual="/html/header.html"-->
+	<!--头部end-->
+	<div class="main clear">
+		<div class="main_left">
+			<ul>
+				<li class="accoutNum">
+					<a  href="/center/editData.html">
+						账号安全
+					</a>
+				</li>
+				<li class="headpic">
+					<a  href="/center/edittx.html">
+						头像
+					</a>
+				</li>
+				<li class="editDatas">
+					<a href="/center/editbjzl.html">
+						编辑资料
+					</a>
+				</li>
+				<li class="edithmd">
+					<a href="/center/edithmd.html">
+						黑名单
+					</a>
+				</li>
+				<li class="editpbsz">
+					<a href="/center/editpbsz.html">
+						屏蔽设置
+					</a>
+				</li>
+				<li class="Feedback">
+					<a href="/center/edityjfk.html">
+						意见反馈
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="main_right">
+			<div class="personal_data">个人资料</div>
+			<div class="touxiang_wrap">
+				<span>头像</span>
+				<div class="touxiang_default">
+					<!--<div class="moren">
+						<div class="boxqz">
+							<div class="imgPer"><img src="/img/touxiang_default.png"></div>
+							<div class="chooses">
+								<span class="dels">删除</span>
+								<div class="uploadImg">
+									<span>上传</span>
+									<input type="file" name="file" id="upLoadImg"/>
+								</div>
+								<br class="clear" />
+							</div>
+						</div>
+						<div class="bgHead"></div>
+						<br class="clear" />
+					</div>-->
+					<!--<ul>
+						<li>
+							<div class="imgPer"><img src="/img/touxiang_default.png"></div>
+							<div class="chooses">
+								<span class="dels">删除</span>
+								<div class="uploadImg">
+									<span>上传</span>
+									<input type="file" name="file" id=""/>
+								</div>
+							</div>
+						</li>
+						<br class="clear" />
+					</ul>-->
+					<div class="bgHead"></div>
+					<br class="clear" />
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!--底部start-->
+	<!--#include virtual="/html/bottomer.html"-->
+	<!--底部end-->
+	<div class="delete_box" style="">
+		<div class="delete_wrap">
+			<img src="/img/wenhao.png">
+			<p>确认要删除此头像吗？</p>
+			<button>确认</button>
+			<button>取消</button>
+		</div>
+	</div>
+	<!--上传图片弹窗-->
+	<div class="maskFix"></div>
+	<div class="maskCenter">
+		<span class="errors">×</span>
+		<div class="uploads">
+			<div class="leftBar">
+				<h4>上传自定义头像</h4>
+				<div class="startUpload">
+					<p>开始上传</p>
+					<input type="file" name="file" id="headImg" value="" class="headImg"/>
+				</div>
+				<div class="upLoadtit">
+					<p class="formatTit">仅支持JPG、GIF、PNG 图片文件，且文件小于5M</p>
+					<div class="upLoading">
+                    	<span class="name">01-1图片的名字</span>
+                        <div class="progress"><div class="bar"></div></div>
+                         <span class="pro">0</span>
+                        <span class="stopErr"><b>×</b>放弃上传</span>
+                        <br class="clear"/>
+                    </div>
+				</div>
+				<div class="headImgBox">
+				</div>
+			</div>
+			<div class="rightBar">
+				<div class="previewImg">
+					
+				</div>
+				<p>保存头像</p>
+			</div>
+			<input type="hidden" name="x1">
+	        <input type="hidden" name="y1">
+	        <input type="hidden" name="x2">
+	        <input type="hidden" name="y2">
+	        <input type="hidden" name="w">
+	        <input type="hidden" name="h"> 
+			<br class="clear"/>
+		</div>
+	</div>
+	<script src="/js/center/editData/editData_touxiang.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 通讯录 -->
+	<!--#include virtual="/html/AddressBook.html"-->
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!--右侧个人信息-->
+<div class="my_message" id="my_message">
+	<div class="message_top">
+		<div class="message_bg"></div>
+		<!--<img src="../../../img/nv.png" alt="" alt="头像" class="portrait" />
+		<p class="message_name">奥巴马</p>
+		<p>UI设计</p>
+		<ul>
+			<li>
+				<a href="javascript:;">关注<span>198</span></a>
+			</li>
+			<li>
+				<a href="javascript:;">粉丝<span>198万</span></a>
+			</li>
+			<li>
+				<a href="javascript:;">动态<span>268</span></a>
+			</li>
+		</ul>-->
+	</div>
+	<div class="myCircle">
+		<p>我的圈子
+			<a href="/center/me/circle.html">查看更多</a>
+		</p>
+		<ul class="myCircle_t">
+			
+		</ul>
+		<div class="clear"></div>
+	</div>
+	<!--同城热点-->
+	<!--#include virtual="/html/city_hot.html"-->
+	<!--推荐视频-->
+	<!--#include virtual="/html/suggested_videos.html"-->
+	<!--用二维码下载  -->
+	<!--#include virtual="/html/qrodeload.html"-->
+	
+	
+	
+	<div class="followUs">
+	    <div class="followUs_head">关注我们</div>
+	    <ul class="followUs_container">
+	       <li>客服QQ : 800186957</li>
+	       <li><a href="https://weibo.com/u/5935541953?refer_flag=1001030102_&is_all=1" target="_blank">圈子_facechat 微博</a></li>
+	    </ul>
+	</div>
+	
+	<div class="hotline">
+	    <div class="hotline_head">服务热线</div>
+	    <ul class="hotline_container">
+	       <li>400-087-3899</li>
+	       <li>周一至周五 9:00-17:30</li>
+	    </ul>
+	</div>
+	
+	
+	<div class="nologin_footer">
+		<a href="/center/guanyuwomen.html">关于圈子</a>
+		<a href="/center/lianxiwomen.html">联系我们</a>
+		<a href="/center/quanziApp.html">圈子APP</a>
+	</div>
+</div>
+<script src="/js/common/center_rightPerson.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		rightmyFindJoinedAllCircleBy();
+		//我的圈子跳转
+		$(document).on("click",".myCircle_t li.my_join",function(){
+			var type = $(this).attr("data-type");
+			var code = $(this).attr("data-code");
+			var Url ="";
+			if(type == 1) Url = "/center/zhiye/mydynamic.html?code=" + code +'&dataName=' + $(this).find("p").html()
+			if(type == 2) Url = "/center/global/mydynamic.html?code="+ code
+			if(type == 3) Url = "/center/life/mydynamic.html?code=" + code
+			console.log(Url)
+			window.location.href = Url;
+		})
+
+	})
+</script>

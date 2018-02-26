@@ -1,0 +1,215 @@
+<!--#include virtual="/html/doctype.html"-->
+<title>个人主页-粉丝-圈子</title>
+<!--#include virtual="/html/mate.html"-->
+<link rel="stylesheet" type="text/css" href="/css/center/index/triends.css"/>
+<link rel="stylesheet" type="text/css" href="/css/center/personalHomepage/personalHomepage.css"/>
+<script type="text/javascript" src="/js/common/publishIndex.js"></script>
+<script type="text/javascript" src="/js/center/index/index.js"></script>
+<script type="text/javascript" src="/js/center/personalHomepage/personalHomepage_funs.js"></script>
+<script src="/js/common/com_ajaxfileupload.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="/js/common/index_shareThing.js"></script>
+</head>
+<body>
+	<!--头部开始-->
+	<!--#include virtual="/html/header.html"-->
+	<!--头部end-->
+	<div class="homepage_main">
+		<div class="homepage_top">
+			<div class="user_bj" style="width: 100%;height: 100%;">
+			</div>
+			<!--<div class="nav">-->
+				<!--<ul>-->
+					<!--<li><a href="/center/me/page.html">动态<span class="dynamic_num"></span></a></li>-->
+					<!--<li><a href="/center/me/circle.html">我的圈子<span class="circle_num"></span></a></li>-->
+					<!--<li><a href="/center/me/release.html">我的发布<span class="release_num"></span></a></li>-->
+					<!--<li><a href="/center/me/focus.html">关注<span class="focus_num"></span></a></li>-->
+					<!--<li><a href="/center/me/funs.html" class="nav_active">粉丝<span class="funs_num"></span></a></li>-->
+					<!--<li><a href="/center/me/collect.html" class="collect">收藏<span class="collect_num"></span></a></li>-->
+				<!--</ul>-->
+			<!--</div>-->
+			<!--头部开始-->
+			<!--#include virtual="/center/me/myNav.html"-->
+			<!--头部end-->
+			<div class="personal_info">
+				<a href="javascript:;" class="userImg">
+					<img src="/img/first.png">
+				</a>
+				<dl>
+					<dd class="personal_title">
+						<span class="personal_nikename"></span>
+						<i class="sex"></i>
+						<i class="level"></i>
+						<i class="viplevel"></i>
+					</dd>
+					<dd>
+						<span style="float: left;">圈子号:</span>
+						<span class="personal_code" style="float: left;margin-right: 30px;"></span>
+						<span class="job" style="float: left;"></span>
+						<span class="pass"></span>
+						<span class="identification"></span>
+						<div class="clear"></div>
+					</dd>
+					<dd class="sign"></dd>
+				</dl>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="homepage_bottom">
+			<div class="homepage_left">
+				<!--头部开始-->
+				<!--#include virtual="/center/me/foucsFuns.html"-->
+				<!--头部end-->
+				<div class="personal_data">
+					<ul>
+						<li class="lawchat_logo">
+							<i class="logo"></i>
+							<span>圈子号</span>
+							<span class="personal_code" style="float: left;"></span>
+						</li>
+						<li class="personal_job">
+							<i class="logo"></i>
+							<span>职位</span>
+							<span class="job" style="float: left;"></span>
+							<span class="pass" style=""></span>
+							<span class="identification"></span>
+						</li>
+						<li class="personal_sex">
+							<i class="logo"></i>
+							<span>性别</span>
+							<span class="data_sex"></span>
+						</li>
+						<li class="personal_birth">
+							<i class="logo"></i>
+							<span>生日</span>
+							<span class="birthday"></span>
+						</li>
+						<li class="personal_hometown">
+							<i class="logo"></i>
+							<span>地区</span>
+							<span class="homeTown"></span>
+						</li>
+						<li class="personal_tel">
+							<i class="logo"></i>
+							<span>手机号</span>
+							<span class="tel"></span>
+						</li>
+					</ul>
+					<p class="edit_data">
+						<a href="/center/editbjzl.html">编辑资料<span></span></a>
+					</p>
+				</div>
+				<!--左侧推荐start-->
+				<div class="recommend">
+				    <p><i>可能认识</i><a href="javascript:;">查看更多</a>
+				 
+				    </p>
+				    <div class="clear"></div>
+					    <ul>
+					        <!-- <li>
+					            <dl><dt><img src="http://quanzinet.com:9090/plugins/restapi/v1/files/download?filename=TX-5f743f49-689d-42d5-aa0c-b2bd2d3f5afb" alt=""></dt>
+					                <dd class="recommend_name">赵宪明苹果<span class="gradeImg"><img src="/img/h/sj_boy_0.png"></span>
+					                </dd>
+					                <dd>脚本开发</dd>
+					            </dl>
+					            <div class="dispose"><a class="plus" data-id="45401" href="javascript:;">加为好友</a><a class="dispose_del" data-id="45401" href="javascript:;">×</a>
+					            </div>
+					        </li> -->
+					    </ul>
+				    <div class="clear"></div>
+				</div>
+				<!--左侧推荐end-->
+
+		</div>
+			<div class="personal_right">
+				<div class="jiazai"><i class="loading"></i>正在加载中，请稍后</div>
+				<div class="personal_guanzhu">
+			        <ul class="guanzhu_wrap">
+			        <!--     <li>
+			                <a href="javascript:;" class="guanzhu_img">
+			                    <img src="/img/require_img.png">
+			                </a>
+			                <dl class="guanzhu_info">
+			                    <dd class="guanzhu_name">健健</dd>
+			                    <dd class="guanzhu_type">安卓开发</dd>
+			                </dl>
+			                <div class="funs_content">
+			                    <a href="javascript:;" class="funs_guanzhu"><i></i>关注</a>
+			                    <a href="javascript:;" class="funs_more">更多<i></i>
+			                    	<div class="more_box setting_box">
+			                    		<span>加为好友</span>
+			                    		<span>取消关注</span>
+			                    	</div>
+			                    </a>
+			                </div>
+			                <div class="clear"></div>
+			            </li> -->
+			            <!-- 分页 -->
+			            
+			        </ul>
+		        
+				</div>
+				<div class="page">
+	            		<!-- <a href="javascript:;" class="pagesActive">1</a>
+		            	<a href="javascript:;">2</a>
+		            	<a href="javascript:;">3</a>
+		            	<a href="javascript:;">4</a>
+		            	<a href="javascript:;">5</a>
+		            	<a href="javascript:;">6</a>
+		            	<a href="javascript:;">7</a>
+		            	<a href="javascript:;">8</a>
+		            	<span>...</span>
+		            	<a href="javascript:;">10</a>
+		            	<button>下一页</button> -->
+	            </div>
+	            <div class="no_publish">
+					<div class="noPublishBox">
+						<img src="/img/nopublish.png">
+						<p class="text_show">您还没有粉丝哦~快发布动态让更多的人关注你吧</p>
+						<button class="releaseBtn">立即发布</button>
+					</div>			
+				</div>
+			</div>
+			<!--返回置顶-->
+			<!--<div class="returnTop"></div>-->	
+			<br class="clear"/>
+		</div>
+	</div>
+		<!--底部start-->
+		<!--#include virtual="/html/bottomer.html"-->
+		<!--底部end-->
+		<!--遮盖弹窗-->
+	<!-- 好友验证弹出框开始 -->
+	<div class="addFriend" style="display: none;">
+		<div class="addWrap" style="display: none;">
+			<p class="addTitle">添加朋友</p>
+			<p>请输入验证信息</p>
+			<textarea class="addInformation"></textarea>
+			<div class="addInfo">你需要发送验证请求，对方通知后你才能添加其为好友</div>
+			<div class="confirm">
+				<button class="confirm_active">确定</button>
+				<button class="confirm_cancel">取消</button>
+			</div>
+		</div>
+		<div class="addConfirm" style="display: none;">
+			<img src="/img/addFriend_success.png">
+			<p>好友请求已发送</p>
+		</div>
+	</div>
+	<!-- 好友验证弹出框结束 -->
+
+	<!-- 分享点新鲜事start -->
+	<div class="publish_box" style="display: none;">
+		<div class="center_box">
+			<!-- 发布动态 -->
+			<!--#include virtual="/html/index_shareThing.html"-->
+			<!-- 发布动态 -->
+		</div>
+	</div>
+	<!-- 分享点新鲜事end -->	
+	<!--转发分享圈子朋友圈  圈子好友   圈子群组开始-->
+	<!--#include virtual="/html/dynamicSharing.html"-->
+	<!--转发分享圈子朋友圈  圈子好友   圈子群组结束-->
+	<!-- 通讯录 -->
+	<div class="Addressbook_box"></div>
+</body>
+</html>

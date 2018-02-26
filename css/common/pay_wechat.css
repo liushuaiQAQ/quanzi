@@ -1,0 +1,14 @@
+#payBg{height: 100%; width: 100%;z-index: 10001;position: fixed;background-color: rgb(147, 148, 149);top: 0px;left: 0px;opacity: 0.7;display: none;}
+#pay_wechat{display:none;width:440px;height:345px;position:fixed;top:50%;margin-top:-190px;left:50%;margin-left:-260px;background:#fff;border:10px solid rgba(0,0,0,0.4);padding:20px 30px 15px;z-index:10002;}
+#pay_wechat>p{text-align: center;font-size:18px;}
+#pay_wechat>img{position:absolute;top:20px;right:20px;cursor: pointer;}
+#pay_wechat>p span{color:#018fd9;margin:0 5px;}
+#pay_wechat .imgBox{width:218px;height:218px;border:1px solid #e5e5e5;margin:25px auto 50px;}
+#pay_wechat .imgBox img{width:100%;}
+#pay_wechat>span {font-size:16px;}
+#pay_wechat>span b{font-size:24px;margin-left:10px;}
+#pay_wechat>span b,#pay_wechat>span span{color:#ffac22;}
+#pay_wechat>span span{font-weight:bold;margin-right:10px;}
+#pay_wechat>span,#pay_wechat .trade{float:left;}
+#pay_wechat .trade{float:right;color:#999999;margin-top:10px;}
+#pay_wechat .trade span:first-child{margin-right:30px;}

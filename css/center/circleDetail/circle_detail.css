@@ -1,0 +1,110 @@
+.detail_wrap{width: 863px;margin:140px auto 0px;}
+.detail_left{box-sizing:border-box;width: 552px;float: left;min-height: 600px;}
+.content_items{margin-top: 0;}
+.dynamic_list .content_items .spaciaMaxHeight li{max-height:none;}
+.detail_right2{box-sizing:border-box;float: left;margin-left: 10px;width: 300px;border:1px solid #e5e5e5;background: #fff;max-height:918px;overflow: hidden;overflow-y: scroll;}
+.detail_right2::-webkit-scrollbar{width:5px;}
+.detail_right2::-webkit-scrollbar-track{background-color:#fff;}
+.detail_right2::-webkit-scrollbar-thumb{background-color:#999;}
+.detail_header{border-bottom: 1px solid #e5e5e5;}
+.detail_header h3{height: 38px;line-height: 38px;font-size: 13px;margin-left: 14px;float: left;}
+.detail_header span{margin-right: 16px;width:50px;height: 38px;line-height: 38px;text-align: right;float: right;}
+.detail_header span i{width:16px;height:16px;display:inline-block;vertical-align: middle; margin-top: -3px;}
+.Refresh{background: url("/img/shuaxin.png") left center no-repeat;}
+.recommend_main{padding:0 14px;border-bottom: 1px solid #e5e5e5;}
+.recommend_title{margin-top: 10px;margin-bottom: 5px;}
+.pagePersons{width:20px;height: 20px;border-radius: 1px;display: block;float: left;}
+.pagePersons img{width: 100%;height: 100%;border-radius: 3px;}
+.recommend_title b{line-height: 20px;font-size: 12px;margin-right:8px;margin-left: 6px;}
+.date{font-size: 12px;line-height: 20px;}
+.recommend_content{max-height: 104px;overflow: hidden;}
+.recommend_content p{line-height: 17px;font-size: 12px;}
+.detail_img{margin-top: 5px;overflow: hidden;height: 100px;}
+.detail_img img{margin-right: 6px;width:128px;height: 100%;float: left;}
+.detail_img img:nth-of-type(2){margin-right: 0px;}
+.right_handle{margin: 8px 0 9px;}
+.right_handle ul li{float: left;margin-right: 10px;}
+.right_icon{width: 15px;height: 15px;display: block;float: left;margin-right: 4px;}
+.right_praise i{background: url(/img/dianzan_10.png) no-repeat center;}
+/*.qz_handle .qz_row_line .like_praise i{background:url(/img/dianzan_10.png) no-repeat;}*/
+.like_yizan i{background:url(/img/08_1yizan.png) no-repeat;}
+.right_praise span{margin-right: 10px;}
+.right_review i{background: url(/img/04_1xiaoxi.png) no-repeat center;margin-top:2px;}
+.right_review:hover{color:#3FA435;}
+.right_review:hover i{background: url(/img/04_2xiaoxi.png) no-repeat;margin-top:2px;}
+.review_1{margin-bottom: 4px;text-align: right;}
+.publish_tj{width:66px;height:24px;display: inline-block;background:#3FA435;color:#fff;font-size: 12px;text-align: center;}
+
+.right_review span{margin-right: 10px;}
+.right_transpond i{background: url(/img/zhuanfa_11.png) no-repeat;}
+/*//轮播图*/
+.img_show{display: none;width: 100%;}
+.img_show img{margin: 0 auto;display:block;}
+.pic_main{width:100%;height: auto;}
+.wrap{width: 100%;height:auto;position: relative;padding-bottom: 10px;}
+.wrap img{width: 100%;height:auto;}
+.wrap a{position: absolute;width: 23px;height: 39px;display: block;top:50%;margin-top: -20px;}
+.wrap a:nth-of-type(1){left: 20px;background: url("/img/01_ shangyizhang.png") 0 0 no-repeat;}
+.wrap a:nth-of-type(2){right: 20px;background: url("/img/02_ xiayizhang.png") 0 0 no-repeat;}
+.imgs{width: 100%;height: 58px;}
+.imgs a{display:block;float: left;}
+.imgs img{display:block;width:58px;height:58px;}
+
+/*评论*/
+.commentListsOne{margin-top: 15px;border-bottom: 1px solid #e5e5e5;margin-bottom: 10px;cursor: pointer;}
+/*样式微调     与trends的区别*/
+.content_items .message_mark{width: 370px;}
+/*视频投诉*/
+.bgBOX{position: fixed;height: 100%; width: 100%; left: 0;top: 0;background-color: #000;opacity: 0.3; filter: Alpha(opacity:30);z-index: 900;display: none;}
+/*投诉弹窗*/
+.ComplaintsBox{width:358px;min-height:448px;border:1px solid #E5E5E5;background:#fff;position:fixed;z-index:9999;left:50%;top:50%;margin-left:-240px;margin-top: -224px;display: none;}
+.ComplaintsBox h3{height:24px;padding-top: 14px;border-bottom:1px solid #E5E5E5;font-size: 14px;color:#333;text-align: center;margin-right: 14px;}
+.ComplaintsBox h3 a{float:right;display: inline-block;width:14px;height:14px;background:url(/img/chahao.png) no-repeat center}
+.ComplaintsBox ul{margin:0 16px;padding-top:10px;}
+.ComplaintsBox ul li{padding:10px 0;font-size:12px;}
+.ComplaintsBox ul li label{float:right;background:url(/img/check.png) no-repeat;}
+.ComplaintsBox .checked{background:url(/img/checkOn.png) no-repeat;}
+.ComplaintsBox ul li input{opacity: 0;}
+.ComplaintsBox .Complaints_btn{height:30px;margin-right: 16px;padding-bottom: 20px;}
+.ComplaintsBox .Complaints_btn>a{float:right;display: inline-block;width:68px;height:30px;background:#3FA435;color:#fff;text-align: center;line-height: 30px;}
+.ComplaintsBox textarea{height:94px;color:#999;font-size:12px;border:1px solid #E5E5E5;width:305px;}
+.parentS{position: relative;height: 96px;padding-bottom:10px;margin:0 16px 16px 16px;display: none;}
+.ComplaintsBox .parentS .titRen{width: 120px;height: 30px;background: #393939;text-align: center;line-height: 30px;font-size: 12px;color:#fff;position:absolute;left:90px;top:40px;display: none;}
+/*评论的样式*/
+.chitchatBox{width:524px;height: auto;background: #fff;padding:0px 14px 14px;}
+.commentListsOne{margin-top: 0px;margin-bottom: 0px;border: 0px;}
+.qz_handle{margin-bottom: 0px;}
+.moreComment{text-align: center;cursor: pointer;padding: 10px 0px;}
+.moretextAlign{text-align: center;padding: 10px 0px;}
+
+.detail_right .qz_publish{padding-top: 5px;border-bottom: #E5E5E5;}
+.Postcomment{overflow:hidden;width:239px;padding:4px 12px 6px 12px;border:1px solid #ccc;max-height: 73px;font-size: 12px;vertical-align:middle;display:table-cell;line-height: 20px;}
+.detail_right .review_1{padding:0;padding-bottom: 5px;height: 24px;}
+.TheRefresh_animation{background:url(/img/03_shubiaohuaguoshuaxin.png) left center no-repeat;animation: loading 0.8s linear infinite;-webkit-animation: loading .8s linear infinite;}
+@keyframes loading{
+		0% {
+	    transform: rotate(0deg);
+	}
+	100% {
+	    transform: rotate(360deg);
+	}
+}
+.unfold{font-size: 12px;color:#1293e4;}
+.dynamic_list{width: 100%;}
+.chitchatBox .more{height:22px;border-top: 1px solid #E5E5E5;line-height: 36px;font-size: 14px;cursor:pointer;}
+.chitchatBox .more i{display: inline-block;width: 14px;height:10px;background:url(/img/qz_shq_xiala.png) no-repeat center;}
+.chitchatBox .more:hover{color:#3FA435;}
+.chitchatBox .more:hover i{background: url(/img/active_xiala.png) no-repeat center;background-size:9px 6px;}
+.content_items .guanzhu{border:1px solid #E5E5E5;    display: inline-block; width: 58px;height: 26px;border-radius: 3px;text-align: center; line-height: 26px;}
+.pic_main{display: block;}
+
+
+/*右侧分享转发*/
+.right_handle .retransmission .wordShare{font-size: 12px;color: #999;}
+.right_handle .retransmission a{font-size: 12px;color: #999;}
+.right_handle li .retransmission a:hover{color: #008000;}
+.right_handle li .retransmission a.wechat_zone:hover>.qrodeBox{display: block;}
+.right_handle .retransmission .qrodeBox{left: -135px;}
+
+.recommend_main .specialOn{width:265px;}
+.recommend_main .Forwardpage{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}

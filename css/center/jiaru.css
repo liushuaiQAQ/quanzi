@@ -1,0 +1,26 @@
+/*动态导航栏*/
+.dynamic{height:36px;background: #fff;border:1px solid #e5e5e5;margin-bottom:10px;}
+.dynamic ul li{line-height: 36px;margin:0 10px;float: left;position: relative;}
+.dynamic ul li a{color:#333;}
+/*.dynamic_list{width:100%;background: #fff;min-height:772px;height: auto;}*/
+.content_items{background:#fff;margin-top:10px;}
+.collectionVideo{background:#ececec;}
+/*加入列表*/
+.personal_right{float: right;width: 550px;box-sizing: border-box;margin-left: 10px;}
+/* 加入 */
+.circleContent{padding: 0 14px;background: #ffffff;}
+.attention{height:88px;border-bottom:1px solid #E5E5E5;background: url(/img/zheye_sj.png) no-repeat center right 5px;position: relative;cursor: pointer;}
+.attention p{line-height: 39px; padding-top: 9px;}
+.attention span{color:#999;margin-right: 5px;}
+.Imgheader img{width:50px;height:50px;border-radius: 25px;float:left;margin:19px 10px 0 0;}
+.attention span.create{background: #41a237;color:#fff;font-size: 12px;border-radius:2px;padding:1px 4px;margin-left: 5px;}
+.circleContent ul li:last-child{border:none;}
+.topiccnt{font-style:normal;display: inline-block;position: absolute;right:40px;top:36px;width:36px;height:16px;background:#ff8a00;border-radius:2px;text-align: center;line-height:16px;color:#fff;}
+/*没有加入时的提示*/
+.releaseBtn{display: block;width: 96px;margin-top: 6px;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */border:1px solid #e1e1e1;font-size: 11px;line-height: 26px;text-align: center;background: #ffffff;cursor: pointer;margin-left:226px;border-radius: 2px;}
+.releaseBtn:hover{background: #3fa435;color:#ffffff;}
+.no_publish{height: 598px;box-sizing: border-box;border:1px solid #e5e5e5;background: #ffffff;display: none;}
+.noPublishBox{margin-top: 81px;}
+.text_show{font-size: 11px;line-height: 35px;height: 35px;text-align: center;}
+.noPublishBox>img{width: 43px;height: 36px;display: block;margin-left: 253px;}
+

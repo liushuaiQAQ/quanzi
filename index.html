@@ -1,0 +1,107 @@
+<!--#include virtual="/html/doctype.html"-->
+<title>圈子--圈子社交平台、找朋友、随时随地交朋友，职业圈生活圈全球圈尽在全球社交平台圈子社交、随时随地发现新鲜事新朋友！</title>
+<!--#include virtual="/html/mate.html"-->
+<meta name="baidu-site-verification" content="rrHD5UlN6N" />
+<link rel="stylesheet" type="text/css" href="/css/center/index/index.css" />
+<link rel="stylesheet" type="text/css" href="/css/center/index/triends.css" />
+<script src="/js/index.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/common/center_rightPerson.js" type="text/javascript"></script>
+<script src="/js/common/possiblePeople.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <!--头部-->
+  <!--#include virtual="/html/nloginh.html"-->
+  <!--内容-->
+  <div class="main clearfix">
+
+    <!--left   左导航-->
+    <!--#include virtual="/html/nologin_leftBar.html"-->
+
+    <!--首页-->
+    <div class="center_box">
+      <!--发布动态-->
+      <div class="center_publisher">
+        <div class="publisher_top">
+          <h2>分享点新鲜事</h2>
+          <div class="limit">还可以输入<span class="limit_num">2000</span>字</div>
+        </div>
+        <textarea id="FaceBoxText" name="" placeholder="此时此刻想跟大家说点什么"></textarea>
+        <div class="kind">
+          <a href="javascript:;" class="faceBtn"><em></em>表情</a>
+          <a href="javascript:;" class="fx_photo login_window"><em></em>照片</a>
+          <a href="javascript:;" class="fx_video login_window"><em></em>视频</a>
+          <div id="FaceBox"></div>
+        </div>
+        <div class="func">
+          <a href="javascript:;" class="func_publish login_window">发布</a>
+        </div>
+        <div class="clear"></div>
+      </div>
+
+      <!-- 可能认识的人start-->
+      <!--#include virtual="/html/possiblePeople.html"-->
+
+      <!--动态导航栏-->
+      <div class="dynamic nav_c d_title">
+        <ul>
+          <li class="home">
+            <a class="list_bg" href="/index.html">热门</a>
+            <em></em>
+            <span class="bg_br"></span>
+           <!--#include virtual="/html/dynamicNav.html"-->
+          </li>
+          <li class="pyq">
+            <a href="/index.html?qz=py">朋友圈</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--首页动态内容-->
+      <div class="dynamic_list" id="dynamic_list" >
+          <div class="jiazai"><i class="loading"></i>正在加载中，请稍后</div>
+      </div>
+      
+      
+    </div>
+        
+    <!--右侧账号登录-->
+    <div class="right_sideBar"></div>
+    <!--右侧置顶-->
+		<!--	<div class="returnTop"></div>-->
+  </div>
+
+
+  <!-- 推送消息 -->
+  <!--#include virtual="/html/pushMessage.html"-->
+
+  <!-- footer -->
+  <!--#include virtual="/html/nologin_bottomer.html"-->
+  
+
+
+
+
+
+
+
+<script type="text/javascript" charset="utf-8">
+  $(function(){
+    if($(".item_3").hasClass("onbg")){
+      $(".header_right .header_right_box .header_home a").css("color","#3da431");
+      $(".header_right .header_right_box .header_home i").css("background","url(/img/sy_shouye_xuanzhong.png) no-repeat")
+    }
+  })
+
+  //发帖限制字数
+  $("#FaceBoxText").on("keyup",function(){
+    checkNum($(this),'2000',".limit_num")
+  })
+  if(getCookie("username")){
+    window.location.href="/center/index.html";
+  }
+</script>
+
+</body>
+
+</html>

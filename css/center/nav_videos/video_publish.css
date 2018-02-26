@@ -1,0 +1,28 @@
+.main{width: 550px;margin: 0 auto;border:1px solid #e5e5e5;background: #ffffff;}
+.main_bar{padding:0 14px;}
+/*上部分开始*/
+.main_top{border-bottom: 2px solid #dbdbdb;}
+.main_top h2{line-height: 36px;font-size: 15px;color: #7b8abc;}
+.edit_box{box-sizing: border-box;width: 520px;height: 92px;border:1px solid #e5e5e5;font-size: 12px;line-height: 26px;padding: 5px;}
+.channel{margin-top: 7px;margin-bottom: 7px;}
+.channel ul{float: left;margin-top: 5px;}
+.channel ul li{float: left;}
+.channel ul li a{display: block;margin-right: 20px;font-size: 12px;}
+.channel ul li a img{margin-right: 7px;}
+.publish{float: right;}
+.publish label{font-size: 11px;font-weight: bold;}
+#sync{margin-top: 7px;}
+.publish button{cursor:pointer;background: #3ea436;width: 72px;height: 26px;border-style: none;color: #fffefe;margin-left: 20px;}
+/*上部分结束*/
+/*下部分开始*/
+.info_title{margin-top: 5px;}
+.info_title p{line-height: 32px;font-size: 12px;color:#bdbdbd;}
+.info_title span{position: absolute;right: 0;top:10px;}
+.edit_content{box-sizing: border-box;width: 452px;height: 210px;padding: 9px;font-size: 13px;border:1px solid #e5e5e5;}
+.btn_video{position: absolute;top:176px;left: 25px;}
+#file1{position: absolute;width: 60px;height: 60px;left: 0;top: 0;opacity: 0;} 
+.upload_start{margin: 12px 0 13px;}
+.upload_start label{font-size: 11px;font-weight: bold;}
+.upload_start button{cursor:pointer;margin-left: 107px;width: 62px;height: 24px;border-radius: 1px;background: #cccccc;color: #ededed;border-style: none;font-size: 12px;}
+.upload_start button:hover{background: #3fa435;}
+/*下部分结束*/

@@ -1,0 +1,17 @@
+.cityHot{padding: 0 14px 14px 14px;background: #ffffff;margin-top: 10px;z-index: 1;}
+.cityHotList{border-bottom: 1px solid #e5e5e5; padding-bottom: 13px;}
+.cityHot .cityHotList:last-child{border: none;padding-bottom: 0;}
+.cityHot_head{height: 36px;line-height: 36px;font-weight:bold;color:#333;font-size: 14px;}
+.cityHot_head a{float:right;font-size:12px;color:#999;font-weight:normal;}
+.cityHot_container>h3{height: 39px;width: 250px;line-height: 39px;font-size: 14px;font-weight: normal;color: #3b3b3b;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;border-top: 1px solid #E5E5E5;}
+.cityHot_container>h3>a:hover{color: #40a434;}
+.cityHot_container>ul>li{float: left;border: 1px solid #e1e0e2;width: 121px;height: 100px;overflow: hidden;}
+.cityHot_container>ul>li:first-child{margin-right: 4px;}
+.cityHot_container>ul>li>img{width: 100%;height: 100%;display:block;}
+.cityHot_price{height: 34px;line-height: 34px;clear: both;color: #fb0202;}
+.cityHot_address{height: 25px;font-size: 14px;line-height: 14px;color: #666;}
+.cityHot_person{margin-top: 9px;margin-bottom: 12px;}
+.cityHot_person>img{display: inline-block; width: 20px;height: 20px;}
+.tcProType{display: inline-block;width: 130px;height: 16px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;text-indent: 5px;}
+.cityHot_person>span:nth-child(2){display: inline-block;min-width: 50px;text-indent: 5px;font-weight: bold; max-width: 100px;height: 16px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #333;}
+.cityHotList li:last-child .cityHot_person{margin-bottom: 0;}

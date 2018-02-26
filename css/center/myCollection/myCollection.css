@@ -1,0 +1,49 @@
+/*动态导航栏*/
+.dynamic{height:36px;background: #fff;border:1px solid #e5e5e5;margin-bottom:10px;}
+.dynamic ul li{line-height: 36px;margin:0 10px;float: left;position: relative;}
+.dynamic ul li a{color:#bdbdbd;}
+.bg_br{position:absolute;bottom:-1px;left: 30%;border-width:9px;border-top-width:0;display: inline-block;border-style: solid;overflow: hidden;font-size: 0;vertical-align: top;border-color: #fff;border-bottom-color:#afc8e4;display: none;}
+.blockbg{display: block;}
+.dynamic ul li.list_bg a{color:#3ea436;}
+.dynamic_list{width:100%;}
+.content_items{background:#fff;margin-top:10px;}
+.collectionVideo{background:#ececec;}
+
+
+/*视频*/
+.collectionVideo li{width: 272px;height: 275px;float: left;background: #fff;margin-bottom: 10px;position: relative;}
+.collectionVideo li:nth-child(odd){margin-right: 6px;}
+.collectionVideo li .videoBox{width: 272px;height: 168px;position: relative;cursor: pointer;}
+.collectionVideo li .videoImg{width: 272px;height: 168px;}
+.collectionVideo li .videoImg img{display: block;width: 100%;height: 100%;}
+.collectionVideo li .playNum{min-width:30px;height:20px;padding-left:20px;padding-right:5px;background:rgba(0,0,0,0.4) url(/img/pc_sp_bofangcishu.png) no-repeat 5px center;border-radius: 2px;font-size: 12px;color: #fff;line-height: 20px;position: absolute;left: 10px;bottom: 5px;}
+.collectionVideo .times{display:block;width: 45px;height: 20px;background:rgba(0,0,0,0.4);font-size: 12px;color: #fff;text-align: center;line-height: 20px;position: absolute;right: 10px;bottom: 5px;}
+.collectionVideo .playimg{display:block;width:40px;height: 40px;background: url(/img/qz_sp_bofang.png) no-repeat;position: absolute;left:116px;top:64px;}
+.collectionVideo .collectionIcon{display:block;width: 25px;height: 25px;background: url(/img/qz_sp_yishoucang.png) no-repeat;position: absolute;right:10px;top:10px;display: none;}
+.collectionVideo li .brief{display:block;font-size: 14px;color: #7a7a7a;margin:10px;line-height: 20px;height: 40px;overflow: hidden;text-overflow: ellipsis;line-height: 20px;text-overflow: ellipsis;word-break: break-all;}
+.collectionVideo li .brief:hover{color: #ffb053;}
+.userName{height:20px;padding-left:40px ;background: #fff url(/img/qz_sp_quanzihaoyou.png) no-repeat 10px center;background-size:20px 20px;font-size:12px;color: #666;}
+.collectionVideo dl{margin: 0 10px;margin-top: 5px;font-size:12px;color: #b2b2b2;}
+.collectionVideo dl dt{float: left;padding-left: 18px;background:url(/img/pc_sp_bofangcishu.png) no-repeat left center;}
+.collectionVideo dl dd{float:left;padding-left:18px;}
+.collectionVideo dl dd:nth-child(2){margin: 0px 20px;}
+.collectionVideo dl .colloction{background: #fff url(/img/qz_sp_pinglun.png) no-repeat left center;}
+.collectionVideo dl .share{background: #fff url(/img/qz_sp_fenxiang.png) no-repeat left center;cursor: pointer;}
+.collectionVideo dl .collect{background: #fff url(/img/pc_sp_shoucang.png) no-repeat left center;cursor: pointer;}
+.collectionVideo dl .collect:hover{background: #fff url(/img/pc_spxq_shoucang.png) no-repeat left center;background-size:12px 12px;cursor: pointer;}
+.sharelink{padding:15px 20px;border: 1px solid #d3d3d3;position: absolute;background: #fff;right: 0px;top:270px;z-index: 99;display: none;}
+.sharelink .qrodeBox{display:none;width:120px;height: 150px;padding:10px;background:#fff;border:1px solid #E5E5E5;position:absolute;/*top:130px;*/top:89px;right:-143px;}
+.sharelink .qrodeBox p{font-size: 12px;color: #323232;margin-bottom: 10px;}
+.sharelink .qrodeBox div{width: 120px;height: 120px;}
+.sharelink a{display: block;padding-right:36px;font-size: 12px;color: #323232;margin-bottom:15px;height: 20px;line-height: 20px;}
+.sharelink a.share1{background: #fff url(/img/qz_sp_quanzipengyouquan.png) no-repeat right center;}
+.sharelink a.share2{background: #fff url(/img/qz_sp_quanzihaoyou.png) no-repeat right center;}
+.sharelink a.share3{background: #fff url(/img/qz_sp_quanziqunzu.png) no-repeat right center;}
+.sharelink a.share4{background: #fff url(/img/qz_sp_weixinhaoyou.png) no-repeat right center;}
+.sharelink a.share5{background: #fff url(/img/qz_sp_weixinpengyouquan.png) no-repeat right center;}
+.sharelink a.share6{background: #fff url(/img/qz_sp_QQkongjian.png) no-repeat right center;}
+.sharelink a.share7{background: #fff url(/img/qz_sp_QQhaoyou.png) no-repeat right center;}
+.sharelink a.share8{background: #fff url(/img/qz_sp_xinlangweibo.png) no-repeat right center;margin-bottom:0px;}
+.sharelink a.share9{background: #fff url(/img/indexhot.png) no-repeat right center;}
+.sharelink a:hover{color: #008000;}
+.sharelink a.share5:hover .qrodeBox{display:block;}

@@ -1,0 +1,27 @@
+/*解除头部定位*/
+/*.headerBox{position:static;}
+.AddressBook{position: absolute;}*/
+.main{margin: 0 auto;width: 1000px;max-width: 1000px;margin-top:140px;}
+.main_left ul li.accoutNum a{background: #fff url(/img/01_1zhanghao.png) no-repeat 10px center;}
+.main_left ul li.headpic a{background: #fff url(/img/02_1touxiang.png) no-repeat 10px center;}
+.main_left ul li.editDatas a{background: #fff url(/img/03_1bianji.png) no-repeat 10px center;}
+.main_left ul li.editpbsz a{background: #fff url(/img/pingbishezhi1.png) no-repeat 10px center;}
+.main_left ul li.edithmd a{background: #fff url(/img/sz_heimingdan.png) no-repeat 10px center;}
+.main_left ul li.Feedback a{background: #fff url(/img/04_2yijian.png) no-repeat 10px center;font-weight: bold;color: #42a236;}
+.advise_wrap{margin-left: 20px;}
+.advise{font-size: 16px;line-height: 56px;}
+.question{margin-top: 8px;position: relative;}
+.question p:nth-of-type(1){font-size: 13px;margin-bottom: 10px;}
+.edit_question{box-sizing: border-box;width:600px;height: 200px;border:1px solid #ccc;padding: 10px 10px 20px;}
+.count{position: absolute;right: 150px;bottom: 9px;}
+.telephone{margin-bottom: 10px;}
+.telephone p{margin-top: 30px;margin-bottom: 10px;}
+.telephone>input{width: 160px;height:34px;border:1px solid #ccc;box-sizing: border-box;padding:8px 10px;}
+.submit{width: 80px;}
+.submit>button{width: 80px;height: 32px;display: block;font-size: 14px;text-align: center;line-height: 32px;background:#40a336;color: #fff;border-style: none;cursor: pointer;border-radius: 3px;}
+/*	.sub .sub_active{background:#3fa435;color: #fff;}
+	.submit>button:hover{background:#3fa435;color: #fff;}*/
+	
+.conTit{position:absolute;left: 40%;left: 230px;top:80px;display: none;}
+.conTit span{display:inline-block;padding:10px 10px 10px 40px;background:#eeeeee url(/img/gantanhaoG.png) no-repeat 10px center;border:1px solid #ccc;font-size: 12px;color: #333;}
+.conTit span.on{background:#eee url(/img/duihaoG.png) no-repeat 10px center;}
