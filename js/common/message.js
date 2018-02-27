@@ -201,7 +201,6 @@ var Gab = {
 	},
 	//拉黑
 	pull_black: function (msg) {
-		//console.log(msg)
 		var codeAttr = $(msg).find("error").attr("code");
 		if (codeAttr == 503 || codeAttr == 406) {
 			warningMessage("由于您或对方已被拉黑，该消息被拒收。");
