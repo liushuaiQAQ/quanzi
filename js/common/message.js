@@ -197,7 +197,6 @@ var Gab = {
 			}
 		}
 		if (off) chat_version.push(version);
-		// console.log(chat_version, off)
 		return off;
 	},
 	//拉黑
