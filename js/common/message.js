@@ -721,8 +721,6 @@ var Gab = {
 		} else {
 			var topOff = true;
 			if (topLen >6) {
-//				$('.Message_zk').show();
-//				$('.Message_box ul').css('height', '320px');
 				$(".Message_box .msg-parentBox").css('overflow-y',"auto");
 			};
 			for (var i = 0; i < topLen; i++) {
